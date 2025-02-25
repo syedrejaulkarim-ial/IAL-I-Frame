@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="iFramesExplorer">
+  <DataContextMoniker Name="/iFramesExplorerDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f3bdd412-9b40-42ea-b6d5-4e37921f5fbd" isExpanded="false" absoluteBounds="0.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/AMFI_QUARTER_FUNDSIZE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16ea8c26-19ab-4f95-8470-76d4b4225e3e" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fa326924-178e-428b-b923-508f81fa719a" isExpanded="false" absoluteBounds="0.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/expense" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ef3d40f8-8a49-41db-b73f-f769a9140537" absoluteBounds="0.51500000000000012, 1.585, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="520d5ed0-f8dd-4329-9cf0-30a01168f8c2" isExpanded="false" absoluteBounds="0.5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/ptratio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="394bba31-61ce-4113-8621-e6f2b4747967" absoluteBounds="0.51500000000000012, 2.21, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5fc4331-08ef-416f-9a4e-2c598c25934a" isExpanded="false" absoluteBounds="0.5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/ind_recExplorer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d06d298-4d7c-4b6d-9271-d41a304c605c" absoluteBounds="0.51500000000000012, 2.835, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7108d6cb-5d1d-4992-83ff-5f1bf97354a1" isExpanded="false" absoluteBounds="0.5, 3, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/SchemeIndexExplorer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6ec7d77-2de5-45cf-bd28-9c771adc63d0" absoluteBounds="0.515, 3.46, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="98f9a719-e22b-4ab2-977f-938841169ecf" isExpanded="false" absoluteBounds="0.5, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/Sector_indExplorer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4ac45b7-47d9-4510-819e-6ecbdaef1e52" absoluteBounds="0.51500000000000012, 4.085, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="efe72dcd-749d-47d1-b4b2-f6299eccc55d" absoluteBounds="0.5, 4.25, 2, 1.5891951497395827">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/ind_infoExplorer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6816868b-677f-428f-bf04-51b1ae50f84e" absoluteBounds="0.51500000000000012, 4.71, 1.9700000000000002, 1.0291951497395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9668abb-bff0-4b6f-8399-e69b981777f7" isExpanded="false" absoluteBounds="0.5, 5.375, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/BSEPortfolio_Stat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9514375a-1f5c-4fac-9253-34d02a6357f2" absoluteBounds="0.51500000000000012, 5.835, 1.9700000000000002, 1.5222371419270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="859ffd1e-e26a-4af8-b2f7-5b3343884e69" isExpanded="false" absoluteBounds="2.75, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/com_pot" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47ec05bd-9beb-4b47-a397-f5927a1025ec" absoluteBounds="2.7649999999999997, 0.96, 1.9700000000000002, 2.67266845703125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3bff5770-ac9e-43ad-a569-7f4357392b5a" isExpanded="false" absoluteBounds="2.75, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/preCalcPEPB" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e14b5d7-cadf-4af3-87e4-ba3335406173" absoluteBounds="2.765, 1.585, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2545eee2-91e3-4df6-9edd-7297df3a6afa" isExpanded="false" absoluteBounds="2.75, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/Scheme_StyleBox" />
+      <nestedChildShapes>
+        <elementListCompartment Id="740fb8d8-e563-4baa-ae4c-1082e0d31c58" absoluteBounds="2.765, 2.21, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7f390536-f85a-41e4-bca7-3ae620b4af53" isExpanded="false" absoluteBounds="2.75, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/scheme_InfoExplorer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b72adf29-cd21-4c6e-93a2-3fbf42cbca12" absoluteBounds="2.765, 2.835, 1.9700000000000002, 7.931783040364583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21c02668-83e3-4164-965f-27c30653c695" isExpanded="false" absoluteBounds="2.75, 3, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/marketcapclassification_detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2782a52f-521d-4e64-a565-4e63ec468125" absoluteBounds="2.7649999999999997, 3.46, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe9f01e7-7f6d-4383-add3-1762c1ee9184" isExpanded="false" absoluteBounds="2.75, 3.625, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/PreCalculatedRatios_MFI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6eee897-76e7-426f-9a6f-7ea56dba350d" absoluteBounds="2.765, 4.085, 1.9700000000000002, 3.16571044921875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c66a70d1-de1b-4614-8297-a4077657cd36" isExpanded="false" absoluteBounds="2.75, 4.25, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/top_fund_Index" />
+      <nestedChildShapes>
+        <elementListCompartment Id="69170c62-71b7-4aa7-af77-0589f7e0740f" absoluteBounds="2.7649999999999997, 4.71, 1.9700000000000002, 1.8509318033854165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f76e39cf-8863-4160-a993-04f1775a8123" isExpanded="false" absoluteBounds="2.875, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/MUT_FUND" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41d719ed-0ff3-4b38-8d4e-12d81c42501c" absoluteBounds="2.8899999999999997, 5.335, 1.9700000000000002, 3.987447102864583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f6c00cff-e18c-4388-8b0a-5d7bd3222ffe" isExpanded="false" absoluteBounds="5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/Scheme_Info_Additional" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f38b049e-8e5e-4e97-b33c-dbbb664f01b7" absoluteBounds="5.015, 0.96, 1.9700000000000002, 8.58917236328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="faa313db-6215-4b83-8ccc-6fedc95bb12e" isExpanded="false" absoluteBounds="5.125, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/Fund_ManagerExplorer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2c555c7-0323-4325-80b5-33511a70ba73" absoluteBounds="5.14, 1.585, 1.9700000000000002, 2.17962646484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e495645e-1a86-4c69-bee0-412085b3ce3a" isExpanded="false" absoluteBounds="5.125, 1.875, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/cur_fund_manExplorer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="013b7c74-03e1-401f-9582-2827b0d187c9" absoluteBounds="5.14, 2.335, 1.9700000000000002, 1.19354248046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="13e4ac32-e764-4eb2-b15c-9cf932829990" isExpanded="false" absoluteBounds="5.125, 2.5, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/sch_launch" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42ee6793-da98-404a-b0bf-00726e61e8f6" absoluteBounds="5.14, 2.96, 1.9700000000000002, 3.3300577799479165" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6542a457-86a1-4773-8589-717ed954b61f" isExpanded="false" absoluteBounds="5.125, 3.125, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/Nav_Rec" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf04b478-4da9-47d8-89b8-b2d834cb619f" absoluteBounds="5.14, 3.585, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30c3d26a-43d7-433a-bc59-b409e8f8cf8d" isExpanded="false" absoluteBounds="5.25, 3.75, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/SchemeIndex" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1ff5baba-bc95-435c-bbad-e4faf55cde5c" absoluteBounds="5.265, 4.21, 1.9700000000000002, 0.53615315755208326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2fa1547d-0612-4182-a858-7010f9af8c02" isExpanded="false" absoluteBounds="5.25, 4.625, 2, 0.45">
+      <DataClassMoniker Name="/iFramesExplorerDataContext/amfiExplorer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fdce88ef-adb3-4f24-a8ea-62f17ba75611" absoluteBounds="5.265, 5.085, 1.9700000000000002, 2.015279134114583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

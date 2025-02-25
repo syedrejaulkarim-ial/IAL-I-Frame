@@ -1,0 +1,16 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="NAVChartSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://mfiframes.mutualfundsindia.com/WebServices/NAVChart.asmx"
+                binding="basicHttpBinding" bindingConfiguration="NAVChartSoap"
+                contract="wsNavChart.NAVChartSoap" name="NAVChartSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

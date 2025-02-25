@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.125" name="Rankings">
+  <DataContextMoniker Name="/RankingsDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1bb8fd83-4431-4a09-9898-3cc5f8127045" absoluteBounds="0.5, 0.5, 2, 8.3274357096354166">
+      <DataClassMoniker Name="/RankingsDataContext/scheme_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="329726a7-4cda-4f77-bedb-0dc2dfc8b74f" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 7.767435709635417" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b2ffab20-65f8-4565-90d3-40c6d72b5e6a" absoluteBounds="5, 0.5, 2, 1.26050048828125">
+      <DataClassMoniker Name="/RankingsDataContext/Ranking_weightage" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c338f22a-5b46-4241-9473-c4e9f9313de7" absoluteBounds="5.015, 0.96, 1.9700000000000002, 0.70050048828125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="54452d6a-9372-4c6f-838a-29b2dee3a8d6" absoluteBounds="5.375, 2, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/RankingsDataContext/rankperiod" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b10f42c1-10d2-4ef1-8a5f-719cb566d10f" absoluteBounds="5.39, 2.46, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aba67fd4-31bf-4b68-9ba8-2695665ccb76" absoluteBounds="5, 3.625, 2, 1.4248478190104168">
+      <DataClassMoniker Name="/RankingsDataContext/categories" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ad55f85-a620-43f9-8daf-a7ad9b870bfa" absoluteBounds="5.015, 4.085, 1.9700000000000002, 0.86484781901041674" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a1fa591-cd3d-41be-bfdf-0652cd793a2d" absoluteBounds="2.75, 1.125, 2, 3.0683211263020831">
+      <DataClassMoniker Name="/RankingsDataContext/RANKING_PARAMETER_RANK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fed57dd8-e8e8-477c-ae2c-40a1685684df" absoluteBounds="2.765, 1.585, 1.9700000000000002, 2.508321126302083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de957b72-79ac-419e-81d2-cb8462eb4e92" absoluteBounds="2.75, 0.5, 2, 4.5474471028645826">
+      <DataClassMoniker Name="/RankingsDataContext/MUT_FUND_Ranking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a782914-0864-4c9d-bd00-c3a3ee896d59" absoluteBounds="2.765, 0.96, 1.9700000000000002, 3.987447102864583" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

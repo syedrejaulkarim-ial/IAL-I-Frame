@@ -1,0 +1,10 @@
+<OutOfBrowserSettings ShortName="Charting" EnableGPUAcceleration="True" ShowInstallMenuItem="True">
+  <OutOfBrowserSettings.Blurb>Charting Application on your desktop; at home, at work or on the go from http://www.mutualfundsindia.com. © Icra Online Ltd. All rights reserved. For any problem please contact support@icraonline.com</OutOfBrowserSettings.Blurb>
+  <OutOfBrowserSettings.WindowSettings>
+    <WindowSettings Title="Charting - Mutualfundsindia.com" WindowStyle="BorderlessRoundCornersWindow" />
+  </OutOfBrowserSettings.WindowSettings>
+  <OutOfBrowserSettings.SecuritySettings>
+    <SecuritySettings ElevatedPermissions="Required" />
+  </OutOfBrowserSettings.SecuritySettings>
+  <OutOfBrowserSettings.Icons />
+</OutOfBrowserSettings>

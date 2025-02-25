@@ -1,0 +1,931 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DSP</title>
+    <link rel="stylesheet" type="text/css" href="dspstyles.css">
+    <style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;	
+}
+
+.top_tr{
+	background:#000000;
+	height:83px;
+	color:#FFFFFF;
+	font-size:30px;
+	text-transform:uppercase;
+	font-weight: normal;
+	padding-left: 30px;
+}
+
+.left_table{
+	width:550px;
+	height:auto;	
+	color:#2a2525;
+	vertical-align: top;
+	font-stretch:normal;
+	text-decoration:none;	
+	font-size:13px;
+	
+	
+}
+.mid_table{
+	width:20px;
+}
+.right_table{
+	width:390px;
+	height:auto;	
+	vertical-align: top;
+	font-stretch:normal;
+	text-decoration:none;
+	color:#2a2525;	
+	font-size:13px;	
+
+}
+.td_style1{
+	height:20px;
+	text-align:justify;
+	font-size:13px;
+	vertical-align:top;
+	font-weight:normal;
+	text-decoration:none;
+	line-height: 20px;	
+	color:#2a2525;
+	text-align:justify;
+	letter-spacing:0.01em;
+}
+.text_style{font-weight:bold; font-size:12px; text-decoration:underline;}
+.td_style2{
+	background:#569fd3;
+	height:27px;
+	text-align:justify;
+	font-size:15px;
+	color:#FFFFFF;
+	padding-left: 10px;
+	vertical-align: middle;	
+	
+}
+.td_style3{
+	height:20px;
+	text-align:justify;
+	font-size:15px;
+	color:#000;
+	vertical-align: middle;
+}
+.td_style3t{
+	height:20px;
+}
+.td_style3tt{
+	height:2px;
+}
+.td_style4{
+	height:25px;
+	text-align:justify;
+	font-size:15px;
+	color:#000;
+	font-family:"Trebuchet MS";
+	vertical-align: middle;
+	border-bottom:#c6c8ca solid 1px;
+	padding-top: 5px;
+}
+
+.summery_left{
+	width:80%;
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	
+}
+.summery_left_t{
+	width:80%;
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;	
+	padding-top: 2px;
+	
+}
+
+.td_style5{
+	height:25px;
+	text-align:justify;
+	font-size:14px;	
+	font-size: 12px;
+	vertical-align:top;
+	padding-left: 15px;	
+}
+.td_style55{
+	height:25px;
+	text-align:justify;	
+	font-size: 12px;
+	vertical-align:top;		
+}
+.td_style6{
+	height:34px;
+	text-align:justify;
+	font-size:15px;
+	font-size: 12px;
+	vertical-align:middle;	
+	font-weight:bold;
+	padding-top: 5px;
+	text-transform: uppercase;
+	color:#4f4e50;
+	
+}
+.td_style7{
+	height:5px;
+	
+}
+
+.summery_right{
+	width:20%;
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+}
+
+.summery_right_t{
+	width:20%;
+	height:20px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+}
+
+.summery_left1{
+	height:25px;
+	vertical-align:middle;	
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	width: 50%;
+	font-size:13px;
+}
+.summery_right1{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+	width: 50%;
+}
+.summery_right12{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: left;	
+	border-bottom:black solid 1px;
+	font-size: 13px;
+	width: 100%;
+	padding-top: 2px;	
+	
+}
+.summery_left1_t{
+	height:25px;
+	vertical-align:middle;	
+	padding-top: 2px;
+	width: 50%;
+	font-size:13px;
+}
+.summery_right1_t{
+	height:20px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+	width: 50%;
+}
+.summery_left2{
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	width: 60%;
+}
+.summery_left3{
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	padding-top: 2px;
+	width: 60%;
+}
+.summery_left4{
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	padding-top: 2px;
+	width: 45%;
+	text-align:left;
+	padding-right: 10px;
+}
+
+.summery_right2{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+	width: 20%;
+}
+.summery_right3{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: left;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+	width: 20%;
+	color: #2296d3;
+	font-weight: bold;
+}
+.summery_right4{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: left;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+	width: 20%;
+	color: #000;
+}
+.summery_right5{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: left;
+	font-size: 13px;
+	width: 20%;
+	color: #000;
+	font-weight: normal;
+}
+
+.grdheader{
+	font-size:12px;
+	vertical-align:middle;
+	text-align:center;	   
+    background: #569fd3;
+	border-bottom:#c6c8ca solid 1px;
+	height: 25px;
+	font-weight: bold;
+}
+.grdHead
+{
+    text-align: center;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: normal;   
+    background: #569fd3;
+    height: 25px;
+}
+.grdrow{
+	font-size:13px;
+	vertical-align:middle;
+	text-align:center;
+	border-bottom:#c6c8ca solid 1px;
+	height: 25px;
+}
+.chart{text-align:left;}
+.disclaimer{
+	font-family:Arial Narrow;
+	font-size:15px;
+	font-style:italic;
+	text-align: justify;
+	line-height: 17px;
+	color:#2a2525;
+}
+.line{
+	border-bottom:#000000 solid 1px;
+	vertical-align: middle;
+}
+.dis{
+	
+	font-size:16px;
+	font-weight:normal  ;
+	text-align: center;
+}
+
+        .prepareTablestyle
+        {
+            width: 100%;
+            background-color:#F5F5F5;     
+            
+            font-size:11px;
+        }
+        
+        .borderbottom
+        {
+            height:20px;
+            vertical-align:bottom;
+            border-bottom: 1px solid;
+        }
+        .tdborderbotton
+        {
+            height:20px;
+            vertical-align:bottom;
+            border-bottom: 1px solid;
+        }
+
+-->
+    </style>
+</head>
+<body>
+    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr align="left">
+            <td valign="top">
+                <table width="900" border="0" align="left" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="left_table">
+                            <div>
+                                <table width="550" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="td_style3">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="top_tr">
+                                            RGESS REPORT
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style2">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <div>
+                            <td class="mid_table">
+                                <img src="../IMG/images/spacer11.gif" width="20px" height="1" />
+                            </td>
+                        </div>
+                        <td class="right_table">
+                            <div>
+                                <table width="370" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="td_style3">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" height="58px">
+                                            <img src="../IMG/../IMG/logo.jpg" width="266" height="33" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style3" style="vertical-align: top; text-align: right;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="td_style1">
+                Everyone is allowed to invest in RGESS. However investors must meet certain criteria
+                to avail a tax benifit on RGESS. The eligibility criteria is listed as under:<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="td_style1">
+                <span class="text_style">If you already have a demat account:</span><br />
+                If you have not invested in securities or derivatives before Nov 23, 2012, you can
+                invest in these schemes through your demat account to get tax benefits, with 2 additional
+                criteria to be met. You have to:
+                <br />
+                1. Be a resident Indian.<br />
+                2. Have a gross annual income from all sources less than/equal to Rs 12 lacs Note:
+                You can get tax benefits by investing in a RGESS compliant MF scheme <strong><em>only
+                    by investing through your demat account.</em></strong><br />
+            </td>
+            <tr>
+                <td class="td_style1">
+                    <span class="text_style">If you don’t have a demat account:</span><br />
+                    You will need to open one before you invest, with 2 additional criteria to be met.
+                    You have to:
+                    <br />
+                    1. Be a resident Indian.
+                    <br />
+                    2. Have a gross annual income from all sources less than/equal to Rs 12 lacs Note:
+                    Even you have held stocks in a physical certificate format, you will still be eligible
+                    for tax saving if you start a new demat account to invest in these schemes.
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="td_style1">
+                    Please find below a summary of your tax savings.
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 15px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="td_style2">
+                                Investor Details
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="summery_left3">
+                                            Investor Name
+                                        </td>
+                                        <td class="summery_left4">
+                                            <!txtuser!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left3">
+                                            Age
+                                        </td>
+                                        <td class="summery_left4">
+                                            <!textAge!>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_style2">
+                                Input Summary
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="summery_left2">
+                                            &nbsp;
+                                        </td>
+                                        <td class="summery_right3">
+                                            (Invested in RGESS)
+                                        </td>
+                                        <td class="summery_right3">
+                                            (No RGESS Investment)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2">
+                                            Gross Income
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!salaryInput!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!salaryInput!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left3">
+                                            Less: Deduction U/S
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2" style="padding-left: 15px">
+                                            80 C
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!licInput!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!licInput!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2" style="padding-left: 15px">
+                                            80 D (Medical Insurance Premium)
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!medInput!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!medInput!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2" style="padding-left: 15px">
+                                            24 (Interest Part of Home Loan)
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtHomeLoanInt!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtHomeLoanInt!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left3">
+                                            Total Taxable Income
+                                        </td>
+                                        <td class="summery_right5">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtTaxIncome!>
+                                        </td>
+                                        <td class="summery_right5">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtTaxIncome!>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 15px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_style2">
+                                Investmant in RGESS
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="summery_left2">
+                                            Investment in RGESS
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtRgess!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            Nil
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left3">
+                                            80CCG (Tax benefit: Deduction of 50% of amount invested. Deduction not to exceed
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!spanRgessTaxExempt!>)
+                                        </td>
+                                        <td class="summery_right5">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtbenefitRgess!>
+                                        </td>
+                                        <td class="summery_right5">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            Nil
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 15px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_style2">
+                                Output Summary
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="summery_left2">
+                                            Total Taxable Income
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtTaxIncomeR!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtTaxIncomeRWo!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2">
+                                            (Upto -
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!spanTaxfreeLimit!>)-NIL
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!taxLimit1!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!taxLimit1Wo!>
+                                        </td>
+                                    </tr>
+                                    <tr id="rowtaxFreelimit" style="display: ">
+                                        <td class="summery_left2">
+                                            (<img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!spanTaxfreeLimit1!> -
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!spanTaxfreeLimit2!>)- <!spanTaxLimit1Rate!>%
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!taxLimit2!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!taxLimit2Wo!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2">
+                                            (<img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!spanTaxfreeLimit3!> -
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!spanTaxfreeLimit4!>)- <!spanTaxLimit2Rate!>%
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!taxLimit3!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!taxLimit3Wo!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2">
+                                            (<img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!spanTaxfreeLimit5!> & Above)- <!spanTaxLimit3Rate!>%
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!taxLimit4!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!taxLimit4Wo!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2">
+                                            Tax Payable
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtTotalTax!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtTotalTaxWo!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2">
+                                            Education Cess & Secondary and Higher Education Cess <!spanEducationCessRate!>%
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtECess!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtECessWo!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2">
+                                            Total Tax Payable
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtEduCess!>
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtEduCessWo!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left3">
+                                            Tax Saved for <!txtuser!>
+                                        </td>
+                                        <td class="summery_right5">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtTaxSaved!>
+                                        </td>
+                                        <td class="summery_right5">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            Nil
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 15px">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td width="60%">
+                                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="td_style2" colspan="3">
+                                            Conclusion
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2">
+                                            Total Tax Payable without RGESS
+                                        </td>
+                                        <td class="summery_right4">
+                                            &nbsp;
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtEduCessWo!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left2">
+                                            Total Tax Payable with RGESS
+                                        </td>
+                                        <td class="summery_right4">
+                                            &nbsp;
+                                        </td>
+                                        <td class="summery_right4">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                            <!txtEduCess!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left3">
+                                            <strong>Tax Saved</strong>
+                                        </td>
+                                        <td class="summery_right5">
+                                            &nbsp;
+                                        </td>
+                                        <td class="summery_right5">
+                                            <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" /><strong>
+                                                <!txtTaxSaved!> </strong>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="5%">
+                            </td>
+                            <td width="35%">
+                                <table cellpadding="0" cellspacing="0" class="prepareTablestyle">
+                                    <tr>
+                                        <td align="center" style="height: 150px;">
+                                            <table width="90%" cellpadding="0" cellspacing="0" style="text-align: left;">
+                                                <tr>
+                                                    <td style="font-weight: bold; color: #4f4e50;" class="style1">
+                                                        Prepared By:
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdborderbotton">
+                                                        <!PreparedBy!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdborderbotton">
+                                                        <!Mobile!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdborderbotton">
+                                                        <!Email!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="height: 20px;">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-weight: bold; color: #4f4e50;">
+                                                        Prepared For:
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="tdborderbotton">
+                                                        <!PreparedFor!>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 40px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="dis">
+                    <span style="font-size: 12px;">THIS IS A SYSTEM GENERATED REPORT POPULATED BASED ON
+                        YOUR SELECTION OF DATA ON THE RETURNS CALCULATOR PAGE AVAILABLE ON </span><a class="text"
+                            href="http://www.financialadvisors.dspblackrock.com">www.financialadvisors.dspblackrock.com
+                        </a>
+                    <br />
+                    *For important instructions/disclaimer please refer page 2
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 30px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="color: #333333">
+                    <strong>&nbsp;Disclaimer: </strong>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_style1" style="color: #333333">
+                    <ul>
+                        <li>Maximum deduction of
+                            <img src="../IMG/rimg.png" style="vertical-align: text-bottom" />
+                            <!spanTaxExempt80c!> is allowed for 80C. </li>
+                        <li>Maximum deduction of
+                            <img src="../IMG/rimg.png" style="vertical-align: text-bottom" />
+                            <!spanMedicalClaim!> is allowed for 80D. </li>
+                        <li>80C includes Public Provident Fund (PPF), National Savings Certificate (NSC), Insurance
+                            Premium Paid, Tuition Fees ( up to 2 children),Housing Loan-Principal payment, Tax
+                            saving Mutual Funds, Fixed Deposit (Tax Saving) and etc. </li>
+                        <li>Deduction of an amount equal to hundred percent of income-tax payable or an amount
+                            of
+                            <img src="../IMG/rimg.png" style="vertical-align: text-bottom" />
+                            2,000, whichever is less, is allowed to an individual resident in India whose total
+                            income does not exceed
+                            <img src="../IMG/rimg.png" style="vertical-align: text-bottom" />
+                            500,000. </li>
+                        <li>Surcharge @ 10% is also applicable for taxable income exceeding
+                            <img src="../IMG/rimg.png" style="vertical-align: text-bottom" />
+                            1 crore. However, marginal relief is also allowed to ensure that the surcharge payable
+                            on excess of income over
+                            <img src="../IMG/rimg.png" style="vertical-align: text-bottom" />
+                            1 crore is limited to the amount by which the income exceed
+                            <img src="../IMG/rimg.png" style="vertical-align: text-bottom" />
+                            1 crore. </li>
+                        <li>To avail tax benefit under RGESS, investors shall comply with condition as prescribed
+                            under Rajiv Gandhi Equity Savings Scheme, 2012.</li>
+                        <li>This is not to be considered as a tax advice document. Please reach out to a tax
+                            consultant for further tax related issues. </li>
+                    </ul>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="dis" style="padding-top: 5px">
+                    &nbsp;<b>Mutual Fund investments are subject to market risks, read all scheme related
+                        documents carefully.</b><br />
+                </td>
+            </tr>
+    </table>
+</body>
+</html>

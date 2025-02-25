@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<SIPSchemes>
+	<Scheme Name="Edelweiss Liquid Fund" Id="1970" Scheme_Type="FromTSIP"></Scheme>
+	<Scheme Name="Edelweiss Absolute Return Fund" Id="3275" Scheme_Type="FromTSIP"></Scheme>
+	<Scheme Name="Edelweiss Arbitrage Fund" Id="7310" Scheme_Type="FromTSIP"></Scheme>
+	<Scheme Name="Edelweiss Treasury Fund" Id="1971" Scheme_Type="FromTSIP"></Scheme>
+	<Scheme Name="Edelweiss Equity Savings Advantage Fund" Id="7494" Scheme_Type="FromTSIP"></Scheme>
+	<Scheme Name="Edelweiss Top 100 Fund" Id="3633" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss Mid and Small Cap Fund" Id="1972" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss ELSS Fund" Id="1316" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss Prudent Advantage Fund" Id="3244" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss Absolute Return Fund" Id="3275" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss Economic Resurgence Fund" Id="7667" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss Equity Opportunities Fund" Id="1969" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss Equity Savings Advantage Fund" Id="7494" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss Top 100 Fund" Id="3633" Scheme_Type="FromGSMSIP"></Scheme>
+	<Scheme Name="Edelweiss Mid and Small Cap Fund" Id="1972" Scheme_Type="FromGSMSIP"></Scheme>
+	<Scheme Name="Edelweiss Prudent Advantage Fund" Id="3244" Scheme_Type="FromGSMSIP"></Scheme>
+	<Scheme Name="Edelweiss Absolute Return Fund" Id="3275" Scheme_Type="ToGSMSIP"></Scheme>
+	<Scheme Name="Edelweiss Arbitrage Fund" Id="7310" Scheme_Type="ToGSMSIP"></Scheme>
+	<Scheme Name="Edelweiss Short Term Income Fund" Id="1314" Scheme_Type="ToGSMSIP"></Scheme>
+	<Scheme Name="Edelweiss Balanced Advantage Fund" Id="7775" Scheme_Type="FromTSIP"></Scheme>
+	<Scheme Name="Edelweiss Balanced Advantage Fund" Id="7775" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss Small Cap Fund" Id="19509" Scheme_Type="FromTSIP"></Scheme>
+	<Scheme Name="Edelweiss Small Cap Fund" Id="19509" Scheme_Type="ToTSP"></Scheme>
+	<Scheme Name="Edelweiss Overnight Fund" Id="19795" Scheme_Type="FromTSIP"></Scheme>
+	<Scheme Name="Edelweiss Overnight Fund" Id="19795" Scheme_Type="ToTSP"></Scheme>
+</SIPSchemes>

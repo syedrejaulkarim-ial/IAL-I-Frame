@@ -1,0 +1,194 @@
+
+#returns-calc-form{
+  margin: 0 0 30px 0;
+}
+#returns-calc-form .action-button{
+  margin-top: 15px;
+}
+#returns-calc-form div select, #returns-calc-form fieldset label{
+  font-size: 14px;
+}
+#returns-calc-form fieldset select, #returns-calc-form fieldset input{
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #20205c;
+  border-radius: 0;
+  width: 100%;
+}
+#returns-calc-form fieldset #checkbox-ince{
+  width: auto;
+}
+#returns-calc-form fieldset select:focus, #returns-calc-form fieldset input:focus{
+  box-shadow: none;
+}
+
+.return-calc-disclaimer{
+  padding: 20px;
+  border:1px solid #ddd;
+  border-top:3px solid #2ee9b6;  
+  } 
+  .text-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #20205c;
+}
+.text-title::before {
+  content: '';
+  background-color: #2ee9b6;
+  width: 165px;
+  height: 5px;
+  display: block;
+}
+.datepicker td,
+.datepicker th {
+    text-align: center;
+    width: 30px;
+    height: 32px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+
+.select2-container .select2-selection--single {
+    height: 34px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 34px;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #20205c;
+    border-radius: 0px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #20205c transparent transparent transparent;
+    margin: 1px -5px;
+}
+
+.outline-orange-button.focus,
+.outline-orange-button:focus {
+    box-shadow: 0 0 0 .2rem rgba(241, 90, 36, 0.44);
+}
+
+.return-calc-disclaimer p {
+    text-align: justify;
+}
+
+.returnCalc tr th,
+.returnCalc tr td {
+    vertical-align: middle;
+}
+
+#divSummary tr th {
+    background: #2ee9b6;
+    font-size: 14px;
+    border: 1px solid #dee2e6;
+}
+#divSummary tr td {
+    border: 1px solid #dee2e6;
+}
+
+.pp .nav-tabs .nav-link,
+.pp .nav-link.active {
+    font-size: 1em;
+    border: 0;
+    padding: 20px;
+    border-radius: 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #2ee9b6;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #2ee9b6;
+    color: #fff;
+}
+
+.pp {
+    margin-top: 15px;
+}
+
+.taB {
+    width: 90%;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.RCexcel {
+    text-align: right;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #2ee9b6;
+}
+
+.solid-Blue-button {
+    background-color: #20205c;
+    border-color: #20205c;
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 2px;
+}
+
+.solid-Blue-button:hover {
+    background-color: transparent;
+    border: 1px solid #20205c;
+    color: #20205c;
+}
+
+.solid-Danger-button {
+    border-radius: 20px;
+    color: #fff;
+    margin: 0 2px;
+}
+
+.solid-Danger-button:hover {
+    background-color: transparent;
+    border: 1px solid #c82333;
+    color: #c82333;
+}
+.fa-rupee-sign {
+    color: #969696;
+font-size: 12px;
+}
+.fa-calendar-alt{
+    color: #969696;
+}
+table th{
+    text-align: center;
+}
+.lebell {
+    margin-bottom: .5rem;
+    display: inline-block;
+    font-size: 14px;
+}
+#DetailDiv tbody tr th {
+    background: #2ee9b6;
+    font-size: 14px;
+    border:none;
+}
+#DetailDiv tbody tr td {
+    border: none;
+}
+#DetailDiv table{
+    border:none;    
+}
+.nav-tabs .nav-link, .nav-link.active {
+    font-size: 1em;
+    border: 0;
+    padding: 20px;
+    border-radius: 0;
+    color: #000;
+    font-weight: bold;
+}

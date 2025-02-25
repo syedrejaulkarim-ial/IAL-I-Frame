@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Questions>
+  <Question value="1. Your age is?" QId="lblQ1" AnsId="RdbAns1">
+    <Ans value="10" slNo="1">Under 30</Ans>
+    <Ans value="8" slNo="2">30-40</Ans>
+    <Ans value="6" slNo="3">41-50</Ans>
+    <Ans value="4" slNo="4">51-60</Ans>
+    <Ans value="2" slNo="5">60 or over</Ans>
+  </Question>
+  <Question value="2. What is your Risk Appetite?" QId="lblQ2" AnsId="RdbAns2">
+    <Ans value="20" slNo="1">&amp;nbsp;Very Aggressive</Ans>
+    <Ans value="16" slNo="2">&amp;nbsp;Aggressive</Ans>
+    <Ans value="10" slNo="3">&amp;nbsp; Moderate</Ans>
+    <Ans value="6" slNo="4">&amp;nbsp;Conservative</Ans>
+    <Ans value="3" slNo="5">&amp;nbsp; Defensive</Ans>
+  </Question>
+  <Question value="3. What is your Investment Horizon?" QId="lblQ3" AnsId="RdbAns3">
+    <Ans value="4" slNo="1">&amp;nbsp;Less than 1 year</Ans>
+    <Ans value="7" slNo="2">&amp;nbsp;Between 1 - 3 years</Ans>
+    <Ans value="11" slNo="3">&amp;nbsp; Between 3 - 7 years</Ans>
+    <Ans value="15" slNo="4">&amp;nbsp;More than 7 years</Ans>
+  </Question>
+  <Question value="4. Your view on the future economic growth of India" QId="lblQ4" AnsId="RdbAns4">
+    <Ans value="20" slNo="1"> &amp;nbsp;Very Positive</Ans>
+    <Ans value="15" slNo="2">  &amp;nbsp;Positive</Ans>
+    <Ans value="10" slNo="2">  &amp;nbsp;Neutral</Ans>
+    <Ans value="6" slNo="3">  &amp;nbsp;Negative</Ans>
+    <Ans value="3" slNo="4"> &amp;nbsp;Very Negative</Ans>
+  </Question>
+</Questions>

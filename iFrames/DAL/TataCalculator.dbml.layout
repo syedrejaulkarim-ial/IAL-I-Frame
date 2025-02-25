@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.125" name="TataCalculator">
+  <DataContextMoniker Name="/TataCalculatorDataContext" />
+  <nestedChildShapes>
+    <classShape Id="df2a1287-8f99-4e01-97a0-fee98de5131b" isExpanded="false" absoluteBounds="0.75, 0.75, 2, 0.45">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_SCHEMES_MASTER_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e6f3d6db-c883-4ff0-8748-1acce013e8ca" absoluteBounds="0.76499999999999968, 1.21, 1.9700000000000002, 8.5183512369791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0e908ae5-2e42-415d-b9c5-f1d7771443d1" isExpanded="false" absoluteBounds="3.375, 0.75, 2, 0.45">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_INDEX_RECORD_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cbaf0027-21e1-4f25-9c90-37ba1437eaac" absoluteBounds="3.39, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d042d598-0013-49aa-a2bd-a21e71664df6" isExpanded="false" absoluteBounds="5.5, 4.5, 2, 0.45">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_SCHEMES_OPTION_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="92d4bba9-ca8d-43de-8a2c-678876d2f7ea" absoluteBounds="5.5150000000000006, 4.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8f20686d-b0cd-4ad3-a499-d84f77e5eb5d" isExpanded="false" absoluteBounds="3.375, 1.625, 2, 0.45">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_INDEX_MASTER_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0f10cbe8-618c-4d3b-999c-e270ec6ff85c" absoluteBounds="3.39, 2.085, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c37973f2-6611-43bf-af7e-df8f8500c0d6" isExpanded="false" absoluteBounds="3.25, 4.875, 2, 0.45">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_NAV_DIV_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1513bc49-61b6-4019-9f97-3cdd5a01ba43" absoluteBounds="3.265, 5.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b7394d13-4e36-462e-81b2-574de903cebb" isExpanded="false" absoluteBounds="5.625, 1.625, 2, 0.45">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_SCHEMES_INDEX_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bd7acff1-84d4-4c25-b529-0374a5dafe86" absoluteBounds="5.6400000000000006, 2.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7d5d7c80-a036-4291-8feb-cb233d794d48" isExpanded="false" absoluteBounds="5.5, 3.375, 2, 0.45">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_SCHEMES_NATURE_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d715ff4-4031-4560-b9a7-c38d892c3055" absoluteBounds="5.5150000000000006, 3.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70ed272a-fc45-49de-bd3a-d9c6d9555abe" isExpanded="false" absoluteBounds="3.5, 3.875, 2, 0.45">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_FUND_MASTER_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22104cb3-ebf2-41a8-84d3-fa41022a3d96" absoluteBounds="3.515, 4.335, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 4.65625); (2.71875 : 4.65625); (2.71875 : 1.2)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TataCalculatorDataContext/T_SCHEMES_OPTION_tata/T_SCHEMES_OPTION_tata_T_SCHEMES_MASTER_tata" />
+      <nodes>
+        <classShapeMoniker Id="d042d598-0013-49aa-a2bd-a21e71664df6" />
+        <classShapeMoniker Id="df2a1287-8f99-4e01-97a0-fee98de5131b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 4.26189697265625); (2.734375 : 4.26189697265625); (2.734375 : 1.2)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TataCalculatorDataContext/T_FUND_MASTER_tata/T_FUND_MASTER_tata_T_SCHEMES_MASTER_tata" />
+      <nodes>
+        <classShapeMoniker Id="70ed272a-fc45-49de-bd3a-d9c6d9555abe" />
+        <classShapeMoniker Id="df2a1287-8f99-4e01-97a0-fee98de5131b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.375 : 1.625); (4.375 : 1.2)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TataCalculatorDataContext/T_INDEX_MASTER_tata/T_INDEX_MASTER_tata_T_INDEX_RECORD_tata" />
+      <nodes>
+        <classShapeMoniker Id="8f20686d-b0cd-4ad3-a499-d84f77e5eb5d" />
+        <classShapeMoniker Id="0e908ae5-2e42-415d-b9c5-f1d7771443d1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.375 : 1.85); (5.625 : 1.85)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TataCalculatorDataContext/T_INDEX_MASTER_tata/T_INDEX_MASTER_tata_T_SCHEMES_INDEX_tata" />
+      <nodes>
+        <classShapeMoniker Id="8f20686d-b0cd-4ad3-a499-d84f77e5eb5d" />
+        <classShapeMoniker Id="b7394d13-4e36-462e-81b2-574de903cebb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 0.975); (3.125 : 0.975); (3.125 : 1.45); (4.29166666666667 : 1.45 : JumpStart); (4.45833333333333 : 1.45 : JumpEnd); (6.625 : 1.45); (6.625 : 1.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TataCalculatorDataContext/T_SCHEMES_MASTER_tata/T_SCHEMES_MASTER_tata_T_SCHEMES_INDEX_tata" />
+      <nodes>
+        <classShapeMoniker Id="df2a1287-8f99-4e01-97a0-fee98de5131b" />
+        <classShapeMoniker Id="b7394d13-4e36-462e-81b2-574de903cebb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5000005 : 3.825); (6.5000005 : 4.1); (5.5 : 4.1)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TataCalculatorDataContext/T_SCHEMES_NATURE_tata/T_SCHEMES_NATURE_tata_T_FUND_MASTER_tata" />
+      <nodes>
+        <classShapeMoniker Id="7d5d7c80-a036-4291-8feb-cb233d794d48" />
+        <classShapeMoniker Id="70ed272a-fc45-49de-bd3a-d9c6d9555abe" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="1aacbf27-c666-4015-a43a-5a7788094356" isExpanded="false" absoluteBounds="5.5, 5.75, 2, 0.45">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_FUND_MANAGER_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="646b1ca0-7949-410a-ad66-2becf503263d" absoluteBounds="5.5150000000000006, 6.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1ec509cb-1f0a-4c97-aef7-70adf19f80ba" absoluteBounds="4.875, 6.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_CURRENT_FUND_MANAGER_tata" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dd7ebd54-83b8-452e-a004-fbdb3fdebd5b" absoluteBounds="4.89, 7.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="36eb7e9a-1f18-411b-8022-97447d1e19f4" absoluteBounds="0.625, 2.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/TataCalculatorDataContext/T_MFIE_CUSTOM_INDEX_MASTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="685f1c38-1d94-44f2-bb16-d4aa426c2b16" absoluteBounds="0.64, 3.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

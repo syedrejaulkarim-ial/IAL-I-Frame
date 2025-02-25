@@ -1,0 +1,68 @@
+﻿.header
+{
+	color: #007AB9;
+	font-family: Verdana;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+.subheader
+{
+	color: #007AB9;
+	font-family: Verdana;
+	font-size: 11pt;
+	font-weight: bold;
+}
+.footer
+{
+	color: #007AB9;
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+}
+
+.title
+{
+	color: #007AB9;
+	font-family: Verdana;
+	font-size: 10pt;
+	width: 12%;
+}
+
+.hight3
+{
+	height: 3px;
+}
+.hight5
+{
+	height: 5px;
+}
+.hight10
+{
+	height: 10px;
+}
+
+.percentage50
+{
+	width: 50%;
+}
+.percentage100
+{
+	width: 100%;
+}
+
+.allignTop
+{
+	vertical-align: top;
+}
+
+.button
+{
+	background-color: #067DCD;
+	color: White;
+	font-weight: bold;
+	text-align: center;
+	border: 1;
+	border-width: 1;
+	cursor: pointer;
+}

@@ -1,0 +1,996 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DSP</title>
+    <style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.top_tr{
+	background:#000000;
+	height:83px;
+	color:#FFFFFF;
+	font-size:30px;
+	text-transform:uppercase;
+	font-weight: normal;
+	padding-left: 30px;
+}
+
+.left_table{
+	width:550px;
+	height:auto;
+	color:#2a2525;
+	vertical-align: top;
+	font-stretch:normal;
+	text-decoration:none;
+	font-size:13px;
+}
+.mid_table{
+	width:20px;
+}
+.right_table{
+	width:390px;
+	height:auto;	
+	vertical-align: top;
+	font-stretch:normal;
+	text-decoration:none;
+	color:#2a2525;	
+	font-size:13px;	
+
+}
+.left_table1{
+	width:480px;
+	height:auto;
+	color:#2a2525;
+	vertical-align: top;
+	font-stretch:normal;
+	text-decoration:none;
+	font-size:13px;
+}
+.mid_table{
+	width:20px;
+}
+.right_table1{
+	width:480px;
+	height:auto;
+	vertical-align: top;
+	font-stretch:normal;
+	text-decoration:none;
+	color:#2a2525;
+	font-size:13px;
+}
+
+.td_style1{
+	height:10px;
+	text-align:justify;
+	font-size:13px;
+	vertical-align:top;
+	font-stretch:normal;
+	text-decoration:none;
+	line-height: 20px;
+	color:#2a2525;
+}
+.td_style2{
+	background:#569fd3;
+	height:27px;
+	text-align:justify;
+	font-stretch:normal;
+	font-size:15px;
+	color:#FFFFFF;
+	padding-left: 10px;
+	vertical-align: middle;	
+}
+.td_style3{
+	height:25px;
+	text-align:justify;
+	font-size:15px;
+	color:#000;
+	vertical-align: middle;
+}
+.td_style4{
+	height:27px;
+	text-align:justify;
+	font-size:15px;
+	color:#FFFFFF;
+	padding-left: 10px;
+	vertical-align: middle;
+	background:#6c207e;
+	margin-top:10px;
+	padding-top: 2px;
+}
+.td_style5{
+	height:25px;
+	text-align:justify;
+	font-size:14px;	
+	font-size: 12px;
+	vertical-align:top;
+	padding-left: 15px;	
+}
+.td_style6{
+	height:34px;
+	text-align:justify;
+	font-size:15px;
+	font-size: 12px;
+	vertical-align:middle;
+	padding-top: 5px;
+	text-transform: uppercase;
+	color:#000;
+	border-top:#000000 solid 1px;
+}
+.text_style{font-weight:bold; font-size:12px; text-decoration:underline;}
+.summery_left{
+	width:70%;
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	word-wrap: break-word;	
+}
+
+.summery_left1{
+	height:25px;
+	vertical-align:middle;
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	width: 47%;
+	font-size:13px;
+}
+.summery_left2{
+	width:65%;
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+}
+.summery_left3{
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	padding-top: 2px;
+	width: 80%;
+	background:#e6e7e8;
+	padding-left:5px;
+	text-align:left;
+}
+.summery_left4{
+	height:25px;
+	vertical-align:middle;
+	width: 47%;
+	font-size:13px;
+}
+.summery_left5{
+	height:25px;
+	vertical-align:middle;	
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	width: 50%;
+	font-size:13px;
+	text-align:right;
+	padding-right:30px;
+}
+.summery_left6{
+	height:15px;
+	vertical-align:middle;
+	padding-top: 2px;
+	width: 55%;
+	font-size:13px;
+	text-align:right;
+	padding-right:30px;
+}
+.summery_left7{
+	height:15px;
+	vertical-align:middle;
+	padding-top: 2px;
+	width: 65%;
+	font-size:13px;
+	text-align:left;
+}
+
+.summery_left8{
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	padding-top: 2px;
+	width: 70%;
+	background:#e6e7e8;
+	padding-left:5px;
+	text-align:left;
+}
+
+.summery_line1{
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	padding-top: 2px;
+	width: 80%;
+	background:#e6e7e8;
+	padding-left:5px;
+	text-align:left;
+	border-bottom:black solid 1px;
+	border-top:black solid 1px;
+}
+.summery_line2{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+	width: 20%;
+	background:#e6e7e8;
+	border-bottom:black solid 1px;
+	border-top:black solid 1px;
+}
+.summery_line3{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: left;
+	font-size: 13px;
+	width: 72%;
+	background:#e6e7e8;
+	padding-left:5px;
+	border-bottom:black solid 1px;
+	border-top:black solid 1px;
+}
+.summery_line4{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+	width: 28%;
+	background:#e6e7e8;
+	border-bottom:black solid 1px;
+	border-top:black solid 1px;
+}
+
+.summery_right{
+	width:30%;
+	height:20px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+}
+.summery_right1{
+	height:20px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+	width: 45%;
+}
+.summery_right2{
+	width:35%;
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+}
+.summery_right3{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+	width: 20%;
+	background:#e6e7e8;
+}
+.summery_right4{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+	width: 28%;
+	background:#e6e7e8;
+}
+.summery_right5{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+	width: 20%;
+}
+.summery_right6{
+	height:20px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+	width: 45%;
+}
+.summery_right7{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: left;
+	font-size: 13px;
+	width: 72%;
+	background:#e6e7e8;
+	padding-left:5px;
+}
+.summery_right8{
+	height:25px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+	width: 30%;
+	background:#e6e7e8;
+}
+
+
+.dis{
+	font-size:16px;
+	font-weight:normal ;
+	text-align: center;
+}
+.line{
+	border-bottom:black solid 1px;
+	width:97%;
+	margin:0 0 0 6px;
+	background:#e6e7e8;
+	height:10px;
+}
+.line1{
+	border-top:black solid 1px;
+	width:97%;
+	margin:0 0 0 6px;
+	background:#e6e7e8;
+	height:5px;
+}
+
+.text_style1{}
+.gap{
+	padding-top:5px;
+	padding-bottom:10px;
+}
+.gap2{
+	padding-top:12px;
+	padding-bottom:5px;
+}
+
+.gap1{
+	height:30px;
+	margin-top:10px;
+	vertical-align:middle;
+	/*border-top:#000000 solid 1px;
+	border-bottom:#000000 solid 1px;*/
+	font-weight:bold;
+	font-size:14px;
+    background:#0d7128;
+    color:#fff;
+    padding-left:8px;
+    padding-right:8px;
+
+}
+
+.bg{background:#e6e7e8;}
+.column1{width:33%;
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	border-bottom:black solid 1px;
+	border-right:black solid 1px;
+	padding-top: 2px;
+	background:#e6e7e8;
+	text-align:center;
+}
+.column2{
+	width:33%;
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	background:#e6e7e8;
+	text-align:center;
+}
+.column3{width:33%;
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	border-bottom:black solid 1px;
+	border-right:black solid 1px;
+	padding-top: 2px;
+	background:#e6e7e8;
+	text-align:center;
+	padding-left: 5px;
+}
+.column4{
+	width:33%;
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	background:#e6e7e8;
+	text-align:right;
+	padding-right: 10px;
+}
+.circle {
+	width: 10px;
+	height: 10px;
+	background: #fc2e5a;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+.table_bg{
+	margin-top:30px;
+	border: 1px Solid #569fd3;
+	
+	
+}
+.row1{
+    background:#569fd3;
+	font-weight:bold;	
+	font-size:13px;
+    color:#fff;
+}
+
+.row2{
+    background:#fff;
+	/*border-bottom:#d6d6d6 solid 1px;*/
+	font-size:12px;
+    color:#000;
+}
+
+.text_style3{font-weight:normal; font-size:12px; text-transform:none;}
+
+-->
+    </style>
+</head>
+<body>
+    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr align="left">
+            <td valign="top">
+                <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="left_table">
+                            <div>
+                                <table width="580" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="td_style3">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="top_tr">
+                                            RETIREMENT PLANNING REPORT
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style2">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <div>
+                            <td class="mid_table">
+                                <img src="../images/images/spacer11.gif" width="20px" height="1" />
+                            </td>
+                        </div>
+                        <td class="right_table">
+                            <div>
+                                <table width="370" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="td_style3">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" height="58px">
+                                            <img src="../images/logo.jpg" width="266" height="33" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style3" style="vertical-align: top; text-align: right;">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="td_style1">
+                Thank you <!txtUserName!> for taking the first step towards planning for your retirement.
+                Based on your estimates we have created a detailed report, which will be handy for
+                you for your Retirement Planning.<br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="td_style1">
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="left_table">
+                            <table width="580" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td colspan="2" class="td_style2">
+                                        Key Highlights
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left">
+                                        Your monthly expenses of <img src="../images/rimg.png" style="vertical-align: top; padding-top: 5px;" /> <span class="text_style1"><!txtcurrentMonthlyExp!></span>
+                                        will rise to (at retirement):
+                                    </td>
+                                    <td class="summery_right">
+                                        <img src="../images/rimg.png" style="vertical-align: top; padding-top: 5px;" />
+                                        <span class="text_style1"><!lbtxtExpectedMonthlyExpRetire!></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left">
+                                        Your estimated retirement corpus of
+                                        <img src="../images/rimg.png" style="vertical-align: top; padding-top: 5px;" />
+                                        <span class="text_style1"><!txtEstimatedRetirementCorpus!></span> will last for:
+                                    </td>
+                                    <td class="summery_right">
+                                        <span class="text_style1"><!lbtxtRetireCorpusLast!></span> years
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left">
+                                        The retirement corpus which will last for <span class="text_style1"><!txtExpectdRetireCorpusLast!></span>
+                                        years should be:
+                                    </td>
+                                    <td class="summery_right">
+                                        <img src="../images/rimg.png" style="vertical-align: top; padding-top: 5px;" />
+                                        <span class="text_style1"><!lbtxtPlannedRetireCorpus!></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left">
+                                        Based on your investment plan you will achieve your retirement corpus of
+                                        <img src="../images/rimg.png" style="vertical-align: top; padding-top: 5px;" />
+                                        <span class="text_style1"><!txtEstRetCorp!></span> by :
+                                    </td>
+                                    <td class="summery_right">
+                                        <span class="text_style1"><!lbExpTimeReqRetire!></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="mid_table">
+                            &nbsp;
+                        </td>
+                        <td class="right_table">
+                            <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td colspan="2" class="td_style2">
+                                        Your Profile
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left1">
+                                        Your current age:
+                                    </td>
+                                    <td class="summery_right1">
+                                        <!txtAge!> years
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left1">
+                                        Your preferred retirement age:
+                                    </td>
+                                    <td class="summery_right1">
+                                        <!txtWishRetireAge!> years
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left7">
+                                        Your estimated annual rate of return
+                                    </td>
+                                    <td class="summery_right6">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left6">
+                                        Pre retirement:
+                                    </td>
+                                    <td class="summery_right6">
+                                        <!txtRatePreRetire!>%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left5">
+                                        Post retirement:
+                                    </td>
+                                    <td class="summery_right1">
+                                        <!txtRatePostRetire!>%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_left1">
+                                        Your estimated rate of inflation:
+                                    </td>
+                                    <td class="summery_right1">
+                                        <!txtRateEstInflation!>%
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <tr>
+                <td class="gap">
+                    <div class="td_style4">
+                        Your Retirement Estimates</div>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_style1">
+                    <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="left_table">
+                                <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            <table width="580" border="0" cellspacing="0" cellpadding="0">
+                                                <tr>
+                                                    <td colspan="2" class="td_style2">
+                                                        Expected Monthly Expenses
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left3">
+                                                        Your current monthly expenses:
+                                                    </td>
+                                                    <td class="summery_right3">
+                                                        <img src="../images/grimg.jpg" style="vertical-align: top; padding-top: 5px;" />
+                                                        <!txtcurrentMonthlyExp!>
+                                                    </td>
+                                                </tr>
+                                                <!-- <tr>
+                                                    <td colspan="2" class="bg">
+                                                        <div class="line">
+                                                        </div>
+                                                    </td>
+                                                </tr>-->
+                                                <tr>
+                                                    <td class="summery_line1">
+                                                        <strong>Your monthly expenses at retirement will rise to:</strong>
+                                                    </td>
+                                                    <td class="summery_line2">
+                                                        <img src="../images/grimg.jpg" style="vertical-align: top; padding-top: 5px;" />
+                                                        <strong><!lbtxtExpectedMonthlyExpRetire!></strong>
+                                                    </td>
+                                                </tr>
+                                                <!-- <tr>
+                                                    <td colspan="2" class="bg">
+                                                        <div class="line1">
+                                                        </div>
+                                                    </td>
+                                                </tr>-->
+                                                <tr>
+                                                    <td colspan="2" class="td_style1">
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="left_table">
+                                            <table width="580" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td colspan="2" class="td_style2">
+                                                        Is Your Planned Corpus Enough?
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left3">
+                                                        Your estimated retirement corpus:
+                                                    </td>
+                                                    <td class="summery_right3">
+                                                        <img src="../images/grimg.jpg" style="vertical-align: top; padding-top: 5px;" />
+                                                        <!txtEstimatedRetirementCorpus!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left3">
+                                                        Monthly income you wish to get post retirement(from the retirement corpus):
+                                                    </td>
+                                                    <td class="summery_right3">
+                                                        <img src="../images/grimg.jpg" style="vertical-align: top; padding-top: 5px;" />
+                                                        <!txtMonthlyIncomePostRetire!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left3">
+                                                        You wish to increase your monthly income post retirement by:
+                                                    </td>
+                                                    <td class="summery_right3">
+                                                        <!txtMonthlyIncrementPostRetire!>%
+                                                    </td>
+                                                </tr>
+                                                <!-- <tr>
+                                                    <td colspan="2" class="bg">
+                                                        <div class="line">
+                                                        </div>
+                                                    </td>
+                                                </tr>-->
+                                                <tr>
+                                                    <td class="summery_line1">
+                                                        <strong>Your planned corpus will last for:</strong>
+                                                    </td>
+                                                    <td class="summery_line2">
+                                                        <strong><!lbtxtRetireCorpusLast!> Years</strong>
+                                                    </td>
+                                                </tr>
+                                                <!--<tr>
+                                                    <td colspan="2" class="bg">
+                                                        <div class="line1">
+                                                        </div>
+                                                    </td>
+                                                </tr>-->
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="mid_table">
+                                &nbsp;
+                            </td>
+                            <td class="right_table">
+                                <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td colspan="2" class="td_style2">
+                                            Your Ideal Retirement Corpus
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left8">
+                                            Monthly income you wish to get post retirement (from the retirement corpus):
+                                        </td>
+                                        <td width="40%" class="summery_right8">
+                                            <img src="../images/grimg.jpg" style="vertical-align: top; padding-top: 5px;" />
+                                            <!txtExpectedMonthlyIncomePostRetire!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_left8">
+                                            You wish your retirement corpus to last for (post retirement):
+                                        </td>
+                                        <td class="summery_right8">
+                                            <!txtExpectdRetireCorpusLast!> years
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="summery_right8">You wish to increase your monthly income post retirement by:
+                                        </td>
+                                        <td class="summery_right8"><!txtMonthlyIncrementPostRetire4stage3!>%
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td class="summery_line3">
+                                                        <strong>Your ideal retirement corpus should be:</strong>
+                                                    </td>
+                                                    <td class="summery_line4">
+                                                        <img src="../images/grimg.jpg" style="vertical-align: top; padding-top: 5px;" />
+                                                        <strong><!lbtxtPlannedRetireCorpus!></strong>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <!--<tr>
+                                        <td colspan="2" class="bg">
+                                            <div class="line1">
+                                            </div>
+                                        </td>
+                                    </tr>-->
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <div class="td_style4">
+                                    Your Retirement Plan</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td_style1">
+                                <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="left_table">
+                                            <table width="480" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td class="summery_left2">
+                                                        Your estimated retirement corpus:
+                                                    </td>
+                                                    <td class="summery_right2">
+                                                        <img src="../images/rimg.png" style="vertical-align: top; padding-top: 5px;" /><!txtEstRetCorp!>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td class="mid_table">
+                                            &nbsp;
+                                        </td>
+                                        <td class="right_table">
+                                            <table width="480" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td class="summery_left4">
+                                                        You wish to start investing from:
+                                                    </td>
+                                                    <td class="summery_right5">
+                                                        <!txtRetDate!>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 200px; vertical-align: top;">
+                                <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="left_table1">
+                                            <table id="tblSIPAdded" width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td colspan="3" class="td_style2">
+                                                        Your Systematic Investments (Monthly SIPs)
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="column1">
+                                                        <b>Investment Date</b>
+                                                    </td>
+                                                    <td class="column1">
+                                                        <b>Amount</b>
+                                                    </td>
+                                                    <td class="column2">
+                                                        <b>Duration</b>
+                                                    </td>
+                                                </tr>
+                                                <!AddTrMainSip!> <!AddTrSip!>
+                                                <!--<tr>
+                                                    <td class="column1">
+                                                        January 1, 2016
+                                                    </td>
+                                                    <td class="column1">
+                                                        <img src="../images/rimg.png" style="vertical-align: top; padding-top: 2px;" />
+                                                        2,000
+                                                    </td>
+                                                    <td class="column2">
+                                                        5 Years
+                                                    </td>
+                                                </tr>-->
+                                            </table>
+                                        </td>
+                                        <td class="mid_table">
+                                            &nbsp;
+                                        </td>
+                                        <td class="right_table1">
+                                            <table id="tblLSAdded" width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td colspan="2" class="td_style2">
+                                                        Your Lump-sum Investments
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="column3">
+                                                        <b>Investment Date</b>
+                                                    </td>
+                                                    <td class="column4">
+                                                        <b>Amount</b>
+                                                    </td>
+                                                </tr>
+                                                <!AddTrMainLs!> <!AddTrLs!>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="gap">
+                    <img src="../images/gygreen.jpg" style="vertical-align: top; padding-top: 5px;" />
+                    &nbsp;Indicates investments at the beginning of the plan.
+                </td>
+            </tr>
+            <tr>
+                <td class="gap1">
+                    You will be able to achieve your Retirement Corpus of <!txtEstRetCorp!> in <!lbTotalTimeReqRetire!>
+                    . (by <!lbExpTimeReqRetire!>)
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="30%" border="0" align="right" cellpadding="0" cellspacing="4" class="table_bg">
+                        <tr>
+                            <td class="row1">
+                                Prepared By:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row2">
+                                <!PreparedBy!>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row2">
+                                <!ArnNo!>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row2">
+                                <!Mobile!>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row2">
+                                <!Email!>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row1">
+                                Prepared For:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="row2">
+                                <!PreparedFor!>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td width="100%" style="height: 150px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="td_style6">
+                    <br />
+                    THIS IS A SYSTEM GENERATED REPORT POPULATED BASED ON YOUR DATA ESTIMATES ON THE
+                    RETIREMENT PLANNER TOOL AVAILABLE ON <span class="text_style3">www.dspblackrock.com</span><br />
+                </td>
+            </tr>
+    </table>
+</body>
+</html>

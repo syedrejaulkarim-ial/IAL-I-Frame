@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="icraclient_research_test" Class="PramericaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=mumicrdb01;Initial Catalog=icraclient;Persist Security Info=True;User ID=icraclient" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csIcraclient" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_INDEX_RECORDS" Member="T_INDEX_RECORD_PRMs">
+    <Type Name="T_INDEX_RECORD_PRM">
+      <Column Name="INDEX_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RECORD_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="INDEX_VALUE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

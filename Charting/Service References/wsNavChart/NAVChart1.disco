@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://mfiframes.mutualfundsindia.com/WebServices/NAVChart.asmx?wsdl" docRef="http://mfiframes.mutualfundsindia.com/WebServices/NAVChart.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://mfiframes.mutualfundsindia.com/WebServices/NAVChart.asmx" xmlns:q1="http://www.mutualfundsindia.com/" binding="q1:NAVChartSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://mfiframes.mutualfundsindia.com/WebServices/NAVChart.asmx" xmlns:q2="http://www.mutualfundsindia.com/" binding="q2:NAVChartSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

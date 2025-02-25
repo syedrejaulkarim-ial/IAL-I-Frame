@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="icraclient_research" Class="EdelweissSIPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=172.17.3.1;Initial Catalog=icraclient_research;Persist Security Info=True;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="icraclient_researchConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_MFIE_INDEX_RETURN_REPO" Member="T_MFIE_INDEX_RETURN_REPOs">
+    <Type Name="T_MFIE_INDEX_RETURN_REPO">
+      <Column Name="INDEX_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RECORD_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="INDEX_VALUE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_INDEX_RECORDS_Test" Member="T_INDEX_RECORDS_Tests">
+    <Type Name="T_INDEX_RECORDS_Test">
+      <Column Name="INDEX_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RECORD_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="INDEX_VALUE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

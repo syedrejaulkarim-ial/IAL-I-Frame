@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Questions>
+  <Question value="1. Your age is?" QId="lblQ1" AnsId="RdbAns1">
+    <Ans value="10" slNo="1">Under 30</Ans>
+    <Ans value="8" slNo="2">30-40</Ans>
+    <Ans value="8" slNo="3">41-50</Ans>
+    <Ans value="8" slNo="4">51-60</Ans>
+    <Ans value="8" slNo="5">60 or over</Ans>
+  </Question>
+  <Question value="2. Your post tax income is?" QId="lblQ2" AnsId="RdbAns2">
+    <Ans value="3" slNo="1">&amp;nbsp;Under Rs. 1,00,000</Ans>
+    <Ans value="4" slNo="2">&amp;nbsp;Between Rs. 1,00,000 and Rs. 2,00,000</Ans>
+    <Ans value="6" slNo="3">&amp;nbsp;Between Rs. 2,00,000 and Rs. 4,00,000</Ans>
+    <Ans value="8" slNo="4">&amp;nbsp;Over Rs. 4,00,000</Ans>
+  </Question>
+  <Question value="3. How many people are dependent on your income?" QId="lblQ3" AnsId="RdbAns3">
+    <Ans value="9" slNo="1">&amp;nbsp;Only yourself</Ans>
+    <Ans value="7" slNo="2">&amp;nbsp;1 other person in your household besides yourself</Ans>
+    <Ans value="5" slNo="3">&amp;nbsp;Between 2 and 3 other persons besides yourself</Ans>
+    <Ans value="3" slNo="4">&amp;nbsp;Between 4 and 5 other persons besides yourself</Ans>
+    <Ans value="2" slNo="4">&amp;nbsp;More than 5 other persons besides yourself</Ans>
+  </Question>
+  <Question value="You are nearing your target to purchase an expensive mobile phone. However, just short of the purchase, your income stream takes a big hit. Your reaction will be to?" QId="lblQ4" AnsId="RdbAns4">
+    <Ans value="2" slNo="1">&amp;nbsp;Cancel your plans</Ans>
+    <Ans value="5" slNo="2">&amp;nbsp;Buy a product which is priced at less than the original phone which you aimed to buy</Ans>
+    <Ans value="7" slNo="3">&amp;nbsp;Make no changes to your plans</Ans>
+    <Ans value="9" slNo="4">&amp;nbsp;Buy the phone and all the accessories for which you hadn't previously planned</Ans>
+  </Question>
+  <Question value="5. Having made a decision to save &amp; acted upon it. How do you feel? " QId="lblQ5" AnsId="RdbAns5">
+    <Ans value="8" slNo="1">&amp;nbsp;Enthusiastic and hopeful</Ans>
+    <Ans value="6" slNo="2">&amp;nbsp;Pleased and content with yourself</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;Uncertain and confused</Ans>
+    <Ans value="2" slNo="4">&amp;nbsp;Remorse and regret</Ans>
+  </Question>
+  <Question value="6. How would you describe your income stream?" QId="lblQ6" AnsId="RdbAns6">
+    <Ans value="4" slNo="1">&amp;nbsp;Erratic and uncertain</Ans>
+    <Ans value="10" slNo="2">&amp;nbsp;Sustainable and regular</Ans>
+    <Ans value="8" slNo="3">&amp;nbsp;Not important, as you have a benefactor</Ans>
+    <Ans value="6" slNo="4">&amp;nbsp;Going to be change and will become less</Ans>
+  </Question>
+  <Question value="7. You invest Rs. 10,000 in a stock that goes down by 10% the next day. How would you react?" QId="lblQ7" AnsId="RdbAns7">
+    <Ans value="8" slNo="1">&amp;nbsp;Purchase more, and use this as an opportunity to accumulate</Ans>
+    <Ans value="6" slNo="2">&amp;nbsp;You are unflinched by short term changes</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;Cut your losses short, pull the money out and reinvest in a safe instrument</Ans>
+    <Ans value="2" slNo="4">&amp;nbsp;Wait for the price to revert to your purchase price and obtain your capital back</Ans>
+  </Question>
+  <Question value="8. What sort of remuneration excites you?" QId="lblQ8" AnsId="RdbAns8">
+    <Ans value="8" slNo="8">&amp;nbsp;A 2-year job guarantee</Ans>
+    <Ans value="6" slNo="6">&amp;nbsp;A windfall of Rs. 2 lakh</Ans>
+    <Ans value="4" slNo="4">&amp;nbsp;A moderate increase in current salary</Ans>
+    <Ans value="2" slNo="2">&amp;nbsp;Employee stock options </Ans>
+  </Question>
+  <Question value="9. What is your savings philosophy closest to?" QId="lblQ9" AnsId="RdbAns9">
+    <Ans value="8" slNo="8">&amp;nbsp;Saving is for the boring</Ans>
+    <Ans value="6" slNo="6">&amp;nbsp;Saving is a residual activity</Ans>
+    <Ans value="4" slNo="4">&amp;nbsp;Savings are ad hoc</Ans>
+    <Ans value="2" slNo="2">&amp;nbsp;Savings should be proactive, a minimum amount should be saved irrespective of how much you earn</Ans>
+  </Question>
+  <Question value="10. How do you educate yourself on your investments?" QId="lblQ10" AnsId="RdbAns10">
+    <Ans value="8" slNo="8">&amp;nbsp;Avid reader of magazines and TV channels pertaining to finance</Ans>
+    <Ans value="6" slNo="2">&amp;nbsp;Subscriber to a pink paper and one other financial magazine</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;I skim through the Business section of my daily newspaper</Ans>
+    <Ans value="3" slNo="4">&amp;nbsp;I track market prices on my phone</Ans>
+  </Question>
+  <Question value="11. Which personality trait best describes you?" QId="lblQ11" AnsId="RdbAns11">
+    <Ans value="8" slNo="8">&amp;nbsp;Impulsive</Ans>
+    <Ans value="6" slNo="2">&amp;nbsp;Calculated risk-taker</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;Cautious</Ans>
+    <Ans value="3" slNo="4">&amp;nbsp;Not comfortable with uncertainty</Ans>
+    <Ans value="2" slNo="4">&amp;nbsp;Avoid uncertainties</Ans>
+  </Question>
+  <Question value="12. How would you rate your knowledge of investing?" QId="lblQ12" AnsId="RdbAns12">
+    <Ans value="2" slNo="8">&amp;nbsp;Poorly informed investor and rely on distributors/investment managers</Ans>
+    <Ans value="3" slNo="2">&amp;nbsp;Above average investment knowledge</Ans>
+    <Ans value="5" slNo="3">&amp;nbsp;I invest in mutual funds</Ans>
+    <Ans value="6" slNo="4">&amp;nbsp;I understand stocks and trade myself</Ans>
+    <Ans value="4" slNo="4">&amp;nbsp;I'm a babe in the woods when it comes to financial planning</Ans>
+  </Question>
+  <Question value="13. How many years can you comfortably retire in?" QId="lblQ13" AnsId="RdbAns13">
+    <Ans value="3" slNo="8">&amp;nbsp;Less than 3 years</Ans>
+    <Ans value="4" slNo="2">&amp;nbsp;3 to 6 years</Ans>
+    <Ans value="6" slNo="3">&amp;nbsp;6 to 10 years</Ans>
+    <Ans value="8" slNo="4">&amp;nbsp;More than 10 years</Ans>
+  </Question>
+  <Question value="14. How would you describe your financial decisions?" QId="lblQ14" AnsId="RdbAns14">
+    <Ans value="8" slNo="8">&amp;nbsp;Random</Ans>
+    <Ans value="6" slNo="2">&amp;nbsp;Make you nervous</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;Based on advice from informed people</Ans>
+    <Ans value="3" slNo="4">&amp;nbsp;Based on some analysis</Ans>
+    <Ans value="2" slNo="4">&amp;nbsp;Based on thorough analysis of all options</Ans>
+  </Question>
+  <Question value="15. When you suffer a financial loss, what are your feelings?" QId="lblQ15" AnsId="RdbAns15">
+    <Ans value="8" slNo="8">&amp;nbsp;It was meant to be</Ans>
+    <Ans value="6" slNo="2">&amp;nbsp;It is my fault</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;Poor decisions made by me</Ans>
+    <Ans value="3" slNo="4">&amp;nbsp;Cut your losses short and move on</Ans>
+    <Ans value="2" slNo="4">&amp;nbsp;I invest only in safest instruments</Ans>
+  </Question>
+  <Question value="16. Your company is offering severance pay. How would you react?" QId="lblQ16" AnsId="RdbAns16">
+    <Ans value="8" slNo="8">&amp;nbsp;You take it on</Ans>
+    <Ans value="6" slNo="2">&amp;nbsp;Take it as you were in any case looking out for another job</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;Worry about the continuity of business and start looking for a job elsewhere</Ans>
+    <Ans value="3" slNo="4">&amp;nbsp;Ignore it</Ans>
+  </Question>
+  <Question value="17. Excluding your house, your savings are" QId="lblQ17" AnsId="RdbAns17">
+    <Ans value="2" slNo="8">&amp;nbsp;Nil</Ans>
+    <Ans value="3" slNo="2">&amp;nbsp;About 6 months salary</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;6-15 months salary</Ans>
+    <Ans value="6" slNo="4">&amp;nbsp;Upto 3 yrs salary</Ans>
+    <Ans value="8" slNo="4">&amp;nbsp;More than 3 yrs salary</Ans>
+  </Question>
+  <Question value="18. How would you describe your current staying arrangement?" QId="lblQ18" AnsId="RdbAns18">
+    <Ans value="8" slNo="8">&amp;nbsp;Live in my family home</Ans>
+    <Ans value="6" slNo="2">&amp;nbsp;Company provides accommodation</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;Live on rent</Ans>
+    <Ans value="3" slNo="4">&amp;nbsp;Live in my own house but would like something better</Ans>
+  </Question>
+  <Question value="19. How much do you save each month?" QId="lblQ19" AnsId="RdbAns19">
+    <Ans value="2" slNo="8">&amp;nbsp;No savings</Ans>
+    <Ans value="3" slNo="2">&amp;nbsp;Depend on PF of employer as savings</Ans>
+    <Ans value="4" slNo="3">&amp;nbsp;I save 10% without fail</Ans>
+    <Ans value="6" slNo="4">&amp;nbsp;I save more than 30% without fail every month</Ans>
+    <Ans value="8" slNo="4">&amp;nbsp;I save and I'm comfortable with the current situation</Ans>
+  </Question>
+</Questions>

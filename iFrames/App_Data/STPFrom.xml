@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<SIPSchemes>
+  <Scheme name="ICICI Prudential Income Opportunities Fund - Retail - Dividend" SCH_CODE="PI643" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Income Opportunities Fund - Retail - Growth" SCH_CODE="PI644" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Income Opportunities Fund - Institutional - Dividend" SCH_CODE="PI645" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Income Opportunities Fund - Institutional - Growth" SCH_CODE="PI646" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Income Opportunities Fund - Institutional - Qtly Dividend" SCH_CODE="PI797" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Income Opportunities Fund - Retail - Qtly Dividend" SCH_CODE="PI798" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Medium Term Plan - Regular - Growth" SCH_CODE="PI834" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Medium Term Plan - Regular - Monthly Dividend" SCH_CODE="PI835" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Medium Term Plan - Regular - Quarterly Dividend" SCH_CODE="PI836" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Medium Term Plan - Regular - Half Yearly Dividend" SCH_CODE="PI837" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Medium Term Plan - Premium - Quarterly Dividend" SCH_CODE="PI840" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Medium Term Plan - Premium Plus - Growth" SCH_CODE="PI842" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Medium Term Plan - Regular - Daily Dividend" SCH_CODE="PI965" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Regular - Daily Dividend" SCH_CODE="PI810" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Regular - Growth" SCH_CODE="PI811" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Premium - Daily Dividend" SCH_CODE="PI812" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Premium - Growth" SCH_CODE="PI813" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Premium Plus - Daily Div" SCH_CODE="PI814" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Premium Plus - Growth" SCH_CODE="PI815" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Super Premium - Daily Div" SCH_CODE="PI816" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Super Premium - Growth" SCH_CODE="PI817" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Regular - Weekly Dividend" SCH_CODE="PI818" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Regular - Fortnightly Dividend" SCH_CODE="PI819" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Regular - Monthly Dividend" SCH_CODE="PI820" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Regular - Quarterly Dividend" SCH_CODE="PI821" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Premium - Weekly Dividend" SCH_CODE="PI822" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Premium - Monthly Dividend" SCH_CODE="PI824" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Premium - Quartely Dividend" SCH_CODE="PI825" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Premium Plus - Weekly Dividend" SCH_CODE="PI826" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Ultra Short Term Plan - Super Premium - Weekly Dividend" SCH_CODE="PI830" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Flexible Income Plan - Premium - Growth" SCH_CODE="PI056" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Flexible Income Plan - Premium - Weekly Dividend" SCH_CODE="PI085" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Flexible Income Plan - Premium - Daily Dividend" SCH_CODE="PI086" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan B - Growth" SCH_CODE="PI068" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan B - Dividend" SCH_CODE="PI069" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan A - Growth" SCH_CODE="PI145" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan A - Dividend" SCH_CODE="PI146" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan C - Growth" SCH_CODE="PI147" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan C - Dividend" SCH_CODE="PI148" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan A - Daily Dividend" SCH_CODE="PI153" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan B - Daily Dividend" SCH_CODE="PI154" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan C - Daily Dividend" SCH_CODE="PI155" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan D - Growth" SCH_CODE="PI202" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan D - Daily Dividend" SCH_CODE="PI203" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan D - Dividend" SCH_CODE="PI204" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan A - Weekly Dividend" SCH_CODE="PI775" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan B - Weekly Dividend" SCH_CODE="PI776" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan C - Weekly Dividend" SCH_CODE="PI777" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan D - Weekly Dividend" SCH_CODE="PI778" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Liquid Plan - Growth" SCH_CODE="PI004" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Liquid Plan - Weekly Dividend" SCH_CODE="PI019" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Liquid Plan - Monthly Dividend" SCH_CODE="PI075" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Liquid Plan - Daily Dividend" SCH_CODE="PI080" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Liquid Plan - Quarterly Dividend" SCH_CODE="PI087" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Liquid Plan - Institutional I - Growth" SCH_CODE="PI235" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Liquid Plan - Half Yearly  Dividend" SCH_CODE="PI266" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Sweep Plan - Dividend" SCH_CODE="IP099" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Sweep Plan" SCH_CODE="PI050" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Sweep Plan - Cash Option - Daily Dividend" SCH_CODE="PI217" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Sweep Plan - Cash Option - Weekly Dividend" SCH_CODE="PI218" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Sweep Plan - Cash Option - Growth" SCH_CODE="PI219" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Sweep Plan - Cash Option - Monthly Dividend" SCH_CODE="PI220" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Sweep Plan - Cash Option - Fortnightly Dividend" SCH_CODE="PI267" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Monthly Income Plan - Monthly Dividend" SCH_CODE="PI020" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Monthly Income Plan - Quarterly Dividend" SCH_CODE="PI021" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Monthly Income Plan - Half Yearly Dividend" SCH_CODE="PI022" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Monthly Income Plan - Cumulative" SCH_CODE="PI023" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Flexible Income Plan - Premium - Growth" SCH_CODE="PI056" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Flexible Income Plan - Premium - Weekly Dividend" SCH_CODE="PI085" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Flexible Income Plan - Premium - Daily Dividend" SCH_CODE="PI086" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Flexible Income Plan - Regular - Growth" SCH_CODE="PI799" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Flexible Income Plan - Regular - Daily Dividend" SCH_CODE="PI800" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Flexible Income Plan - Regular - Weekly Dividend" SCH_CODE="PI802" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Gilt Fund Treasury Plan - Dividend" SCH_CODE="PI011" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Gilt Fund Treasury Plan - Growth" SCH_CODE="PI012" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Gilt Fund Investment Plan - Dividend" SCH_CODE="PI013" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Gilt Fund Investment Plan - Growth" SCH_CODE="PI014" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Gilt Fund Investment Plan - PF Option - Growth" SCH_CODE="PI111" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Gilt Fund Treasury Plan - PF Option - Growth" SCH_CODE="PI127" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Gilt Fund Treasury Plan - Half Yearly Dividend" SCH_CODE="PI208" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential MIP 25 - Growth" SCH_CODE="PI115" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential MIP 25 - Monthly Dividend" SCH_CODE="PI116" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential MIP 25 - Quarterly Dividend" SCH_CODE="PI970" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential MIP 25 - Half Yearly Dividend" SCH_CODE="PI971" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+    <Frequency Daily="true="/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan A - Growth" SCH_CODE="PI145" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan A - Dividend" SCH_CODE="PI146" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan A - Daily Dividend" SCH_CODE="PI153" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Floating Rate Fund - Plan A - Weekly Dividend" SCH_CODE="PI775" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Banking and PSU Debt Fund - Prem Plus - Daily Dividend" SCH_CODE="PI935" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Banking and PSU Debt Fund - Prem Plus - Weekly Dividend" SCH_CODE="PI936" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Banking and PSU Debt Fund - Prem Plus - Growth" SCH_CODE="PI937" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Banking and PSU Debt Fund - Premium - Daily Dividend" SCH_CODE="PI979" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Banking and PSU Debt Fund - Premium - Growth" SCH_CODE="PI980" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Banking and PSU Debt Fund - Daily Dividend" SCH_CODE="PI981" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Banking and PSU Debt Fund - Weekly Dividend" SCH_CODE="PI982" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Banking and PSU Debt Fund - Growth" SCH_CODE="PI983" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Child Care Plan - Study Plan" SCH_CODE="PI041" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Child Care Plan - Gift Plan" SCH_CODE="PI042" minAmt="500">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+</SIPSchemes>

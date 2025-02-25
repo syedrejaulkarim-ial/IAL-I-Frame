@@ -1,0 +1,81 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="Charting.App"
+             >
+    <Application.Resources>
+    	<Style x:Key="cmbStyle" TargetType="ComboBoxItem">
+    		<Setter Property="Padding" Value="4"/>
+    		<Setter Property="HorizontalContentAlignment" Value="Left"/>
+    		<Setter Property="VerticalContentAlignment" Value="Center"/>
+    		<Setter Property="Background">
+    			<Setter.Value>
+    				<LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+    					<GradientStop Color="White" Offset="1"/>
+    					<GradientStop Color="#FFA1D6FF" Offset="0"/>
+    					<GradientStop Color="#FFCCE9FE" Offset="0.091"/>
+    				</LinearGradientBrush>
+    			</Setter.Value>
+    		</Setter>
+    		<Setter Property="BorderThickness" Value="2"/>
+    		<Setter Property="TabNavigation" Value="Local"/>
+    		<Setter Property="Template">
+    			<Setter.Value>
+    				<ControlTemplate TargetType="ComboBoxItem">
+    					<Grid Background="{TemplateBinding Background}">
+    						<VisualStateManager.VisualStateGroups>
+    							<VisualStateGroup x:Name="CommonStates">
+    								<VisualState x:Name="Normal"/>
+    								<VisualState x:Name="MouseOver">
+    									<Storyboard>
+    										<DoubleAnimation Duration="0" To=".35" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="fillColor"/>
+    									</Storyboard>
+    								</VisualState>
+    								<VisualState x:Name="Disabled">
+    									<Storyboard>
+    										<DoubleAnimation Duration="0" To=".55" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="contentPresenter"/>
+    									</Storyboard>
+    								</VisualState>
+    							</VisualStateGroup>
+    							<VisualStateGroup x:Name="SelectionStates">
+    								<VisualState x:Name="Unselected"/>
+    								<VisualState x:Name="Selected">
+    									<Storyboard>
+    										<DoubleAnimation Duration="0" To=".75" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="fillColor2"/>
+    									</Storyboard>
+    								</VisualState>
+    							</VisualStateGroup>
+    							<VisualStateGroup x:Name="FocusStates">
+    								<VisualState x:Name="Focused">
+    									<Storyboard>
+    										<ObjectAnimationUsingKeyFrames Duration="0" Storyboard.TargetProperty="Visibility" Storyboard.TargetName="FocusVisualElement">
+    											<DiscreteObjectKeyFrame KeyTime="0">
+    												<DiscreteObjectKeyFrame.Value>
+    													<Visibility>Visible</Visibility>
+    												</DiscreteObjectKeyFrame.Value>
+    											</DiscreteObjectKeyFrame>
+    										</ObjectAnimationUsingKeyFrames>
+    									</Storyboard>
+    								</VisualState>
+    								<VisualState x:Name="Unfocused"/>
+    							</VisualStateGroup>
+    						</VisualStateManager.VisualStateGroups>
+    						<VisualStateManager.CustomVisualStateManager>
+    							<ei:ExtendedVisualStateManager/>
+    						</VisualStateManager.CustomVisualStateManager>
+    						<Rectangle x:Name="fillColor" Fill="#FFBADDE9" IsHitTestVisible="False" Opacity="0" RadiusY="1" RadiusX="1"/>
+    						<Rectangle x:Name="fillColor2" Fill="#FFBADDE9" IsHitTestVisible="False" Opacity="0" RadiusY="1" RadiusX="1"/>
+    						<ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" VerticalAlignment="Center"/>
+    						<Rectangle x:Name="FocusVisualElement" RadiusY="1" RadiusX="1" Stroke="#FF6DBDD1" StrokeThickness="1" Visibility="Collapsed"/>
+    					</Grid>
+    				</ControlTemplate>
+    			</Setter.Value>
+    		</Setter>
+    		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+    		<Setter Property="VerticalAlignment" Value="Stretch"/>
+    		<Setter Property="MinHeight" Value="20"/>
+    		<Setter Property="MaxHeight" Value="25"/>
+    		<Setter Property="BorderBrush" Value="#FF3D73DE"/>
+			
+    	</Style>
+    </Application.Resources>
+</Application>

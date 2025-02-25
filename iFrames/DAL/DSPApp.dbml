@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="icraclient" Class="DSPAppDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.2.4,3696;Initial Catalog=icraclient;Persist Security Info=True;User ID=icraclient;MultipleActiveResultSets=True;Connect Timeout=60000" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csIcraclient" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_DSP_RETURN_ANALYSIS_SUMMARY" Member="T_DSP_RETURN_ANALYSIS_SUMMARies">
+    <Type Name="T_DSP_RETURN_ANALYSIS_SUMMARY">
+      <Column Name="Event_Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FILE_NAME" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="SHEET_NAME" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="CATEGORY" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Fund" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="[Quartile Positioning]" Member="Quartile_Positioning" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="[Fund Positioning]" Member="Fund_Positioning" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="[Compound Annualized Returns]" Member="Compound_Annualized_Returns" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Sector Average]" Member="Sector_Average" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Median Top Quartile]" Member="Median_Top_Quartile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Sector Median]" Member="Sector_Median" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Lowest in Top Quartile]" Member="Lowest_in_Top_Quartile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Rank" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[No# of Funds]" Member="No__of_Funds" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MTD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Report_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Loggeduserid" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Timest" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_DSP_RETURN_ANALYSIS_DETAIL" Member="T_DSP_RETURN_ANALYSIS_DETAILs">
+    <Type Name="T_DSP_RETURN_ANALYSIS_DETAIL">
+      <Column Name="Event_Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FILE_NAME" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="SHEET_NAME" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="Column_Name" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="[Scheme Name]" Member="Scheme_Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="AUM" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NAV" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[1 Day]" Member="_1_Day" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 1 Day]" Member="Rank_1_Day" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[3 Days]" Member="_3_Days" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 3 Days]" Member="Rank_3_Days" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[7 Days]" Member="_7_Days" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 7 Days]" Member="Rank_7_Days" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[14 Days]" Member="_14_Days" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 14 Days]" Member="Rank_14_Days" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[1 Month]" Member="_1_Month" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 1 Month]" Member="Rank_1_Month" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[3 Months]" Member="_3_Months" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 3 Months]" Member="Rank_3_Months" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[6 Months]" Member="_6_Months" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 6 Months]" Member="Rank_6_Months" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[1 Year]" Member="_1_Year" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 1 Year]" Member="Rank_1_Year" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="YTD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank YTD]" Member="Rank_YTD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[3 Years]" Member="_3_Years" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 3 Years]" Member="Rank_3_Years" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[5 Years]" Member="_5_Years" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 5 Years]" Member="Rank_5_Years" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[8 Years]" Member="_8_Years" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 8 Years]" Member="Rank_8_Years" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[10 Years]" Member="_10_Years" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank 10 Years]" Member="Rank_10_Years" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Since Inception]" Member="Since_Inception" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank Since Inception]" Member="Rank_Since_Inception" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MTD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Rank MTD]" Member="Rank_MTD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Report_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="[Table Detail]" Member="Table_Detail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Loggeduserid" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Timest" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_DSP_LOGIN_MASTER" Member="T_DSP_LOGIN_MASTERs">
+    <Type Name="T_DSP_LOGIN_MASTER">
+      <Column Name="User_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Email_Id" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Login_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Password_Changed_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Wrong_Attmept_Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Created_By" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Created_On" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Modified_BY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Modified_On" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Locked_Out_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsOnLine" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SINGLE_SIGNON" Member="T_SINGLE_SIGNONs">
+    <Type Name="T_SINGLE_SIGNON">
+      <Column Name="External_Login_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Client_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="User_Id" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Created_By" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Created_On" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Modified_BY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Modified_On" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.MFI_IFRAME_DSP_LOGIN_HISTORY" Method="MFI_IFRAME_DSP_LOGIN_HISTORY">
+    <Parameter Name="BRANCH_NAME" Parameter="bRANCH_NAME" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="DATE_FROM" Parameter="dATE_FROM" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DATE_TO" Parameter="dATE_TO" Type="System.DateTime" DbType="DateTime" />
+    <ElementType Name="MFI_IFRAME_DSP_LOGIN_HISTORYResult">
+      <Column Name="EMAIL_ID" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="LAST_LOGIN" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LOGIN_COUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+</Database>

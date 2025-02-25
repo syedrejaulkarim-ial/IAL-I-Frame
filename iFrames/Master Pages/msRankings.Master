@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="msRankings.Master.cs"
+    Inherits="iFrames.msRankings" %>
+
+<%@ Register TagPrefix="ajaxtokit" Namespace="AjaxControlToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../Styles/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <%--<base target="_parent" />--%>
+</head>
+<body>
+    <form id="form1" runat="server" style="width: 705px;">
+    <ajaxToolkit:ToolkitScriptManager ID="sm" runat="server" ScriptMode="Release" EnablePartialRendering="true"
+        CombineScripts="false" AsyncPostBackTimeout="600" EnablePageMethods="true">
+    </ajaxToolkit:ToolkitScriptManager>
+    <div>
+        <div class="HeaderDiv">
+            <center>
+                <label style="font-family: Tahoma; color: Black; font-size: 12px; font-weight: bold;
+                    vertical-align: middle;">
+                    Ranking for the period
+                </label>
+                <asp:Label runat="server" ID="lblPeriod" style="font-family: Tahoma; color: Black; font-size: 12px; font-weight: bold;
+                    vertical-align: middle;"></asp:Label>
+                <asp:Label runat="server" ID="lblPeriodId" Visible="false"></asp:Label>
+                <asp:DropDownList Width="120px" AutoPostBack="true" ID="ddlPeriods" runat="server" 
+                    Style="font-family: Tahoma, Arial, sans-serif;
+                    color: #333333; font-size: 8pt; margin-left: 10px; margin-bottom: 3px; margin-top: 3px;" 
+                    onselectedindexchanged="ddlPeriods_SelectedIndexChanged" Visible="false">
+                </asp:DropDownList>
+                
+
+            </center>
+        </div>
+        <div style="display:inline-block;">
+            <center>
+                <div>
+                    <img src="../Images/Ranking_Logo.JPG" alt="" />
+                </div>
+                <div style="margin-left: 18px; display: block;">
+                    <div style="float: left; cursor: hand;">
+                        <asp:Image runat="server" ID="img1YrDebt" src="../Images/Debt.JPG" /></div>
+                    <asp:Panel ID="PopupDebt1" runat="server" CssClass="popupMenu">
+                        <div style="border: 1px outset white" runat="server" id="divDebt1">
+                        </div>
+                    </asp:Panel>
+                    <ajaxToolkit:HoverMenuExtender ID="hme1" runat="Server" TargetControlID="img1YrDebt"
+                        PopupControlID="PopupDebt1" HoverCssClass="popupHover" PopupPosition="Top"
+                        OffsetY="5" />
+                    <div style="float: left; cursor: hand;">
+                        <asp:Image runat="server" ID="img1YrEqui" src="../Images/Equity.JPG" /></div>
+                    <asp:Panel ID="PopupEqui1" runat="server" CssClass="popupMenu">
+                        <div style="border: 1px outset white" runat="server" id="divEquity1">
+                        </div>
+                    </asp:Panel>
+                    <ajaxToolkit:HoverMenuExtender ID="hme2" runat="Server" TargetControlID="img1YrEqui"
+                        PopupControlID="PopupEqui1" HoverCssClass="popupHover" PopupPosition="Top"
+                        OffsetY="8" />
+                    <div style="float: left; cursor: hand;">
+                        <asp:Image runat="server" ID="img1YrHybrid" src="../Images/Hybrid.JPG" /></div>
+                    <asp:Panel ID="PopupHybrid1" runat="server" CssClass="popupMenu">
+                        <div style="border: 1px outset white" runat="server" id="divHybrid1">
+                        </div>
+                    </asp:Panel>
+                    <ajaxToolkit:HoverMenuExtender ID="HoverMenuExtender2" runat="Server" TargetControlID="img1YrHybrid"
+                        PopupControlID="PopupHybrid1" HoverCssClass="popupHover" PopupPosition="Top"
+                        OffsetY="8" />
+                    <div style="float: left; cursor: hand;">
+                        <asp:Image runat="server" ID="img3YrDebt" src="../Images/Debt.JPG" /></div>
+                    <asp:Panel ID="PopupDebt2" runat="server" CssClass="popupMenu">
+                        <div style="border: 1px outset white" id="divDebt3" runat="server">
+                        </div>
+                    </asp:Panel>
+                    <ajaxToolkit:HoverMenuExtender ID="hme4" runat="Server" TargetControlID="img3YrDebt"
+                        PopupControlID="PopupDebt2" HoverCssClass="popupHover" PopupPosition="Top"
+                        OffsetY="5" />
+                    <div style="float: left; cursor: hand;">
+                        <asp:Image runat="server" ID="img3YrEqui" src="../Images/Equity.JPG" /></div>
+                    <asp:Panel ID="PopupEqui3" runat="server" CssClass="popupMenu">
+                        <div style="border: 1px outset white" runat="server" id="divEquity3">
+                        </div>
+                    </asp:Panel>
+                    <ajaxToolkit:HoverMenuExtender ID="hme5" runat="Server" TargetControlID="img3YrEqui"
+                        PopupControlID="PopupEqui3" HoverCssClass="popupHover" PopupPosition="Top"
+                        OffsetX="-65" OffsetY="8" />
+                    <div style="float: left; cursor: hand;">
+                        <asp:Image runat="server" ID="img3YrHybrid" src="../Images/Hybrid.JPG" /></div>
+                    <asp:Panel ID="PopupHybrid3" runat="server" CssClass="popupMenu">
+                        <div style="border: 1px outset white" runat="server" id="divHybrid3">
+                        </div>
+                    </asp:Panel>
+                    <ajaxToolkit:HoverMenuExtender ID="HoverMenuExtender1" runat="Server" TargetControlID="img3YrHybrid"
+                        PopupControlID="PopupHybrid3" HoverCssClass="popupHover" PopupPosition="Top"
+                        OffsetX="-30" OffsetY="8" />
+                </div>
+            </center>
+        </div>
+        <asp:ContentPlaceHolder ID="cphBoby" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

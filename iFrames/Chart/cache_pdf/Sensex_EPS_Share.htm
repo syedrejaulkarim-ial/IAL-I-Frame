@@ -1,0 +1,552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="Stylesheet" href="../css/Chart.css" />
+</head>
+<body>
+    <center>
+        <table class="style1" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+                <tr style="height: 50px;">
+                    <td style="width: 10%; background-color: #007ac2;">
+                    <!DistributorLogo!>
+                    </td>
+                    <td style="width: 70%; margin-left: 45%;">
+                        <p class="Default">
+                            <b><span style="font-size: 30.0pt; font-family: color:Gray; color: #C0C0C0;">Share Price
+                                follows Earnings Growth </span></b>
+                        </p>
+                    </td>
+                    <td style="width: 20%;">
+                        <img src="http://mfiframes.mutualfundsindia.com/Chart/images/pr_logo.jpg" alt="" style="border-width: 0px;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <span id="lblMsgError" style="color: Red; font-weight: bold;"></span>
+        <div id="pnlControls" style="font-family: verdana; font-size: 9pt; width: 700px;">
+            <table width="100%" cellpadding="0" cellspacing="1" border="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <table width="100%" cellspacing="1" style="background-color: #007AC2; height: 30px;">
+                                    <tbody>
+                                        <tr>
+                                            <td align="right">
+                                                <span style="color: White;"><b>Company Name:</b></span>
+                                            </td>
+                                            <td align="left">
+                                                <span style="color: White;"><b>Sensex</b></span>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td align="left">
+                                                <span style="color: White; padding-left: 5px;"><b>Distributor Name:</b></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td align="right" style="display: block;">
+                            <div>
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <span id="lblMsg" style="color: Red; font-weight: bold;"></span>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td align="center">
+                        <div>
+                            <table width="95%" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td id="tdCompName" align="left" style="height: 25px; padding-left: 5px;" colspan="4"
+                                            bgcolor="#007AC2">
+                                            <span id="lblCompName" style="color: White; font-family: Verdana; font-size: 9pt;
+                                                font-weight: bold;">Sensex EPS Vs Sensex</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 10px;" colspan="4">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tdLegend" align="center" style="height: 25px;" bgcolor="#FBFDFE">
+                                            <div>
+                                                <table width="85%" cellpadding="0" cellspacing="0" style="height: 25px; border: 1px solid #B8E4F9;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding-left: 5px; width: 35%; font-family: Verdana; font-size: small">
+                                                                <span id="lblGrowth" style="color: Black; font-family: Verdana; font-weight: bold;">
+                                                                    Compound Annualized Growth Rate since 03/1991</span>
+                                                            </td>
+                                                            <td id="tdEps" style="width: 20%;" bgcolor="#50B000">
+                                                                <b style="padding-left: 5px; color: #FFFFFF; font-family: Verdana; font-size: small">
+                                                                    EPS </b><b style="padding-left: 5px; color: #FFFFFF; font-family: Verdana; font-size: small">
+                                                                        13.88% </b>
+                                                            </td>
+                                                            <td id="tdShare" style="width: 20%;" bgcolor="#FF0000">
+                                                                <b style="padding-left: 5px; color: #FFFFFF; font-family: Verdana; font-size: small">
+                                                                    Share Price </b><b style="padding-left: 5px; color: #FFFFFF; font-family: Verdana;
+                                                                        font-size: small">14.33% </b>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="clear: both;">
+                        </div>
+                        <div>
+                            <div id="pnlCompanyShare" style="width: 100%;">
+                                <br />
+                                <img alt="" src="http://mfiframes.mutualfundsindia.com/Chart/images/Sensex_EPS_Share.Jpeg" />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 10px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="pnlgvCompanyShare">
+                            <div>
+	<table cellspacing="0" cellpadding="4" rules="all" border="1" id="gvCompanyShare" style="background-color:White;border-color:#3366CC;border-width:1px;border-style:None;font-size:Small;width:95%;border-collapse:collapse;">
+		<tr style="color:White;background-color:#007AC2;font-family:Verdana;font-size:9pt;font-weight:bold;">
+			<th scope="col" style="width:5%;">FY End</th><th scope="col" style="width:10%;">Sensex EPS</th><th scope="col" style="width:10%;">YoY EPS Growth (%)</th><th scope="col" style="width:10%;">Sensex</th><th scope="col" style="width:15%;">YoY Sensex Growth (%)</th><th scope="col" style="width:10%;">Dividend Yield (%) </th><th scope="col" style="width:10%;">PE Ratio</th>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        1991
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        59.99
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1167.97
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.39
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        19.47
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        1992
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        78.70
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        31.19
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        4285.00
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        266.88
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        0.49
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        54.45
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        1993
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        81.77
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3.90
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        2280.52
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        -46.78
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.03
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        27.89
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        1994
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        80.85
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        -1.13
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3778.99
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        65.71
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        0.68
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        46.74
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        1995
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        112.60
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        39.27
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3260.96
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        -13.71
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.00
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        28.96
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        1996
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        195.96
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        74.03
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3366.61
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        3.24
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.42
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        17.18
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        1997
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        259.33
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        32.34
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3360.89
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        -0.17
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.71
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        12.96
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        1998
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        248.74
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        -4.08
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3892.75
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        15.82
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.43
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        15.65
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        1999
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        252.53
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.52
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3739.96
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        -3.92
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.53
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        14.81
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2000
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        231.54
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        -8.31
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        5001.28
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        33.73
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.13
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        21.60
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2001
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        192.75
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        -16.75
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3604.38
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        -27.93
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.64
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        18.70
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2002
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        204.08
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        5.88
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3469.35
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        -3.75
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.91
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        17.00
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2003
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        229.92
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        12.66
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        3048.72
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        -12.12
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        2.36
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        13.26
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2004
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        301.06
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        30.94
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        5590.60
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        83.38
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.81
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        18.57
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2005
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        415.94
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        38.16
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        6492.82
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        16.14
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.74
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        15.61
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2006
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        539.20
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        29.63
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        11279.96
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        73.73
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.24
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        20.92
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2007
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        643.00
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        19.25
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        13072.10
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        15.89
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.25
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        20.33
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2008
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        777.94
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        20.99
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        15644.44
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        19.68
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.07
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        20.11
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2009
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        711.25
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        -8.57
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        9708.50
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        -37.94
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.78
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        13.65
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2010
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        822.13
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        15.59
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        17527.77
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        80.54
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.10
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        21.32
+                                    </td>
+		</tr><tr>
+			<td align="center" style="font-family:verdana;font-size:9pt;width:5%;">
+                                        2011
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        919.40
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        11.83
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        19445.22
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:15%;">
+                                        10.94
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        1.07
+                                    </td><td align="center" style="font-family:verdana;font-size:9pt;width:10%;">
+                                        21.15
+                                    </td>
+		</tr>
+	</table>
+</div>
+                            <br />
+                            <table width="95%" cellpadding="0" cellspacing="4" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2" align="left">
+                                            <span style="color: Black; font-family: Verdana; font-weight: bold; font-size: 9pt;">
+                                                Disclaimer:</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">Data for the graph
+                                                is rebased to 100. </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">PE-Price to Earnings
+                                                ratio.</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">EPS-Earning per share
+                                                in Rs. </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">Standalone EPS and
+                                                share price is adjusted as per the corporate action. </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">CAGR calculated from
+                                                the first positive value. </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">Powered by ICRA Online
+                                                Ltd.</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="icraclient" Class="PrincipalCalcDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=192.168.2.4,3696;Initial Catalog=icraclient;Persist Security Info=True;User ID=icraclient;MultipleActiveResultSets=True;Connect Timeout=60000" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csIcraclient" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.T_SCHEMES_MASTER" Member="T_SCHEMES_MASTERs">
+    <Type Name="T_SCHEMES_MASTER">
+      <Column Name="Scheme_Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Scheme_Code" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Scheme_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Sch_Short_Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Ultra_Short_Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Fund_Id" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Amfi_Code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Option_Id" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Nature1_Id" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Nature2_Id" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Sub_Nature1_Id" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Sub_Nature2_Id" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Od_Classification" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Face_Value" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Fu_Sz_Inc" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Nav_Calc_Period_Id" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Pur_Redm_Period_Id" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Listing" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tax_Ben1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tax_Ben2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tax_Ben3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tax_Ben4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Loc_Prd1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Loc_Prd2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Loc_Prd3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Lock_Sp" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Port_Dis" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Parent_Scheme_Flag" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Condition" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Spl_Features" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="Assur_Rtn" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Rolled_Over" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Variant" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nav_Check" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Div_Freq_Period_Id" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Rolled_Over_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Issue_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nfo_Close_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Launch_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Launch_Price" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Redemption_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Maturity_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ISIN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="T_SCHEMES_MASTER_T_SCHEMES_INDEX" Member="T_SCHEMES_INDEXes" ThisKey="Scheme_Id" OtherKey="SCHEME_ID" Type="T_SCHEMES_INDEX" />
+      <Association Name="T_SCHEMES_OPTION_T_SCHEMES_MASTER" Member="T_SCHEMES_OPTION" ThisKey="Option_Id" OtherKey="Option_ID" Type="T_SCHEMES_OPTION" IsForeignKey="true" />
+      <Association Name="T_FUND_MASTER_T_SCHEMES_MASTER" Member="T_FUND_MASTER" ThisKey="Fund_Id" OtherKey="FUND_ID" Type="T_FUND_MASTER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SCHEMES_INDEX" Member="T_SCHEMES_INDEXes">
+    <Type Name="T_SCHEMES_INDEX">
+      <Column Name="SCHEME_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="INDEX_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="COMPOSITION" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="T_SCHEMES_MASTER_T_SCHEMES_INDEX" Member="T_SCHEMES_MASTER" ThisKey="SCHEME_ID" OtherKey="Scheme_Id" Type="T_SCHEMES_MASTER" IsForeignKey="true" />
+      <Association Name="T_INDEX_MASTER_T_SCHEMES_INDEX" Member="T_INDEX_MASTER" ThisKey="INDEX_ID" OtherKey="INDEX_ID" Type="T_INDEX_MASTER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SCHEMES_NATURE" Member="T_SCHEMES_NATUREs">
+    <Type Name="T_SCHEMES_NATURE">
+      <Column Name="Nature_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nature" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Nature_Description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="T_SCHEMES_NATURE_T_FUND_MASTER" Member="T_FUND_MASTERs" ThisKey="Nature_ID" OtherKey="NATURE_ID" Type="T_FUND_MASTER" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SCHEMES_OPTION" Member="T_SCHEMES_OPTIONs">
+    <Type Name="T_SCHEMES_OPTION">
+      <Column Name="Option_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Option_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="T_SCHEMES_OPTION_T_SCHEMES_MASTER" Member="T_SCHEMES_MASTERs" ThisKey="Option_ID" OtherKey="Option_Id" Type="T_SCHEMES_MASTER" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_NAV_DIV" Member="T_NAV_DIVs">
+    <Type Name="T_NAV_DIV">
+      <Column Name="Scheme_Id" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="Nav_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nav" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Div_Flag" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Record_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Div_Ind" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Div_Corp" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Bon_Ind" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Bon_Corp" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Cust_Div_Ind" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Cust_Div_Corp" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Cust_Bon_Ind" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Cust_Bon_Corp" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_INDEX_RECORDS" Member="T_INDEX_RECORDs">
+    <Type Name="T_INDEX_RECORD">
+      <Column Name="INDEX_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RECORD_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="INDEX_VALUE" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Association Name="T_INDEX_MASTER_T_INDEX_RECORD" Member="T_INDEX_MASTER" ThisKey="INDEX_ID" OtherKey="INDEX_ID" Type="T_INDEX_MASTER" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_FUND_MANAGER" Member="T_FUND_MANAGERs">
+    <Type Name="T_FUND_MANAGER">
+      <Column Name="FUNDMAN_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FUND_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FUND_MANAGER_NAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EDUCATION_QUALIFICATION" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Column Name="EXPERIENCE" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_CURRENT_FUND_MANAGER" Member="T_CURRENT_FUND_MANAGERs">
+    <Type Name="T_CURRENT_FUND_MANAGER">
+      <Column Name="FUND_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="FUNDMAN_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="DESIGNATION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="APPOINTMENT_DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CHANGE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LATEST_FUNDMAN" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RETURN_SIP_PRINCIPAL" Member="RETURN_SIP_PRINCIPALs">
+    <Type Name="RETURN_SIP_PRINCIPAL">
+      <Column Name="Particulars" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Scheme_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Scheme_name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Total_Amount_Invest" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Scheme_Return_Yield" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Scheme_Market_value" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Index_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Index_Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Bechmark_return_yield" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Benchmark_Market_value" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Additional_Index_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Additional_Index_Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Additional_Bechmark_return_yield" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Additional_Benchmark_Market_value" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SCHEMES_SUB_NATURE" Member="T_SCHEMES_SUB_NATUREs">
+    <Type Name="T_SCHEMES_SUB_NATURE">
+      <Column Name="Sub_Nature_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sub_Nature" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sub_Nature_Desc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="T_SCHEMES_SUB_NATURE_T_FUND_MASTER" Member="T_FUND_MASTERs" ThisKey="Sub_Nature_ID" OtherKey="SUB_NATURE_ID" Type="T_FUND_MASTER" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_INDEX_MASTER" Member="T_INDEX_MASTERs">
+    <Type Name="T_INDEX_MASTER">
+      <Column Name="INDEX_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="INDEX_CODE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="INDEX_NAME" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSUING_BODY" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ASSET_CLASS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsTRI" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TRI_PRI_Index" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Association Name="T_INDEX_MASTER_T_SCHEMES_INDEX" Member="T_SCHEMES_INDEXes" ThisKey="INDEX_ID" OtherKey="INDEX_ID" Type="T_SCHEMES_INDEX" />
+      <Association Name="T_INDEX_MASTER_T_INDEX_RECORD" Member="T_INDEX_RECORDs" ThisKey="INDEX_ID" OtherKey="INDEX_ID" Type="T_INDEX_RECORD" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_Client_Additional_Benchmark" Member="T_Client_Additional_Benchmarks">
+    <Type Name="T_Client_Additional_Benchmark">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Fund_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Add_Bench_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Client_Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_MFIE_RETURNSETTINGSET" Member="T_MFIE_RETURNSETTINGSETs">
+    <Type Name="T_MFIE_RETURNSETTINGSET">
+      <Column Name="SETTINGSET_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SET_NAME" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RETURNTYPELESSTHAN" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="RETURNTYPEGRATERTHAN" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="RETURNTYPEBOTH" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="NAVTYPE" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="NAVALGOCURRENTDATE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="NAVALGOPREVIOUSDATE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="NAVALGOBOTHDATE" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="DIVIDENDTYPE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NORMALIZERETURNS" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LOGIN_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="RETURN_TYPE" Type="System.Decimal" DbType="Decimal(9,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_IFRAME_CLIENT_DISCLAIMER" Member="T_IFRAME_CLIENT_DISCLAIMERs">
+    <Type Name="T_IFRAME_CLIENT_DISCLAIMER">
+      <Column Name="Disclaimer_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Amfi_Code" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Disclaimer" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Effective_From" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Effective_To" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Creation_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Modify_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Client_Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_FUND_MASTER" Member="T_FUND_MASTERs">
+    <Type Name="T_FUND_MASTER">
+      <Column Name="FUND_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MUTUALFUND_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Column Name="REG_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="NATURE_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="SUB_NATURE_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="STRUCTURE_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="FUND_NAME" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="FUND_MAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FUND_OBJECT" Type="System.String" DbType="VarChar(4000)" CanBeNull="true" />
+      <Column Name="INVESTMENTSTRATEGY" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="FUND_COLOR_MAST_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SEBI_NATURE_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="SEBI_SUB_NATURE_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Association Name="T_FUND_MASTER_T_SCHEMES_MASTER" Member="T_SCHEMES_MASTERs" ThisKey="FUND_ID" OtherKey="Fund_Id" Type="T_SCHEMES_MASTER" />
+      <Association Name="T_SCHEMES_NATURE_T_FUND_MASTER" Member="T_SCHEMES_NATURE" ThisKey="NATURE_ID" OtherKey="Nature_ID" Type="T_SCHEMES_NATURE" IsForeignKey="true" />
+      <Association Name="T_SCHEMES_SUB_NATURE_T_FUND_MASTER" Member="T_SCHEMES_SUB_NATURE" ThisKey="SUB_NATURE_ID" OtherKey="Sub_Nature_ID" Type="T_SCHEMES_SUB_NATURE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SEBI_SCHEMES_NATURE" Member="T_SEBI_SCHEMES_NATUREs">
+    <Type Name="T_SEBI_SCHEMES_NATURE">
+      <Column Name="Sebi_Nature_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sebi_Nature" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sebi_Nature_Description" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_SEBI_SCHEMES_SUB_NATURE" Member="T_SEBI_SCHEMES_SUB_NATUREs">
+    <Type Name="T_SEBI_SCHEMES_SUB_NATURE">
+      <Column Name="Sebi_Sub_Nature_ID" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Sebi_Sub_Nature" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Sebi_Sub_Nature_Desc" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_IFrame_Edelweiss_Nature" Member="T_IFrame_Edelweiss_Natures">
+    <Type Name="T_IFrame_Edelweiss_Nature">
+      <Column Name="Principal_Nature_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Fund_Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Is_Active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.MFIE_SP_INDEX_P2P_ROLLING_RETURN" Method="MFIE_SP_INDEX_P2P_ROLLING_RETURN" IsComposable="true">
+    <Parameter Name="INDEXIDS" Parameter="iNDEXIDS" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SETTINGSETID" Parameter="sETTINGSETID" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="DATEFROM" Parameter="dATEFROM" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DATETO" Parameter="dATETO" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ROUNDTILL" Parameter="rOUNDTILL" Type="System.Int32" DbType="Int" />
+    <Parameter Name="INDXROLLINGPERIODIN" Parameter="iNDXROLLINGPERIODIN" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="INDXROLLINGPERIOD" Parameter="iNDXROLLINGPERIOD" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="INDXROLLINGFREQUENCYIN" Parameter="iNDXROLLINGFREQUENCYIN" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="INDXROLLINGFREQUENCY" Parameter="iNDXROLLINGFREQUENCY" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ROLLING_P2P" Parameter="rOLLING_P2P" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OTHERCALCULATION" Parameter="oTHERCALCULATION" Type="System.String" DbType="VarChar(3)" />
+    <Return Type="object" />
+  </Function>
+  <Function Name="dbo.MFIE_SP_SCHEME_P2P_ROLLING_RETURN" Method="MFIE_SP_SCHEME_P2P_ROLLING_RETURN" IsComposable="true">
+    <Parameter Name="SCHEMEIDS" Parameter="sCHEMEIDS" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="SETTINGSETID" Parameter="sETTINGSETID" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <Parameter Name="DATEFROM" Parameter="dATEFROM" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="DATETO" Parameter="dATETO" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="ROUNDTILL" Parameter="rOUNDTILL" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ROLLINGPERIODIN" Parameter="rOLLINGPERIODIN" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="ROLLINGPERIOD" Parameter="rOLLINGPERIOD" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ROLLINGFREQUENCYIN" Parameter="rOLLINGFREQUENCYIN" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="ROLLINGFREQUENCY" Parameter="rOLLINGFREQUENCY" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="ROLLING_P2P" Parameter="rOLLING_P2P" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OTHERCALCULATION" Parameter="oTHERCALCULATION" Type="System.String" DbType="VarChar(3)" />
+    <Return Type="object" />
+  </Function>
+</Database>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 14.25" name="PrincipalCalc">
+  <DataContextMoniker Name="/PrincipalCalcDataContext" />
+  <nestedChildShapes>
+    <classShape Id="65c65d64-c6ad-40de-bfc2-6289e558da09" absoluteBounds="0.5, 4.875, 2, 9.0783512369791648">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_SCHEMES_MASTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5597eac0-6722-4384-b4e9-b5deb7247c13" absoluteBounds="0.51500000000000012, 5.335, 1.9700000000000002, 8.5183512369791661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0f00a4b1-6278-469c-bc11-5fe6661b0366" isExpanded="false" absoluteBounds="3.375, 3.25, 2, 0.45">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_SCHEMES_INDEX" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a2652720-2e29-4945-93ea-d25af59e7ed5" absoluteBounds="3.39, 3.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.609375 : 4.875); (1.609375 : 3.475); (3.375 : 3.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PrincipalCalcDataContext/T_SCHEMES_MASTER/T_SCHEMES_MASTER_T_SCHEMES_INDEX" />
+      <nodes>
+        <classShapeMoniker Id="65c65d64-c6ad-40de-bfc2-6289e558da09" />
+        <classShapeMoniker Id="0f00a4b1-6278-469c-bc11-5fe6661b0366" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e279f57f-6376-4dcd-b75c-e377514fcc49" isExpanded="false" absoluteBounds="3.125, 4.125, 2, 0.45">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_SCHEMES_NATURE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a589a82d-61e2-4788-90a4-8aa0e7a7a58a" absoluteBounds="3.1399999999999997, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30132949-011f-4bb7-ac9e-c2ae4fb622d4" isExpanded="false" absoluteBounds="0.5, 1.875, 2, 0.45">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_SCHEMES_OPTION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fc4581ea-bc5f-4125-b6dc-0ab24a298e0d" absoluteBounds="0.51500000000000012, 2.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(0.71875 : 2.325); (0.71875 : 4.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PrincipalCalcDataContext/T_SCHEMES_OPTION/T_SCHEMES_OPTION_T_SCHEMES_MASTER" />
+      <nodes>
+        <classShapeMoniker Id="30132949-011f-4bb7-ac9e-c2ae4fb622d4" />
+        <classShapeMoniker Id="65c65d64-c6ad-40de-bfc2-6289e558da09" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4215804d-b389-495a-88aa-33ec62b78d0f" isExpanded="false" absoluteBounds="1, 2.75, 2, 0.45">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_NAV_DIV" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21fd3048-bda7-4dd0-962c-c29c7aaa7bde" absoluteBounds="1.0150000000000001, 3.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="29407dbc-797c-4bdc-8a1d-a453f289925c" absoluteBounds="3.5, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_INDEX_RECORD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13fc659b-b687-4694-ad6b-a04ac0fdec61" absoluteBounds="3.5150000000000006, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6bfdedc7-e1a0-424e-94ce-76e15c10cc6f" absoluteBounds="6.625, 3.25, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_FUND_MANAGER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="03d0ae4a-bdc2-46ac-8e98-57e6e605d732" absoluteBounds="6.64, 3.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d440cf73-e06c-4bb8-ac23-1abfc9423a2b" absoluteBounds="7.125, 6.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_CURRENT_FUND_MANAGER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce96c90a-72a1-4157-a45f-cccf6b9103c0" absoluteBounds="7.14, 6.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3fee558c-667b-4b83-b78e-6ab978524401" isExpanded="false" absoluteBounds="0.5, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/RETURN_SIP_PRINCIPAL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9092e00d-2a34-4d4b-b138-3662abcf3c14" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="53a04d64-45ca-4724-b434-3a54113b3836" absoluteBounds="6.5, 0.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_SCHEMES_SUB_NATURE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c63d87b1-7460-4e57-8338-148370fe9393" absoluteBounds="6.515, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68c2fe98-dd21-4def-9d0c-7bc86c7c521c" isExpanded="false" absoluteBounds="3.625, 2, 2, 0.45">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_INDEX_MASTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47d6f5b3-59b0-4007-b545-b09a202bcf0c" absoluteBounds="3.6399999999999997, 2.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.0624975 : 2.45); (4.0624975 : 3.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PrincipalCalcDataContext/T_INDEX_MASTER/T_INDEX_MASTER_T_SCHEMES_INDEX" />
+      <nodes>
+        <classShapeMoniker Id="68c2fe98-dd21-4def-9d0c-7bc86c7c521c" />
+        <classShapeMoniker Id="0f00a4b1-6278-469c-bc11-5fe6661b0366" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5625 : 2); (4.5625 : 1.8862939453125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PrincipalCalcDataContext/T_INDEX_MASTER/T_INDEX_MASTER_T_INDEX_RECORD" />
+      <nodes>
+        <classShapeMoniker Id="68c2fe98-dd21-4def-9d0c-7bc86c7c521c" />
+        <classShapeMoniker Id="29407dbc-797c-4bdc-8a1d-a453f289925c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0b6417ae-4b04-4aae-9492-c0158071fcd1" absoluteBounds="7.75, 5.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_Client_Additional_Benchmark" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fec4d071-4a2f-40f2-9dc0-2ebc2bc9637d" absoluteBounds="7.765, 5.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f72d9425-0b0a-4686-983c-4d36cf5d2307" isExpanded="false" absoluteBounds="0.75, 1, 2, 0.45">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_MFIE_RETURNSETTINGSET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="08ac1ce2-22d3-49e2-b01f-39752d8c880d" isExpanded="false" absoluteBounds="0.7649999999999999, 1.46, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4fdb9d5-70e4-47f3-a0dc-ee55baafccce" absoluteBounds="1.25, 8.25, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_IFRAME_CLIENT_DISCLAIMER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="35996f75-c5e9-4c64-a7e8-403ed77c12e5" absoluteBounds="1.2650000000000001, 8.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="561bdb93-1dd3-48f4-98a8-b78226c6cfcf" absoluteBounds="3.75, 5.125, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_FUND_MASTER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="90f477ec-0c3d-416e-a957-6699d10ee61e" absoluteBounds="3.7649999999999997, 5.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.4375 : 4.575); (4.4375 : 5.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PrincipalCalcDataContext/T_SCHEMES_NATURE/T_SCHEMES_NATURE_T_FUND_MASTER" />
+      <nodes>
+        <classShapeMoniker Id="e279f57f-6376-4dcd-b75c-e377514fcc49" />
+        <classShapeMoniker Id="561bdb93-1dd3-48f4-98a8-b78226c6cfcf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.53125 : 2.2612939453125); (6.53125 : 5.28125); (5.75 : 5.28125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PrincipalCalcDataContext/T_SCHEMES_SUB_NATURE/T_SCHEMES_SUB_NATURE_T_FUND_MASTER" />
+      <nodes>
+        <classShapeMoniker Id="53a04d64-45ca-4724-b434-3a54113b3836" />
+        <classShapeMoniker Id="561bdb93-1dd3-48f4-98a8-b78226c6cfcf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.75 : 6.65625); (2.5 : 6.65625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/PrincipalCalcDataContext/T_FUND_MASTER/T_FUND_MASTER_T_SCHEMES_MASTER" />
+      <nodes>
+        <classShapeMoniker Id="561bdb93-1dd3-48f4-98a8-b78226c6cfcf" />
+        <classShapeMoniker Id="65c65d64-c6ad-40de-bfc2-6289e558da09" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="228ec9cb-e96c-4f6e-ba4c-be3bb85032f6" absoluteBounds="3.875, 8.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_SEBI_SCHEMES_NATURE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="324514db-c6c4-462c-9749-da654cb34164" absoluteBounds="3.8899999999999997, 9.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b3b8c20-ccdf-4cbd-8192-32dd81ed43cd" absoluteBounds="6.375, 8.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_SEBI_SCHEMES_SUB_NATURE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb5310e2-146e-4d86-8859-618e17de79ab" absoluteBounds="6.39, 9.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c64d22d-8281-4493-b410-37111c5f353f" absoluteBounds="5.125, 11.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/PrincipalCalcDataContext/T_IFrame_Edelweiss_Nature" />
+      <nestedChildShapes>
+        <elementListCompartment Id="101546a3-ad73-416d-82f9-00dfb85f535b" absoluteBounds="5.14, 12.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

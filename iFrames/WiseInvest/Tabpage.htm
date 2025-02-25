@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">-->
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        //       $("#tabs").tabs({
+        //        //            collapsible: true
+        //      });
+        $(function () {
+
+            $("#tabs").tabs({
+                beforeLoad: function (event, ui) {
+                    ui.jqXHR.error(function () {
+                        ui.panel.html("Couldn't load this tab. We'll try to fix this as soon as possible. " + "If this wouldn't be a demo.");
+                    });
+                }
+            });
+
+            var tabs = $("#tabs").tabs();
+            tabs.find(".ui-tabs-nav").sortable({
+                axis: "x", stop: function () {
+                    tabs.tabs("refresh");
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <!--<div id="tabs1">
+        <ul>
+            <li><a href="#fragment-1"><span>One</span></a></li>
+            <li><a href="#fragment-2"><span>Two</span></a></li>
+            <li><a href="#fragment-3"><span>Three</span></a></li>
+        </ul>
+        <div id="fragment-1">
+            <p>
+                First tab is active by default:</p>
+        </div>
+        <div id="fragment-2">
+            MutualFundIndia.com If you are new to this site, please go ahead and explore www.mutualfundindia.com.
+            You will find various tools to evaluate mutual funds in this site. You can also
+            go through our research library to find reports to support your investment decision.
+        </div>
+        <div id="fragment-3">
+            All modules and utilities are now designed to help you evaluate funds in a better
+            way by adding new dimensions for analysis and by providing a more comprehensive
+            set of relevant evaluation parameter. Our research reports are now easily searchable
+            across all timelines and are catagorised. Our workflows are now optimized to help
+            you get much more information by spending equal or lesser amount of time. The website
+            is presently compatible with Internet Explorer 8, 9 and 10 and latest version of
+            Google Chrome. We are keen to hear from you and you can share your feedback by clicking
+            on the Feedback link to the left
+        </div>
+    </div>-->
+    <div id="tabs">
+        <ul>
+            <li><a href="Mfinews.aspx">Mutual Fund News</a> </li>
+            <li><a href="#tabs-1">Nunc tincidunt</a></li>
+            <li><a href="#tabs-2">Proin dolor</a></li>
+            <li><a href="#tabs-3">Aenean lacinia</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>
+                MutualFundIndia.com If you are new to this site, please go ahead and explore www.mutualfundindia.com.
+                You will find various tools to evaluate mutual funds in this site. You can also
+                go through our research library to find reports to support your investment decision..</p>
+        </div>
+        <div id="tabs-2">
+            <p>
+                All modules and utilities are now designed to help you evaluate funds in a better
+                way by adding new dimensions for analysis and by providing a more comprehensive
+                set of relevant evaluation parameter. Our research reports are now easily searchable
+                across all timelines and are catagorised.
+            </p>
+        </div>
+        <div id="tabs-3">
+            <p>
+                Our workflows are now optimized to help you get much more information by spending
+                equal or lesser amount of time. The website is presently compatible with Internet
+                Explorer 8, 9 and 10 and latest version of Google Chrome. We are keen to hear from
+                you and you can share your feedback by clicking on the Feedback link to the left.</p>
+            <p>
+                Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam
+                ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing
+                velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula
+                faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero
+                sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor
+                ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas
+                commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit
+                hendrerit.</p>
+        </div>
+    </div>
+</body>
+</html>

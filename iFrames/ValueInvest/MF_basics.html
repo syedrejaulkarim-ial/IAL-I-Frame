@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>MF Basics</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--Start mf basic-->
+<script type="text/javascript">
+
+var dhtmlgoodies_slideSpeed = 10;	// Higher value = faster
+var dhtmlgoodies_timer = 10;	// Lower value = faster
+
+var objectIdToSlideDown = false;
+var dhtmlgoodies_activeId = false;
+var dhtmlgoodies_slideInProgress = false;
+function showHideContent(e,inputId)
+{
+	if(dhtmlgoodies_slideInProgress)return;
+	dhtmlgoodies_slideInProgress = true;
+	if(!inputId)inputId = this.id;
+	inputId = inputId + '';
+	var numericId = inputId.replace(/[^0-9]/g,'');
+	var answerDiv = document.getElementById('dhtmlgoodies_a' + numericId);
+
+	objectIdToSlideDown = false;
+	
+	if(!answerDiv.style.display || answerDiv.style.display=='none'){		
+		if(dhtmlgoodies_activeId &&  dhtmlgoodies_activeId!=numericId){			
+			objectIdToSlideDown = numericId;
+			slideContent(dhtmlgoodies_activeId,(dhtmlgoodies_slideSpeed*-1));
+		}else{
+			
+			answerDiv.style.display='block';
+			answerDiv.style.visibility = 'visible';
+			
+			slideContent(numericId,dhtmlgoodies_slideSpeed);
+		}
+	}else{
+		slideContent(numericId,(dhtmlgoodies_slideSpeed*-1));
+		dhtmlgoodies_activeId = false;
+	}	
+}
+
+function slideContent(inputId,direction)
+{
+	
+	var obj =document.getElementById('dhtmlgoodies_a' + inputId);
+	var contentObj = document.getElementById('dhtmlgoodies_ac' + inputId);
+	height = obj.clientHeight;
+	if(height==0)height = obj.offsetHeight;
+	height = height + direction;
+	rerunFunction = true;
+	if(height>contentObj.offsetHeight){
+		height = contentObj.offsetHeight;
+		rerunFunction = false;
+	}
+	if(height<=1){
+		height = 1;
+		rerunFunction = false;
+	}
+
+	obj.style.height = height + 'px';
+	var topPos = height - contentObj.offsetHeight;
+	if(topPos>0)topPos=0;
+	contentObj.style.top = topPos + 'px';
+	if(rerunFunction){
+		setTimeout('slideContent(' + inputId + ',' + direction + ')',dhtmlgoodies_timer);
+	}else{
+		if(height<=1){
+			obj.style.display='none'; 
+			if(objectIdToSlideDown && objectIdToSlideDown!=inputId){
+				document.getElementById('dhtmlgoodies_a' + objectIdToSlideDown).style.display='block';
+				document.getElementById('dhtmlgoodies_a' + objectIdToSlideDown).style.visibility='visible';
+				slideContent(objectIdToSlideDown,dhtmlgoodies_slideSpeed);				
+			}else{
+				dhtmlgoodies_slideInProgress = false;
+			}
+		}else{
+			dhtmlgoodies_activeId = inputId;
+			dhtmlgoodies_slideInProgress = false;
+		}
+	}
+}
+
+
+
+function initShowHideDivs()
+{
+	var divs = document.getElementsByTagName('DIV');
+	var divCounter = 1;
+	for(var no=0;no<divs.length;no++){
+		if(divs[no].className=='dhtmlgoodies_question'){
+			divs[no].onclick = showHideContent;
+			divs[no].id = 'dhtmlgoodies_q'+divCounter;
+			var answer = divs[no].nextSibling;
+			while(answer && answer.tagName!='DIV'){
+				answer = answer.nextSibling;
+			}
+			answer.id = 'dhtmlgoodies_a'+divCounter;	
+			contentDiv = answer.getElementsByTagName('DIV')[0];
+			contentDiv.style.top = 0 - contentDiv.offsetHeight + 'px'; 	
+			contentDiv.className='dhtmlgoodies_answer_content';
+			contentDiv.id = 'dhtmlgoodies_ac' + divCounter;
+			answer.style.display='none';
+			answer.style.height='1px';
+			divCounter++;
+		}		
+	}	
+}
+window.onload = initShowHideDivs;
+</script>
+
+<!--end mf basic-->
+</head>
+
+<body>
+<table border="0" cellSpacing="0" cellPadding="0" width="900" align="left" class="main-content">
+  <tr>
+    <td>
+         <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+         	<tr>
+                <td class="value_heading" colspan="2"><img src="img/arw1.jpg"/>MF Basics</td>
+            </tr>
+             <tr>
+               <td colspan="2">&nbsp;</td>
+            </tr>
+          <tr>
+            <td width="12">&nbsp;</td>
+            <td width="97%" height="636" align="left" valign="top">
+              <div class="dhtmlgoodies_question">(1)&nbsp;What is Mutual Fund?</div>
+              <div class="dhtmlgoodies_answer">
+                <div > A mutual fund is a trust that pools the savings of a number of investors who share a common financial goal and investments may be in shares, debt securities, money-market securities or a combination of these. Those securities are professionally managed on behalf of the unit holders and each investor holds a pro-rata share of the portfolio, that is, entitled to profits as well as losses.<br />
+                Income earned through these investments and the capital appreciation realized is shared by its unit holders in proportion to the number of units owned by them. A mutual fund is the most suitable investment scope for common people as it offers an opportunity to invest in a diversified, professionally managed basket of securities at a relatively lower cost.<br />
+                The flow chart below describes broadly the working of a Mutual fund:<br />
+                <div style="text-align:center;"><img src="img/mf_flowchart.png" /></div>
+                
+                </div>
+              </div>
+              <div class="dhtmlgoodies_question">(2)&nbsp;Organization of a Mutual Fund:</div>
+              <div class="dhtmlgoodies_answer">
+                <div> <strong>The following is the structure of typical Mutual Fund:</strong><br />
+                  <br />
+                  <strong> Sponsor</strong><br />
+Sponsor is the person who either alone or in association with another corporate body, establishes a mutual fund. The sponsor must contribute at least 40% of the net worth of the investment managed and meet the eligibility criteria prescribed under the Securities and Exchange Board of India (Mutual Funds) Regulations, 1996.The sponsor is not responsible or liable for any loss or shortfall resulting from the operation of the schemes beyond the initial contribution made by it towards setting up of the mutual fund<br />
+					 <strong>Trust</strong><br />
+                     The mutual fund is constituted as a trust in accordance with the provisions of the Indian Trusts Act, 1882 by the sponsor. The trust deed is registered under the Indian Registration Act, 1908.<br />
+                     <strong>  Trustee</strong><br />
+Trustee is usually a company (corporate body) or a Board of Trustees (body of individuals). The main responsibility of the trustee is to safeguard the interest of the unit holders and inter alias ensure that the AMC functions in the interest of investors and in accordance with the Securities and Exchange Board of India (Mutual Funds) Regulations, 1996, the provisions of the trust deed and the offer documents of the respective schemes. At least 2/3rd of the directors of the Trustee are independent directors who are not associated with the sponsor in any manner.  <br />
+				<strong>Asset Management Company (AMC) </strong> <br />
+				The trustee, as the investment manager of the mutual fund, appoints the AMC. The AMC is required to be approved by the Securities and Exchange Board of India (SEBI) to act as an asset management company of the Mutual fund. At least 50% of the directors of the AMC are independent directors who are not associated with the sponsor in any manner. The AMC must have a net worth of at least Rs. 10 crore at all times.  <br /> 
+				<strong>Custodian</strong> <br />
+				A trust company, bank or similar financial institution, registered with SEBI is responsible for holding and safeguarding the securities owned within a mutual fund. A mutual fund’s custodian may also act as its transfer agent.<br />
+				<strong>Registrar and Transfer Agent </strong><br />
+The AMC, if so authorized by the trust deed, appoints the registrar and transfer agent to the mutual fund. The registrar processes the application form, redemption requests and dispatches account statements to the unit holders. The registrar and transfer agent also handles communication with investors and updates investor records.
+                </div>
+              </div>
+              <div class="dhtmlgoodies_question">(3)&nbsp;Regulatory Authorities:</div>
+              <div class="dhtmlgoodies_answer">
+                <div><strong> SEBI</strong> <br />To protect the interest of investors, SEBI formulates policies and regulates the mutual funds. It notified regulations in 1993 (fully revised in 1996) and issues guidelines from time to time. Mutual funds, either promoted by public or by private sector entities including one promoted by foreign entities, are governed by these regulations.</div>
+              </div>
+              <div class="dhtmlgoodies_question">(4)&nbsp;Types of Mutual Funds Schemes:</div>
+              <div class="dhtmlgoodies_answer">
+                <div >There exist various mutual fund schemes to cater to the needs such as financial position, risk tolerance and return expectations etc. <br />
+The content below gives an overview of the existing types of mutual fund schemes in the industry.
+<br />
+<ul class="level5">
+<li>
+By Structure
+</li>
+</ul>
+<strong>Open-Ended Schemes</strong><br />
+Open-ended schemes are mutual funds that can issue and redeem their shares at any time. Open-ended funds do not have restriction on the amount of shares the fund will issue. They offer units for sale without specifying any duration for redemption. If demand is high enough, the fund will continue to issue shares, no matter how many investors are there. Open-ended funds also buy back shares when investors wish to sell.  Investors can conveniently buy and sell units of open-ended funds directly from the fund house at the prevalent Net Asset Value (NAV) prices. One of the key features of open-end schemes is the liquidity that these funds offer to investors.<br />
+<strong>Close-Ended Schemes</strong><br />
+Close-ended schemes are mutual funds with a fixed number of shares (or units). Unlike open-ended funds, new shares/units are not created by managers to meet demand from investors but the shares can only be purchased (and sold) in the secondary market. <br />
+Close-ended funds raise a fixed amount of capital through a New Fund Offer (NFO). The fund is then structured, listed and traded like a stock, on a stock exchange. The price per share is determined by the market and is usually different from the underlying value or net asset value (NAV) per share of the investments held by the fund. The price is said to be at a discount or premium to the NAV when it is below or above the NAV, respectively. A premium might be due to the market's confidence in the investment manager’s ability to produce above-market returns. A discount might reflect the charges to be deducted from the fund in future by the fund managers.<br />
+Some close-ended funds give an option of selling back the units to the mutual fund through periodic repurchase at NAV related prices. SEBI regulations stipulate that at least one of the two exit routes is provided to the investor, that is, either repurchase facility or through listing on stock exchanges. These mutual funds schemes disclose NAV generally on weekly basis.<br />
+<strong>Interval Schemes</strong><br />
+Interval schemes are those that combine the features of both open-ended and close-ended schemes. The units may be traded on the stock exchange or may be open for sale or redemption during pre-determined intervals at NAV-related prices.<br /><br />
+<ul class="level5">
+<li>
+By Investment objective:
+</li>
+</ul>
+
+<strong>Growth or Equity-Oriented Schemes</strong> <br />The aim of growth funds is to provide capital appreciation over medium to long- term. These schemes normally invest a major part of their portfolio in equities and have comparatively high risks. They provide different options to the investors like dividend option, capital appreciation, etc. and investors may choose one depending on their preferences. The mutual funds also allow the investors to change the options at a later date. Growth schemes are good for investors having a long-term outlook seeking appreciation over a period of time. <br />
+It can be further classified into following depending upon objective:<br />
+<ul>
+	<li>Large-Cap Funds: These funds invest in companies from different sectors. However, they put a restriction in terms of the market capitalization of a company, i.e., they invest largely in BSE 100 and BSE 200 Stocks.</li>
+    <li>Mid-Cap Funds: These funds invest in companies from different sectors. However, they put a restriction in terms of the market capitalization of a company, i.e., they invest largely in BSE Mid Cap Stocks.</li>
+    <li>Sector Specific Funds: These are schemes that invest in a particular sector, for example, IT. </li>
+    <li>Thematic: These schemes invest in various sectors but restrict themselves to a particular theme e.g., services, exports, consumerism, infrastructure etc.</li>
+    <li>Diversified Equity Funds: All non-theme and non-sector funds can be classified as equity diversified funds.</li>
+    <li>Tax Savings Funds (ELSS): Investments in these funds are exempt from income tax at the time of investment, upto a limit of Rs 1 lakh. </li>
+</ul>
+<strong>Income or Debt oriented Schemes</strong><br />
+The aim of income funds is to provide regular and steady income to investors. These schemes generally invest in fixed-income securities such as bonds, corporate debentures, Government Securities and money-market instruments and are less risky compared to equity schemes. However, opportunities of capital appreciation are limited in such funds. The NAVs of such funds are impacted because of change in interest rates in the economy. If the interest rates fall, NAVs of such funds are likely to increase in the short run and vice versa. However, long-term investors do not bother about these fluctuations. <br />
+<strong>Balanced Schemes</strong><br />
+The aim of the balanced funds is to provide both growth and regular income as such schemes invest both in equities and fixed income instruments in the proportion indicated in their offer documents. These are appropriate for investors looking for moderate growth. They generally invest between 65% and 75% in equity and the rest in debt instruments. They are impacted because of fluctuation in stock markets but NAVs of such funds are less volatile compared to pure equity funds.<br />
+<strong>Money Market or Liquid Funds</strong><br />
+These funds are also income funds and their aim is to provide easy liquidity, preservation of capital and moderate income. These schemes invest exclusively in safer short-term instruments such as Treasury Bills, Certificates of Deposits, Commercial Paper and inter-bank call money, Government Securities, etc. Returns of these schemes fluctuate much less than other funds. These are appropriate for investors as a means of short-term investments.<br />
+<strong>Gilt Funds</strong><br />
+These funds invest exclusively in Government Securities. NAVs of these schemes also fluctuate due to change in interest rates and other economic factors as is the case with income or debt-oriented schemes.<br />
+<strong>Fund of Funds Schemes</strong><br />
+Fund of Funds invests in other mutual fund schemes. A traditional mutual fund comprises a portfolio of shares, but a Fund of Funds comprises a portfolio of different mutual fund schemes. A Fund of Funds helps the investor to reduce his chances of selecting the wrong mutual fund.
+<strong>Gold Exchange Traded Funds</strong><br />
+It is an open-ended Exchange Traded Fund. The investment objective of the scheme is to generate returns that are in line with the returns on investment in physical gold, subject to tracking error.<br />
+<strong>Floating Rate Funds</strong><br />
+ These are open-ended income schemes seeking to generate reasonable returns with commensurate risk from a portfolio which comprises floating rate debt instruments and fixed rate debt instruments swapped for floating rate returns. The scheme may also invest in fixed rate money market and debt instruments<br /><br />
+<ul class="level5">
+<li>
+Other schemes:
+</li>
+</ul>
+<strong>Tax-saving schemes</strong><br />
+These schemes offer tax rebates to the investors under specific provisions of the Income Tax Act, 1961 as the Government offers tax incentives for investment in specified avenues like Equity Linked Savings Schemes (ELSS). ELSS is a type of diversified equity mutual fund, which is qualified for tax exemption under Section 80C of the Income Tax Act, and offers the twin-advantage of capital appreciation and tax benefits. It comes with a lock-in period of three years. <br />
+The Rajiv Gandhi Equity Savings scheme (RGESS), which was revised in the Union Budget 2013-14, would provide a 50% tax deduction on investments up to Rs. 50,000 to first time investors in equity whose annual taxable income is below Rs. 12 lakh. <br />
+
+<strong>Index Schemes</strong><br />
+Index funds replicate the portfolio of a particular index such as the BSE Sensitive index, S&P NSE 50 index (Nifty), etc. NAVs of such schemes would rise or fall in accordance with the rise or fall in the index, though not exactly by the same percentage due to some factors known as "tracking error". Necessary disclosures in this regard are made in the offer document of the scheme.<br />
+There are also exchange traded index funds launched by the mutual funds which are traded on the stock exchanges.<br />
+<strong>Sector Specific schemes</strong><br />
+These are the funds which invest in the securities of only those sectors or industries as specified in the offer documents like Pharmaceuticals, Software, FMCG, Petroleum stocks etc. The returns of these funds are dependent on the performance of the respective sectors/industries. While these funds may give higher returns, they are more risky compared to diversified funds. Investors need to keep a watch on the performance of those sectors/industries and must exit at an appropriate time.<br />
+<strong>Load or No-Load Funds</strong><br />
+A load fund is one that charges a percentage of NAV for exit. That is, each time one sells units in the fund, a charge will be payable. This charge is used by the Mutual fund for marketing and distribution expenses.<br />
+A no-load fund is one that does not charge for exit. It means the investors can exit the fund at no additional charges during sale of units.
+In accordance with the SEBI circular no. SEBI/IMD/CIR No.4/168230/09 dated June 30, 2009, no entry load will be charged for purchase / additional purchase / switch-in accepted by the fund with effect from August 1, 2009. Similarly, no entry load will be charged with respect to applications for registrations under Systematic Investment Plan/ Systematic Transfer Plan / Systematic Investment Plan Plus accepted by the fund with effect from August 1, 2009.<br />
+<strong>Dividend Payout Schemes</strong><br />
+Mutual Fund companies as when they keep on making profit, distribute a part of the money to the investors by way of dividends. If one wants to keep on taking part of profit regularly, he may select this option. <br />
+
+<strong>Dividend Reinvestment Schemes</strong><br />
+ This option is similar to the first option except that the dividend declared is re-invested in the same fund on the same day’s NAV. <br />
+
+
+</div>
+              </div>
+              <div class="dhtmlgoodies_question">(5)&nbsp;Types of Returns:</div>
+              <div class="dhtmlgoodies_answer">
+                <div >Following are the ways by which returns can be realized in a mutual fund:<br />
+                  <strong>Dividends</strong><br />
+Unit holders earn dividends on mutual funds. These dividends are distributed from the income generated through dividends on stocks and interest on other instruments.<br />
+<strong>Capital Gains</strong><br />
+Investors get capital gains on mutual funds. If the fund sells securities that have appreciated in value, it earns capital gains. Most funds distribute these capital gains also to investors.<br />
+<strong>Profit from higher NAV</strong><br />
+Any increase in value of fund’s asset increases the NAV of the fund. Investors can make profit by selling back their units to fund house.
+
+</div>
+              </div>
+              <div class="dhtmlgoodies_question">(6)&nbsp;Advantages of Investing in Mutual Funds:</div>
+              <div class="dhtmlgoodies_answer">
+                <div> <strong>Professional Management</strong><br />
+Mutual funds employ experienced and skilled professionals who make investment research and analyze the performance and prospects of various instruments before selecting a particular investment. Thus, by investing in mutual funds, one can avail the services of professional fund managers, which would otherwise be costly for an individual investor.<br />
+
+<strong>Diversification</strong><br />
+Diversification involves holding a wide variety of investments in a portfolio so as to mitigate risks. Mutual funds usually spread investments across various industries and asset classes, constrained only by the stated investment objective. Thus, by investing in mutual funds, one can avail the benefits of diversification and asset allocation without investing a large amount of money that would be required to create an individual portfolio.<br />
+
+<strong>Liquidity</strong><br />
+In an open-ended scheme, unit holders can redeem their units from the fund house anytime. Even with close-ended schemes, one can sell the units on a stock exchange at the prevailing market price. Besides, some close-ended and interval schemes allow direct repurchase of units at NAV related prices from time to time. Thus investors do not have to worry about finding buyers for their investments.<br />
+<strong>Flexibility</strong><br />
+Mutual funds offer a variety of plans, such as regular investment, regular withdrawal and dividend reinvestment plans. Depending upon one’s preferences and convenience, one can invest or withdraw funds, accordingly.<br />
+<strong>Cost Effective</strong><br />
+Since Mutual funds have a number of investors, the fund’s transaction costs, commissions and other fees get reduced to a considerable extent. Thus, owing to the benefits of larger scale, mutual funds are comparatively less expensive than direct investment in the capital markets.<br />
+<strong>Well Regulated</strong><br />
+Mutual funds in India are regulated and monitored by the Securities and Exchange Board of India (SEBI), which strives to protect the interests of investors. Mutual funds are required to provide investors with regular information about their investments, in addition to other disclosures like specific investments made by the scheme and the proportion of investment in each asset classes.<br />
+<strong>Convenient Administration</strong><br />
+The facility of making investments through service centers as well as through internet ensures convenience.<br />
+<strong>Return Potential</strong><br />
+By allocating right asset mix, mutual funds offer a chance of higher potential of returns. The high concentration of risky assets would lead to higher return and vice-versa.<br />
+<strong>Transparency</strong><br />
+Information available through fact sheets, offer documents, annual reports and promotional materials help investors gather knowledge about their investments.<br />
+<strong>Choice of Schemes</strong><br />
+The investors can chose from various kinds of scheme available to them. The risk-seeker investors can go for more aggressive schemes while risk-averse investors can go for income schemes funds and so on.<br />
+</div>
+              </div>
+              <div class="dhtmlgoodies_question">(7)&nbsp;Disadvantages of Investing in Mutual Funds:<br /></div>
+              <div class="dhtmlgoodies_answer">
+                <div><strong>Costs</strong><br />
+Mutual funds provide investors with professional management; however, it comes at a cost. Funds will typically have a range of different fees that reduce the overall payout. In mutual funds, the fees are classified into two categories: shareholder fees and annual fund-operating fees.
+The shareholder fees, in the form of loads and redemption charges, are paid directly by shareholders while purchasing or selling the funds. The annual fund operating fees are charged as an annual percentage - usually ranging from 1-3%. These fees are paid by mutual fund investors, regardless of the performance of the fund. As one can imagine, in years when the fund doesn't make money, these fees only magnify losses.<br />
+<strong>Inefficiency of Cash Reserves </strong><br />
+Mutual funds usually maintain large cash reserves as protection against a large number of simultaneous withdrawals. Although this provides investors with liquidity, it means that some of the fund’s money is invested in cash instead of assets, which tends to lower the investors’ potential return.<br />
+<strong>Diversification</strong><br />
+Although diversification is one of the keys to successful investing, many mutual fund investors tend to over diversify. The idea of diversification is to reduce the risks associated with holding a single security. Over diversification occurs when investors buy many funds that are highly related and so don't get the benefits of diversification.<br />
+<strong>Dilution</strong> <br />
+Diversification reduces the amount of risk involved in investing in mutual funds but it can also be disadvantageous due to dilution. For example, if a single security held by a mutual fund doubles in value, the mutual fund itself would not double in value because that security is only one small part of the fund’s holdings. By holding a large number of different investments, mutual funds tend to do neither exceptionally well nor very poorly either.<br />
+<strong>Trading Limitations</strong><br />
+Although mutual funds are highly liquid in general, most mutual funds (called open-ended funds) cannot be bought or sold in the middle of the trading day. One can only buy and sell them at the end of the day.<br />
+</div>
+              </div>
+               <div class="value_dis">Disclaimer: Mutual Fund investments are subject to market risks. Read all scheme related documents carefully before investing. Past performance of the schemes do not indicate the future performance. <br /></div>
+               <div class="value_btm_text1">Developed and Maintained by: ICRA Analytics Ltd </div>
+            </td>
+            <td width="12">&nbsp;</td>
+          </tr>
+      </table>   
+    </td>
+     </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

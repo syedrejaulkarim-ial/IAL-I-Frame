@@ -1,0 +1,255 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WiseMain.master.cs" Inherits="iFrames.Bluechip.WiseMain" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="css/template_css.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/navigation.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var dminyear = 1900;
+        var dmaxyear = 2200;
+        var chsep = "/";
+        var DateDiff = {
+
+            inDays: function (d1, d2) {
+                var t2 = d2.getTime();
+                var t1 = d1.getTime();
+
+                return parseInt((t2 - t1) / (24 * 3600 * 1000));
+            },
+
+            inWeeks: function (d1, d2) {
+                var t2 = d2.getTime();
+                var t1 = d1.getTime();
+
+                return parseInt((t2 - t1) / (24 * 3600 * 1000 * 7));
+            },
+
+            inMonths: function (d1, d2) {
+                var d1Y = d1.getFullYear();
+                var d2Y = d2.getFullYear();
+                var d1M = d1.getMonth();
+                var d2M = d2.getMonth();
+                return (d2M + 12 * d2Y) - (d1M + 12 * d1Y);
+            },
+
+            inYears: function (d1, d2) {
+                return d2.getFullYear() - d1.getFullYear();
+            }
+        }
+
+        function checkinteger(str1) {
+            var x;
+            for (x = 0; x < str1.length; x++) {
+                // verify current character is number or not !   
+                var cr = str1.charAt(x);
+                if (((cr < "0") || (cr > "9")))
+                    return false;
+            }
+            return true;
+        }
+        function getcharacters(s, chsep1) {
+            var x;
+            var Stringreturn = "";
+            for (x = 0; x < s.length; x++) {
+                var cr = s.charAt(x);
+                if (chsep.indexOf(cr) == -1)
+                    Stringreturn += cr;
+            }
+            return Stringreturn;
+        }
+        function februarycheck(cyear) {
+            return (((cyear % 4 == 0) && ((!(cyear % 100 == 0)) || (cyear % 400 == 0))) ? 29 : 28);
+        }
+        function finaldays(nr) {
+            for (var x = 1; x <= nr; x++) {
+                this[x] = 31
+                if (x == 4 || x == 6 || x == 9 || x == 11) {
+                    this[x] = 30
+                }
+                if (x == 2) {
+                    this[x] = 29
+                }
+            }
+            return this
+        }
+
+        function converterdate(string) {
+            var d = string.split(/[ :\s]/);
+            var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'sep', 'Oct', 'Nov', 'Dec'];
+            var monthval = 1;
+
+            for (var i = 0; i < months.length; i++) {
+                if (months[i] == d[1]) {
+                    monthval = parseInt(i + 1);
+                    break;
+                }
+            }
+
+            if (monthval < 10) {
+                monthval = '0' + monthval;
+            }
+
+            return d[0] + '/' + monthval + '/' + d[2];
+        }
+
+        function dtvalid(strdate) {
+            var monthdays = finaldays(12)
+            var cpos1 = strdate.indexOf(chsep)
+            var cpos2 = strdate.indexOf(chsep, cpos1 + 1)
+            var daystr = strdate.substring(0, cpos1)
+            var monthstr = strdate.substring(cpos1 + 1, cpos2)
+            var yearstr = strdate.substring(cpos2 + 1)
+            strYr = yearstr
+            if (strdate.charAt(0) == "0" && strdate.length > 1) strdate = strdate.substring(1)
+            if (monthstr.charAt(0) == "0" && monthstr.length > 1) monthstr = monthstr.substring(1)
+            for (var i = 1; i <= 3; i++) {
+                if (strYr.charAt(0) == "0" && strYr.length > 1) strYr = strYr.substring(1)
+            }
+            // The parseInt is used to get a numeric value from a string   
+            pmonth = parseInt(monthstr)
+            pday = parseInt(daystr)
+            pyear = parseInt(strYr)
+            if (cpos1 == -1 || cpos2 == -1) {
+                //alert("The date format must be : dd/mm/yyyy")
+                return false
+            }
+            if (monthstr.length < 1 || pmonth < 1 || pmonth > 12) {
+                //alert("Input a valid month")
+                return false
+            }
+            if (daystr.length < 1 || pday < 1 || pday > 31 || (pmonth == 2 && pday > februarycheck(pyear)) || pday > monthdays[pmonth]) {
+                //alert("Input a valid day")
+                return false
+            }
+            if (yearstr.length != 4 || pyear == 0 || pyear < dminyear || pyear > dmaxyear) {
+                //alert("Input a valid 4 digit year between " + dminyear + " and " + dmaxyear)
+                return false
+            }
+            if (strdate.indexOf(chsep, cpos2 + 1) != -1 || checkinteger(getcharacters(strdate, chsep)) == false) {
+                //alert("Input a valid date")
+                return false
+            }
+            return true
+        }
+
+        function IsValidDate(str1, str2) {
+
+            var Day = parseInt(str1.substring(0, 2), 10);
+            var Mn = parseInt(str1.substring(3, 5), 10);
+            var Yr = parseInt(str1.substring(6, 10), 10);
+            var DateVal = Mn + "/" + Day + "/" + Yr;
+            var dt = new Date(DateVal);
+
+            var Day1 = parseInt(str2.substring(0, 2), 10);
+            var Mn1 = parseInt(str2.substring(3, 5), 10);
+            var Yr1 = parseInt(str2.substring(6, 10), 10);
+            var DateVal1 = Mn1 + "/" + Day1 + "/" + Yr1;
+            var dt1 = new Date(DateVal1);
+
+            if (dt.getDate() != Day) {
+                alert('Invalid Date');
+                return false;
+            }
+            else if (dt.getMonth() != Mn - 1) {
+                //this is for the purpose JavaScript starts the month from 0
+                alert('Invalid Date');
+                return false;
+            }
+            else if (dt.getFullYear() != Yr) {
+                alert('Invalid Date');
+                return false;
+            }
+
+
+            if (dt1.getDate() != Day1) {
+                alert('Invalid Date');
+                return false;
+            }
+            else if (dt1.getMonth() != Mn1 - 1) {
+                //this is for the purpose JavaScript starts the month from 0
+                alert('Invalid Date');
+                return false;
+            }
+            else if (dt1.getFullYear() != Yr1) {
+                alert('Invalid Date');
+                return false;
+            }
+            // alert(dt); alert(dt1);
+            if (dt >= dt1) {
+                return false;
+            }
+            return true;
+        }
+
+
+        function LessThanToday(strDate) {
+            var Day = parseInt(strDate.substring(0, 2), 10);
+            var Mn = parseInt(strDate.substring(3, 5), 10);
+            var Yr = parseInt(strDate.substring(6, 10), 10);
+            var DateVal = Mn + "/" + Day + "/" + Yr;
+            var dt = new Date(DateVal);
+
+            var todaydate = new Date();
+            //alert(todaydate);alert(dt);
+            var i = DateDiff.inDays(dt, todaydate)
+            if (i <= 0) {
+                return false;
+            }
+            return true;
+        }
+    
+    </script>
+    <style type="text/css">
+        .ui-datepicker-trigger
+        {
+            position: relative;
+            top: 5px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <ul class="claybricks" id="ulWise" runat="server">
+                <li><a href="TopFund.aspx" id="lTopFund">Top Funds</a></li>
+                <li><a href="LatestNav.aspx" id="lLatest">Latest NAV</a></li>
+                <li><a href="HistNav.aspx" id="lHistNav">Historical NAV</a></li>
+                <li><a href="WiseNavGraph.aspx" id="lNavGraph">NAV Graph</a></li>
+                <li><a href="Dividend.aspx" id="lDividend">Dividend Declared</a></li>
+                <li><a href="NfoUpdate.aspx" id="lNfoUpdate">NFO Update</a></li>
+            </ul>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="cphBoby" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="cpDisc" runat="server">
+            <table width="710px">
+                <tr>
+                    <td class="disclaimerh">
+                        Disclaimer
+                    </td>
+                </tr>
+                <tr>
+                    <td class="disclaimer">
+                       Mutual Fund investments are subject to market risks. Read all scheme related documents carefully before investing.  Past performance of the schemes do not indicate the future performance.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text" align="right">
+                        <span style="text-align: right" class="rslt_text1">Developed and Maintained by:<a
+                            class="text" href="https://www.icraanalytics.com" target="_blank"> ICRA Analytics Ltd </a>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>

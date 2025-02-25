@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Edelweiss Lumpsum Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        div {
+            page-break-before: always;
+        }
+
+        body {
+            margin-left: 0px;
+            margin-top: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header-pdf {
+            background: url(../IMG/pdf_top.jpg) no-repeat;
+            height: 180px;
+            width: 960px;
+        }
+
+        .top_tr {
+            color: #000;
+            font-size: 30px;
+            font-weight: bold;
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+
+        /*.right_tr {
+            background: url(../IMG/logo.png) no-repeat;
+            height: 49px;
+            color: #FFFFFF;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: normal;
+            width: 300px;
+            text-align: right;
+        }*/
+
+        .left_table {
+            width: 550px;
+            height: auto;
+            color: #2a2525;
+            vertical-align: top;
+            font-stretch: normal;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .mid_table {
+            width: 20px;
+        }
+
+        .right_table {
+            width: 390px;
+            height: auto;
+            vertical-align: top;
+            font-stretch: normal;
+            text-decoration: none;
+            color: #2a2525;
+            font-size: 13px;
+        }
+
+
+        .td_style1 {
+            height: 20px;
+            text-align: justify;
+            font-size: 13px;
+            vertical-align: top;
+            font-stretch: normal;
+            text-decoration: none;
+            line-height: 20px;
+            color: #2a2525;
+            text-align: justify;
+            letter-spacing: 0.01em;
+        }
+
+            .td_style1 h3 {
+                font-size: 20px;
+                font-weight: 700;
+                color: #034ea2;
+            }
+
+        .td_style2 {
+            background: #c3dded;
+            height: 27px;
+            text-align: justify;
+            font-size: 15px;
+            color: #034ea2;
+            padding-left: 10px;
+            vertical-align: middle;
+            line-height: 20px;
+            font-weight: bold;
+            border-bottom: #034ea2 solid 2px;
+        }
+        .td_style2Header {
+            background: #cdcb25;
+            height: 10px;
+            text-align: justify;
+            font-size: 15px;
+            color: #FFFFFF;
+            padding-left: 10px;
+            vertical-align: middle;
+        }
+
+        .td_style3 {
+            height: 25px;
+            text-align: justify;
+            font-size: 15px;
+            color: #000;
+            vertical-align: middle;
+        }
+
+        .td_height {
+            height: 18px;
+            text-align: justify;
+            font-size: 15px;
+            color: #000;
+            vertical-align: middle;
+        }
+
+        .td_style4 {
+            height: 25px;
+            text-align: justify;
+            font-size: 15px;
+            color: #000;
+            font-family: Verdana;
+            vertical-align: middle;
+            border-bottom: #c6c8ca solid 1px;
+            padding-top: 5px;
+        }
+
+        .summery_left {
+            width: 70%;
+            height: 25px;
+            vertical-align: middle;
+            font-size: 13px;
+            border-bottom: black solid 1px;
+            padding-top: 2px;
+        }
+
+        .td_style5 {
+            height: 25px;
+            text-align: justify;
+            font-size: 12px;
+            vertical-align: top;
+            padding-left: 15px;
+        }
+
+        .td_style55 {
+            height: 25px;
+            text-align: justify;
+            font-size: 12px;
+            vertical-align: top;
+        }
+
+        .td_style6 {
+            height: 24px;
+            text-align: justify;
+            font-size: 15px;
+            font-size: 12px;
+            vertical-align: middle;
+            font-weight: bold;
+            padding-top: 5px;
+            text-transform: uppercase;
+            color: #4f4e50;
+        }
+
+        .td_style7 {
+            height: 5px;
+        }
+
+        .summery_right {
+            width: 30%;
+            height: 20px;
+            vertical-align: middle;
+            padding-right: 10px;
+            text-align: right;
+            border-bottom: black solid 1px;
+            font-size: 13px;
+        }
+
+        .summery_left1 {
+            height: 25px;
+            vertical-align: middle;
+            border-bottom: black solid 1px;
+            padding-top: 2px;
+            width: 50%;
+            font-size: 13px;
+        }
+
+        .summery_right1 {
+            height: 20px;
+            vertical-align: middle;
+            padding-right: 10px;
+            text-align: right;
+            border-bottom: black solid 1px;
+            font-size: 13px;
+            width: 50%;
+        }
+
+        .summery_right12 {
+            height: 20px;
+            vertical-align: middle;
+            padding-right: 10px;
+            text-align: left;
+            font-size: 13px;
+            width: 100%;
+        }
+
+        .summery_left2 {
+            height: 25px;
+            vertical-align: middle;
+            font-size: 13px;
+            border-bottom: black solid 1px;
+            padding-top: 2px;
+            width: 50%;
+        }
+
+        .summery_right2 {
+            height: 20px;
+            vertical-align: middle;
+            padding-right: 10px;
+            text-align: right;
+            border-bottom: black solid 1px;
+            font-size: 13px;
+            width: 50%;
+        }
+
+        .grdheader {
+            font-size: 12px;
+            vertical-align: middle;
+            text-align: center;
+            background: #569fd3;
+            border-bottom: #c6c8ca solid 1px;
+            height: 25px;
+            font-weight: bold;
+        }
+
+        .grdHead {
+            text-align: center;
+            font-family: Verdana;
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: normal;
+            background: #183885;
+            height: 25px;
+        }
+
+        .grdrow {
+            font-size: 13px;
+            vertical-align: middle;
+            text-align: center;
+            border-bottom: #c6c8ca solid 1px;
+            height: 25px;
+        }
+
+        .chart {
+            text-align: left;
+        }
+
+        .disclaimer {
+            font-family: Verdana;
+            font-size: 15px;
+            font-style: italic;
+            text-align: justify;
+            line-height: 17px;
+            color: #2a2525;
+        }
+
+        .line {
+            border-bottom: #8dc63f solid 6px;
+            vertical-align: middle;
+            height: 4px;
+        }
+
+        .dis {
+            font-size: 16px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .prepareTablestyle {
+            width: 100%;
+            background-color: #F5F5F5;
+            font-size: 11px;
+        }
+
+        .tdborderbotton {
+            height: 20px;
+            vertical-align: bottom;
+            border-bottom: 1px solid;
+        }
+
+        .style1 {
+            height: 2px;
+        }
+
+        -->
+    </style>
+</head>
+<body>
+    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="header-pdf">
+                    <tr>
+                        <td class="top_tr" valign="top">Performance Report</td>
+                        <td class="right_tr">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr align="left">
+            <td valign="top">
+                <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="td_style1" style="padding-left: 4px;text-align:center" colspan="2">
+                            <h3>Fund Name: <!FundName!></h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left_table">
+                            <table width="570" border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="td_style2" colspan="2">
+                                        This fund is suitable for investors seeking **
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="summery_right12">
+                                        <!--<img src="../IMG/grey_arrow.png" />-->
+                                        <!FundDesc1!>
+                                    </td>
+                                    <td align="center">
+                                        <!--Riskometer<br />-->
+                                        <!--<img src="../IMG/grey_arrow.png" />-->
+                                        <!--<!FundDesc3!> <!riskImageColorStmnt!>-->
+                                        <!RiskImage!>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td class="td_style2">
+                                                    Output Summary
+                                                </td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                            <td class="summery_left">
+                                                                Total Amount Invested:
+                                                            </td>
+                                                            <td class="summery_right">
+                                                                ₹<!InstallmentAmount!>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="summery_left">
+                                                                Value of your Investment at the end of Period:
+                                                            </td>
+                                                            <td class="summery_right">
+                                                                ₹<!returnInvestment!>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="summery_left">
+                                                                CAGR Return on your Investment:
+                                                            </td>
+                                                            <td class="summery_right">
+                                                                <!LSReturns!>%
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="summery_left">
+                                                                Total Profit Earned over the Period:
+                                                            </td>
+                                                            <td class="summery_right" style="text-align:right">
+                                                                ₹<!TotalProfit!>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                       
+                        <td class="right_table">
+                                <table width="370" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    
+                                    <tr>
+                                        <td class="right_table">
+                                            <table border="0" width="100%" align="center" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td class="td_style2">
+                                                        Input Summary
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>
+                                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-bottom:61px;">
+                                                            <tr>
+                                                                <td colspan="2" class="summery_right12">
+                                                                    Scheme: <!SchemeName!>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="summery_left1">
+                                                                    Investment Amount (₹):
+                                                                </td>
+                                                                <td valign="middle" class="summery_right1">
+                                                                    ₹<!InstallmentAmount!>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="summery_left1">
+                                                                    Start Date:
+                                                                </td>
+                                                                <td class="summery_right1">
+                                                                    <!LsStartDate!>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="summery_left1">
+                                                                    End Date:
+                                                                </td>
+                                                                <td class="summery_right1" style="text-align:right">
+                                                                    <!LsEndDate!>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td>
+                                                        <table width="100%" align="center" cellpadding="0" cellspacing="0">
+                                                            <tr>
+                                                                <td class="td_style2" >
+                                                                    Fund Details
+                                                                </td>
+                                                            </tr>
+                                                            <!-- <tr>
+                                                <td style="height: 1px">
+                                                </td>
+                                            </tr>-->
+                                                            <tr>
+                                                                <td>
+                                                                    <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                                        <tr>
+                                                                            <td class="summery_left2">
+                                                                                Quarterly Average AUM:
+                                                                            </td>
+                                                                            <td class="summery_right2">
+                                                                                ₹<!CorpusFund!>
+                                                                                Crs.
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="summery_left2">
+                                                                                Fund Manager:
+                                                                            </td>
+                                                                            <td class="summery_right2">
+                                                                                <!FundManagerName!>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="summery_left1">
+                                                                                Date of Inception:
+                                                                            </td>
+                                                                            <td class="summery_right1" style="text-align:right">
+                                                                                <!InceptionDate!>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" style="color: #2a2525;" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="td_style2">
+                            Comparison Against Benchmark
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_style6">
+                            Lump sum Summary Report:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!gvFirstTable!>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_style6">
+                            Historical Performance:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!GridViewSIPResult!>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="height: 250px;">
+            </td>
+        </tr>
+        <tr>
+            <td class="td_style1">
+                ** Investors should consult their financial advisors if in doubt about whether the
+                product is suitable for them.
+                <br />
+                <b>* For Time Periods > 1 yr, CAGR Returns have been shown. For Time Periods < 1 yr,
+                    Absolute Returns have been shown.<br />
+                    
+                    • Since Inception return of the benchmark is calculated from the scheme inception
+                    date. </b>
+                <br />
+                This report is intended solely for the use of the person requesting the same. If
+                you have received this report in error, please ignore/delete/discard the same. This
+                report should not be construed as an advertisement or solicitation to invest in
+                any scheme of Edelweiss Mutual Fund. This report is provided for assistance
+                only and is not intended to be and must not alone be taken as the basis for an investment
+                decision. This recipient should make necessary investment analysis (inclusing the
+                risk involved) and should consult his advisor before investing.
+            </td>
+        </tr>
+          <tr>
+            <td style="height: 10px;">
+            </td>
+        </tr>
+        <tr>
+            <td class="dis">
+                <br />
+                <b>Mutual Fund investments are subject to market risks, read all scheme related documents
+                    carefully.</b>
+            </td>
+        </tr>
+        <tr>
+            <td class="line">&nbsp;
+                
+            </td>
+        </tr>
+        <tr>
+            <td class="dis">
+                <span style="font-size: 12px;">THIS IS A SYSTEM GENERATED REPORT POPULATED BASED ON
+                    YOUR SELECTION OF DATA ON THE RETURNS CALCULATOR PAGE AVAILABLE ON </span><a class="text"
+                        href="http://www.edelweissmf.com">www.edelweissmf.com
+                    </a>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right; padding-right: 15px;">
+                Page 1
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

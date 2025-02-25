@@ -1,0 +1,151 @@
+
+.FieldHead
+{
+   
+    font-family: Arial;
+    color: #333333;
+    font-size: 12px;
+}
+.ddl
+{
+    
+    font-family: Arial;
+    color: #000000;
+    font-size: 11px;
+    font-weight: normal;
+    border: #aec8d9 solid 1px;
+    height: 20px;
+    background: url(images/bg_form.png) left top repeat-x #f9f9f9;
+    box-shadow: 0px 0px 3px #aaa;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    padding: 0px 0px 0px 5px;
+}
+
+.ddl_1
+{
+   
+    font-family: Arial;
+    color: #000000;
+    font-size: 11px;
+    font-weight: normal;
+    border: #aec8d9 solid 1px;
+    background: url(images/bg_form.png) left top repeat-x #f9f9f9;
+    box-shadow: 0px 0px 3px #aaa;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+
+.ddl_2
+{
+    font-family: Arial;
+    font-family: Arial;
+    color: #000000;
+    font-size: 11px;
+    font-weight: normal;
+    border: #aec8d9 solid 1px;
+    padding: 1px;
+    background: url(images/bg_form.png) left top repeat-x #f9f9f9;
+    box-shadow: 0px 0px 3px #aaa;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+
+.ddl_3
+{
+    font-family: Arial;
+    font-family: Arial;
+    color: #000000;
+    font-size: 11px;
+    font-weight: normal;
+    border: #aec8d9 solid 1px;
+    padding: 2px;
+    background: url(images/bg_form.png) left top repeat-x #f9f9f9;
+    box-shadow: 0px 0px 3px #aaa;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+}
+
+
+.grdHead
+{
+    text-align: center;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: normal;   
+    background: #02509b;
+    height: 35px;
+}
+
+.leftal
+{
+    padding-left: 2px;
+    border-bottom: #c6c8ca solid 1px;
+}
+.grdRow
+{
+    text-align: center;
+    line-height: 20px;
+    background-color: #ffffff;
+    font-family: Arial;
+    color: #3E4244;
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom: #c6c8ca solid 1px;     
+    padding-left: 0px;
+}
+.grdAltRow
+{
+    line-height: 20px;
+    background-color: #c3cbe4;
+    font-family: Arial;
+    color: #3E4244;
+    font-size: 11px;
+    font-weight: normal;
+    border: #d0d6db solid 1px;
+    text-align: center;
+}
+.grdFooter
+{
+    border-bottom: #889397 solid;
+    height: 5px;
+}
+
+
+
+A.btnReset:hover
+{
+    background: url(images/Reset.png) #ffffff;
+}
+
+
+.rslt_text
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 4px;
+    line-height: 18px;
+}
+
+
+.rslt_text1
+{
+    font-family: ,Arial, Helvetica, sans-serif;
+    color: #333333;
+    font-size: 11px;
+    font-weight: normal;
+    padding: 4px;
+}
+
+
+.bg
+{
+    background: url(images/bg.jpg) repeat;
+    border-top: #0e80ca solid 5px;
+}
+

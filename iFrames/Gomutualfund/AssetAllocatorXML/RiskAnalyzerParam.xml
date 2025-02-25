@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Weightages>
+  <Weightage value="Very Aggressive" StartVal="76" EndVal="100" RiskAppetiteValue="20">
+    <assets>
+      <asset allocation="35">Large Caps</asset>
+      <asset allocation="25">Mid-caps/ Small caps</asset>
+      <asset allocation="10">Sector Funds</asset>
+      <asset allocation="10">ELSS</asset>
+      <asset allocation="10">Cash/ Bank FD/ Liquid Funds</asset>
+      <asset allocation="10">FMPS &amp; Debt Funds</asset>
+    </assets>
+    <natures>
+      <nature allocation="80">Equity</nature>
+      <nature allocation="20">Debt/Cash</nature>
+    </natures>
+  </Weightage>
+  <Weightage value="Aggressive" StartVal="61" EndVal="75" RiskAppetiteValue="16">
+    <assets>
+      <asset allocation="35">Large Caps</asset>
+      <asset allocation="25">Mid-caps/ Small caps</asset>
+      <asset allocation="10">ELSS</asset>
+      <asset allocation="10">Cash/ Bank FD/ Liquid Funds</asset>
+      <asset allocation="20">FMPS &amp; Debt Funds</asset>
+    </assets>
+    <natures>
+      <nature allocation="70">Equity</nature>
+      <nature allocation="30">Debt/Cash</nature>
+    </natures>
+  </Weightage>
+  <Weightage value="Moderate" StartVal="51" EndVal="60" RiskAppetiteValue="10">
+    <assets>
+      <asset allocation="30">Large Caps</asset>
+      <asset allocation="15">Mid-caps/ Small caps</asset>
+      <asset allocation="5">ELSS</asset>
+      <asset allocation="15">Cash/ Bank FD/ Liquid Funds</asset>
+      <asset allocation="35">FMPS &amp; Debt Funds</asset>
+    </assets>
+    <natures>
+      <nature allocation="50">Equity</nature>
+      <nature allocation="50">Debt/Cash</nature>
+    </natures>
+  </Weightage>
+  <Weightage value="Conservative" StartVal="41" EndVal="50"  RiskAppetiteValue="6">
+    <assets>
+      <asset allocation="25">Large Caps</asset>
+      <asset allocation="5">ELSS</asset>
+      <asset allocation="25">Cash/ Bank FD/ Liquid Funds</asset>
+      <asset allocation="45">FMPS &amp; Debt Funds</asset>
+    </assets>
+    <natures>
+      <nature allocation="30">Equity</nature>
+      <nature allocation="70">Debt/Cash</nature>
+    </natures>
+  </Weightage>
+  <Weightage value="Defensive" StartVal="0" EndVal="40"  RiskAppetiteValue="3">
+    <assets>
+      <asset allocation="15">Large Caps</asset>
+      <asset allocation="5">ELSS</asset>
+      <asset allocation="30">Cash/ Bank FD/ Liquid Funds</asset>
+      <asset allocation="50">FMPS &amp; Debt Funds</asset>
+    </assets>
+    <natures>
+      <nature allocation="20">Equity</nature>
+      <nature allocation="80">Debt/Cash</nature>
+    </natures>
+  </Weightage>
+</Weightages>

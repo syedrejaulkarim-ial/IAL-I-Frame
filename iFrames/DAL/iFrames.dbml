@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="indiacapital" Class="iFramesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=mumicrdb01;Initial Catalog=IndiaCapital;Persist Security Info=True;User ID=indcap" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="csIndiaCapital" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.MUT_FUND" Member="mut_funds">
+    <Type Name="mut_fund">
+      <Column Name="Mut_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Mut_Name" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="E_Mail" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="Web_Site" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="Reg_Add1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Reg_Add2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Reg_city" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Reg_Pin" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Reg_Phone1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Reg_Phone2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Reg_Phone3" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Reg_Fax" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Reg_Conper" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="Cor_Add1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cor_Add2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cor_City" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Cor_Pin" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Cor_Phone1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Cor_Phone2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Cor_Phone3" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Cor_Fax" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Cor_Conper" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="partner" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AMC" Member="AMCs">
+    <Type Name="AMC">
+      <Column Name="AMC_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="AMC_Name" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Pin" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone3" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="FAX" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="E_Mail" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="Web_Site" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="Conper" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.top_fund" Member="top_funds">
+    <Type Name="top_fund">
+      <Column Name="sch_code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="per_7days" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="per_15days" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="per_30days" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="per_91days" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="per_182days" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="per_1yr" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="per_3yr" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="since_incept" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="div_yld" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="nature" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="per_5yr" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.REGIST" Member="REGISTs">
+    <Type Name="REGIST">
+      <Column Name="Reg_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Reg_Name" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="Add1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Add2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PIN" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone3" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="E_Mail" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="Web_Site" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+      <Column Name="Conper" Type="System.String" DbType="VarChar(45)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.latest_nav" Member="latest_navs">
+    <Type Name="latest_nav">
+      <Column Name="Sch_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Nav_Rs" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.div_rec" Member="div_recs">
+    <Type Name="div_rec">
+      <Column Name="Sch_code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Divid_pt" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Record_date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="dividend" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.net_ind_pot1" Member="net_ind_pot1s">
+    <Type Name="net_ind_pot1">
+      <Column Name="Sch_Code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sect_Code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="[Percent]" Member="Percent" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Invt_Pat" Member="Invt_Pats">
+    <Type Name="Invt_Pat">
+      <Column Name="sch_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Equity" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Debt" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Cas_MonM" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.top_hold" Member="top_holds">
+    <Type Name="top_hold">
+      <Column Name="Sch_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="c_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="c_name" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="corpus_per" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Mkt_Value" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="No_of_shares" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Instrument" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nature" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Coupon_Rate" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Rating" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mt_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sect_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="mt_date_txt" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FundSize" Member="FundSizes">
+    <Type Name="FundSize">
+      <Column Name="sch_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fund_Size" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fund_Manager" Member="Fund_Managers">
+    <Type Name="Fund_Manager">
+      <Column Name="Mut_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Fund_Code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Fund_Manager" Member="Fund_Manager1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Designation" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Schemes" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Age" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="Edu_Qual" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Experience" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Views" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Photo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="E_Mail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.cur_fund_man" Member="cur_fund_mans">
+    <Type Name="cur_fund_man">
+      <Column Name="sch_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="fund_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="desgn" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="app_dt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ch_dt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.nav_new" Member="nav_news">
+    <Type Name="nav_new">
+      <Column Name="Sch_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Nav_Rs" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mfi_news" Member="mfi_news">
+    <Type Name="mfi_new">
+      <Column Name="news_headline" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="news_subheading" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="newspaper_name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="matter" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="news_on_page" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+      <Column Name="DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DATE1" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Mut_Name" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Com_detail" Member="Com_details">
+    <Type Name="Com_detail">
+      <Column Name="C_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="C_Name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RSTA_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="SD_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CEO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Address2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Pin" Type="System.String" DbType="VarChar(6)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Phone1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Phone3" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Ex_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Ind_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Sect_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="bse_symb" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="nse_symb" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sector_ind" Member="Sector_inds">
+    <Type Name="Sector_ind">
+      <Column Name="Sect_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Sect_name" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.front_news" Member="front_news">
+    <Type Name="front_new">
+      <Column Name="d_line" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="headline" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="yes_head" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="category" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="keyword" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="author" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="yes_author" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="mut_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="matter" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="article_no" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="source" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="sell" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="photo" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="priority" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="blurr1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="blurr2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="html" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="disp_ic" Type="System.String" DbType="VarChar(1)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.net_com_pot" Member="net_com_pots">
+    <Type Name="net_com_pot">
+      <Column Name="Sch_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="c_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="c_name" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="corpus_per" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Mkt_Value" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="No_of_shares" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Instrument" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nature" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Coupon_Rate" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Rating" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Mt_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sect_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="mt_date_txt" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="INST_INFO_ID" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sector" Member="Sectors">
+    <Type Name="Sector">
+      <Column Name="Sector" Member="Sector1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Sector_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sch_nature_details" Member="sch_nature_details">
+    <Type Name="sch_nature_detail">
+      <Column Name="sch_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="nature1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="subnature1" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="nature2" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="subnature2" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="nature3" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="subnature3" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ind_info" Member="ind_infos">
+    <Type Name="ind_info">
+      <Column Name="ind_code" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ind_name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="iss_body" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="descr" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="AssetClass" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.amc_details" Member="amc_details">
+    <Type Name="amc_detail">
+      <Column Name="AMC_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Detail1" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Detail2" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Detail3" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Key_Persons" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Total_Corpus__Crs_" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AverageCorpus" Member="AverageCorpus">
+    <Type Name="AverageCorpus">
+      <Column Name="Mut_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Corpus_Crs_" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Investor_base" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AUM" Member="AUMs">
+    <Type Name="AUM">
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Sector" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="New_Launched_Sales" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="New_Schemes_Sales" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Exist_Schemes_Sales" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Redemption" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="AUM" Member="AUM1" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.amfi" Member="amfis">
+    <Type Name="amfi">
+      <Column Name="type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="nature" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="new_sch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="new_sch_amt" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="exists_sch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="exists_sch_amt" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="redemption" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="aum" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="tot_sch" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tot_amt" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.corpus" Member="corpus">
+    <Type Name="corpus">
+      <Column Name="Mut_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Corpus_Crs_" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Investor_base" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Book_Close" Member="Book_Closes">
+    <Type Name="Book_Close">
+      <Column Name="Sch_Name" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Sch_code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BC_from" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BC_Till" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Notice" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mut_br" Member="mut_brs">
+    <Type Name="mut_br">
+      <Column Name="Mut_Code" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="BR_ADD1" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="BR_ADD2" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="BR_CITY" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="BR_PIN" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="Br_Phone1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Br_Phone2" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Br_Phone3" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="BR_CONPER" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="BR_FAX" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sale_purchase" Member="sale_purchases">
+    <Type Name="sale_purchase">
+      <Column Name="date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="org" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="nature" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="sale" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="purchase" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.exitentry_load" Member="exitentry_loads">
+    <Type Name="exitentry_load">
+      <Column Name="sch_code" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="app_from" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="app_to" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ee_type" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ee_load" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="cond_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cond_type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="g_cond" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="dur_type1" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="l_cond" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="dur_type2" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="cdsc" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="remark" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

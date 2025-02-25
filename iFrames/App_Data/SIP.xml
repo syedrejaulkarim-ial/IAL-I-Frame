@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?> 
+<SIPSchemes>
+  <Scheme name="ICICI Prudential Focused Bluechip Equity Fund - Retail - Dividend" SCH_CODE="PI550">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Focused Bluechip Equity Fund - Retail - Growth" SCH_CODE="PI551">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="ICICI Prudential Focused Bluechip Equity Fund - Institutional I - Growth" SCH_CODE="PI552">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="Tax Plan - Growth" SCH_CODE="PI010">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Tax Plan - Dividend" SCH_CODE="PI009">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Technology Fund - Growth" SCH_CODE="PI016">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Technology Fund - Dividend" SCH_CODE="PI034">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>    
+  <Scheme name="Dynamic Plan Cumulative Option Growth" SCH_CODE="PI058">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+        <Scheme name="Dynamic Plan Dividend" SCH_CODE="PI114">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Discovery Fund - Dividend" SCH_CODE="PI144">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Discovery Fund - Growth" SCH_CODE="PI143">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Emerging STAR - Dividend" SCH_CODE="PI168">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Emerging STAR - Growth" SCH_CODE="PI167">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+  </Scheme>
+  <Scheme name="Infrastructure Fund - Dividend" SCH_CODE="PI193">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Infrastructure Fund - Growth" SCH_CODE="PI192">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Services Industries Fund - Dividend" SCH_CODE="PI197">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Services Industries Fund - Growth" SCH_CODE="PI196">
+    <Frequency Monthly="true"/>
+	  <Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Indo Asia Equity Fund - Retail Growth" SCH_CODE="PI396">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Indo Asia Equity Fund - Retail Dividend" SCH_CODE="PI395">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Focused Equity Fund Retail Growth" SCH_CODE="PI551">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Focused Equity Fund Retail Dividend" SCH_CODE="PI550">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Banking and Financial Services Fund Retail Growth" SCH_CODE="PI606">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Banking and Financial Services Fund Retail Dividend" SCH_CODE="PI605">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Nifty Junior Index Fund Growth" SCH_CODE="PI962">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="Nifty Junior Index Fund Dividend" SCH_CODE="PI961">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="MIP - 25 Half Yearly Dividend" SCH_CODE="PI971">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+  <Scheme name="MIP - 25 Quarterly Dividend" SCH_CODE="PI970">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+ <Scheme name="MIP - 5" SCH_CODE="PI116">
+		<Frequency Monthly="true"/>
+		<Frequency Quarterly="true"/>
+	</Scheme>
+ 
+  <Scheme name="Reliance Banking Fund - Bonus" SCH_CODE="RC033">
+    <Frequency Monthly="true"/>
+    <Frequency Quarterly="true"/>
+  </Scheme>
+ 
+</SIPSchemes>

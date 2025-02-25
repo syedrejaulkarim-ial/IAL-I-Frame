@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EdelweissSIP">
+  <DataContextMoniker Name="/EdelweissSIPDataContext" />
+  <nestedChildShapes>
+    <classShape Id="494cdda6-a200-49fa-baa2-b009722be319" absoluteBounds="1.625, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/EdelweissSIPDataContext/T_MFIE_INDEX_RETURN_REPO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f59d13c1-ac89-41a6-b704-da25c9294d4e" absoluteBounds="1.6400000000000001, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d72010aa-0964-4fca-ae1e-7f38b72f6d12" absoluteBounds="4.25, 1.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/EdelweissSIPDataContext/T_INDEX_RECORDS_Test" />
+      <nestedChildShapes>
+        <elementListCompartment Id="03312f0b-0662-4b71-96b4-35417d52aa4f" absoluteBounds="4.265, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

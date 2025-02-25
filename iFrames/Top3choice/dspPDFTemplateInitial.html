@@ -1,0 +1,833 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DSP</title>
+    <style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.top_tr{
+	background:#000000;
+	height:83px;
+	color:#FFFFFF;
+	font-size:30px;
+	text-transform:uppercase;
+	font-weight: normal;
+	padding-left: 30px;
+}
+
+.left_table{
+	width:550px;
+	height:auto;	
+	color:#2a2525;
+	vertical-align: top;
+	font-stretch:normal;
+	text-decoration:none;	
+	font-size:13px;
+	
+	
+}
+.mid_table{
+	width:20px;
+}
+.right_table{
+	width:390px;
+	height:auto;	
+	vertical-align: top;
+	font-stretch:normal;
+	text-decoration:none;
+	color:#2a2525;	
+	font-size:13px;	
+
+}
+.td_style1{
+	height:20px;
+	text-align:justify;
+	font-size:13px;
+	vertical-align:top;
+	font-stretch:normal;
+	text-decoration:none;
+	line-height: 20px;	
+	color:#2a2525;
+	text-align:justify;
+	letter-spacing:0.01em;
+}
+
+.td_style2{
+	background:#569fd3;
+	height:27px;
+	text-align:justify;
+	font-size:15px;
+	color:#FFFFFF;
+	padding-left: 10px;
+	vertical-align: middle;	
+	
+}
+.td_style3{
+	height:25px;
+	text-align:justify;
+	font-size:15px;
+	color:#000;
+	vertical-align: middle;
+}
+.td_style3m{
+	height:15px;
+}
+
+.td_style4{
+	height:25px;
+	text-align:justify;
+	font-size:15px;
+	color:#000;
+	font-family:"Trebuchet MS";
+	vertical-align: middle;
+	border-bottom:#c6c8ca solid 1px;
+	padding-top: 5px;
+}
+
+.summery_left{
+	width:70%;
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	
+}
+.td_style5{
+	height:25px;
+	text-align:justify;
+	font-size:14px;	
+	font-size: 12px;
+	vertical-align:top;
+	padding-left: 15px;	
+}
+.td_style55{
+	height:25px;
+	text-align:justify;	
+	font-size: 12px;
+	vertical-align:top;		
+}
+.td_style6{
+	height:18px;
+	text-align:justify;
+	font-size:15px;
+	font-size: 12px;
+	vertical-align:middle;	
+	font-weight:bold;
+	padding-top: 5px;
+	text-transform: uppercase;
+	color:#4f4e50;
+	
+}
+.td_style7{
+	height:5px;
+	
+}
+
+.summery_right{
+	width:30%;
+	height:20px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+}
+.summery_left1{
+	height:25px;
+	vertical-align:middle;	
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	width: 50%;
+	font-size:13px;
+}
+.summery_right1{
+	height:20px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+	width: 50%;
+}
+.summery_right12{
+	height:20px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: left;	
+	border-bottom:black solid 1px;
+	font-size: 13px;
+	width: 100%;	
+	
+}
+.summery_left2{
+	height:25px;
+	vertical-align:middle;
+	font-size: 13px;
+	border-bottom:black solid 1px;
+	padding-top: 2px;
+	width: 30%;
+	
+}
+.summery_right2{
+	height:20px;
+	vertical-align:middle;
+	padding-right: 10px;
+	text-align: right;
+	border-bottom:black solid 1px;
+	font-size: 13px;
+	width: 70%;
+}
+.grdheader{
+	font-size:12px;
+	vertical-align:middle;
+	text-align:center;	   
+    background: #569fd3;
+	border-bottom:#c6c8ca solid 1px;
+	height: 25px;
+	font-weight: bold;
+}
+.grdHead
+{
+    text-align: center;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: normal;   
+    background: #569fd3;
+    height: 25px;
+}
+.grdrow{
+	font-size:13px;
+	vertical-align:middle;
+	text-align:center;
+	border-bottom:#c6c8ca solid 1px;
+	height: 25px;
+}
+.chart{text-align:left;}
+.disclaimer{
+	font-family:Arial Narrow;
+	font-size:13px;
+	font-style:italic;
+	text-align: justify;
+	line-height: 17px;
+	color:#2a2525;
+}
+.line{
+	border-bottom:#000000 solid 1px;
+	vertical-align: middle;
+}
+.dis{
+	
+	font-size:16px;
+	font-weight: normal;
+	text-align: center;
+}
+
+        .prepareTablestyle
+        {
+            width: 100%;
+            background-color:#F5F5F5;     
+            
+            font-size:11px;
+        }
+        
+        .tdborderbotton
+        {
+            height:20px;
+            vertical-align:bottom;
+            border-bottom: 1px solid;
+        }
+
+        .style1
+        {
+            height: 13px;
+        }
+
+-->
+</style>
+</head>
+<body>
+    <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr align="left">
+            <td valign="top">
+                <table width="960" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="left_table">
+                            <div>
+                                <table width="580" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="td_style3">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="top_tr">
+                                            Performance report
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style2">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td class="td_style3">
+                                            &nbsp;
+                                        </td>
+                                    </tr>-->
+                                    <!--<tr>                                        
+                                        <td class="td_style1">
+                                            This report shows how your portfolio has grown based on your SIP installments and
+                                            frequency. It compares the returns generated by your fund to the returns generated
+                                            by the benchmark of your fund. The graph below is a visual representation of your
+                                            investment value and your total amount invested at any given point in time.
+                                        </td>
+                                    </tr>-->
+                                    <tr>
+                                        <td class="td_style1" style="padding-left: 4px; padding-top: 8px;">
+                                            Fund Name: <!FundName!>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 10px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style1">
+                                            <table width="100%" style="height: 160px; vertical-align: top;">
+                                                <tr>
+                                                    <td class="td_style2">
+                                                        This fund is suitable for investors seeking **
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_right12">
+                                                        <!--<img src="../IMG/grey_arrow.png" />-->
+                                                        <!FundDesc1!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_right12">
+                                                        <!--<img src="../IMG/grey_arrow.png" /> -->
+                                                        <!FundDesc2!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="vertical-align: top">
+                                                        <!--<img src="../IMG/grey_arrow.png" />-->
+                                                        <!FundDesc3!> <!riskImageColorStmnt!>
+                                                    </td>
+                                                </tr>
+                                                 <tr>
+                                                    <td style="vertical-align:bottom;padding-top:10px;" >
+                                                        ** Investors should consult their financial advisors if in doubt about whether the
+                                                        product is suitable for them.                                                        
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style3m">
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="td_style2">
+                                            Output Summary
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td class="summery_left">
+                                                        Total Investment Amount Over Selected Period:
+                                                    </td>
+                                                    <td class="summery_right">
+                                                        <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" /><!TotalInvestmentAmount!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left">
+                                                        Value of your Investment at the end of Period:
+                                                    </td>
+                                                    <td class="summery_right">
+                                                        <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" /><!totalInvestment!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left">
+                                                        CAGR Return on your Investment:
+                                                    </td>
+                                                    <td class="summery_right">
+                                                        <!SIPReturns!>%
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left">
+                                                        Total Profit Earned over the Period:
+                                                    </td>
+                                                    <td class="summery_right">
+                                                        <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" /><!TotalProfit!>
+                                                    </td>
+                                                </tr>
+                                                <!-- <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>-->
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style3m">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <div>
+                            <td class="mid_table">
+                                <img src="images/spacer11.gif" width="20px" height="1" />
+                            </td>
+                        </div>
+                        <td class="right_table">
+                            <div>
+                                <table width="360" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="td_style3">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="right" height="58px">
+                                            <img src="../IMG/logo.jpg" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style3" style="vertical-align: top; text-align: right; height: 90px;">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style2">
+                                            Input Summary
+                                        </td>
+                                    </tr>
+                                    <!-- <tr>
+                                        <td class="td_style3">
+                                            &nbsp;
+                                        </td>
+                                    </tr>-->
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td colspan="2" class="summery_right12" style="padding-top: 8px;">
+                                                        Scheme Name: <!SchemeName!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left1">
+                                                        Initial Amount (Rs.):
+                                                    </td>
+                                                    <td class="summery_right1">
+                                                        <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" /><!InitialAmount!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left1">
+                                                        Initial Date:
+                                                    </td>
+                                                    <td class="summery_right1">
+                                                        <!InitialDate!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left1">
+                                                        SIP Installment Amount (Rs):
+                                                    </td>
+                                                    <td class="summery_right1">
+                                                        <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" /><!InstallmentAmount!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left1">
+                                                        Frequency:
+                                                    </td>
+                                                    <td class="summery_right1">
+                                                        <!Frequency!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left1">
+                                                        From Date:
+                                                    </td>
+                                                    <td class="summery_right1">
+                                                        <!FromDate!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left1">
+                                                        To Date:
+                                                    </td>
+                                                    <td class="summery_right1">
+                                                        <!ToDate!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left1">
+                                                        Value as on Date:
+                                                    </td>
+                                                    <td class="summery_right1">
+                                                        <!ValueDate!>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style3m">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_style2">
+                                            Fund Details
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                                                <tr>
+                                                    <td class="summery_left2">
+                                                        Corpus of Fund:
+                                                    </td>
+                                                    <td class="summery_right2">
+                                                        <img src="../IMG/rimg.png" style="vertical-align: top; padding-top: 2px;" /><!CorpusFund!>
+                                                        Crs.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left2">
+                                                        Fund Manager:
+                                                    </td>
+                                                    <td class="summery_right2">
+                                                        <!FundManagerName!>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="summery_left2">
+                                                        Date of Inception:
+                                                    </td>
+                                                    <td class="summery_right2">
+                                                        <!InceptionDate!>
+                                                    </td>
+                                                </tr>                                                
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+       <!-- <tr>
+            <td style="height: 5px;">
+            </td>
+        </tr>-->
+        <tr>
+            <td>
+                <table width="100%" style="color: #2a2525;">
+                    <tr>
+                        <td class="td_style2">
+                            Comparison Against Benchmark
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_style6">
+                            SIP Summary Report:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table border="0" align="center" cellpadding="0" cellspacing="0" style="display: none">
+                                <tr>
+                                    <td class="grdheader">
+                                        Name
+                                    </td>
+                                    <td class="grdheader">
+                                        Total Units
+                                    </td>
+                                    <td class="grdheader">
+                                        Amount Invested
+                                    </td>
+                                    <td class="grdheader">
+                                        Current Value
+                                    </td>
+                                    <td class="grdheader">
+                                        Profit from Investment
+                                    </td>
+                                    <td class="grdheader">
+                                        SIP Returns%
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="left" class="grdrow">
+                                        DSP BlackRock Equity Fund - Growth
+                                    </td>
+                                    <td class="grdrow">
+                                        3954.76
+                                    </td>
+                                    <td class="grdrow">
+                                        60000
+                                    </td>
+                                    <td class="grdrow">
+                                        63280.0492
+                                    </td>
+                                    <td class="grdrow">
+                                        3280.0492
+                                    </td>
+                                    <td class="grdrow">
+                                        11.32
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="grdrow">
+                                        DSP BlackRock Equity Fund - Growth
+                                    </td>
+                                    <td class="grdrow">
+                                        3954.76
+                                    </td>
+                                    <td class="grdrow">
+                                        60000
+                                    </td>
+                                    <td class="grdrow">
+                                        63280.0492
+                                    </td>
+                                    <td class="grdrow">
+                                        3280.0492
+                                    </td>
+                                    <td class="grdrow">
+                                        11.32
+                                    </td>
+                                </tr>
+                            </table>
+                            <!gvFirstTable!>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td_style6">
+                            Historical Performance:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <!GridViewSIPResult!>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td class="chart" width="70%" height="85%" style="height:85%;">
+                            <!chartImage!>
+                        </td>
+                        <td width="30%" style="vertical-align: bottom; height:85%;">
+                            <table cellpadding="0" cellspacing="0" class="prepareTablestyle">
+                                <tr>
+                                    <td align="center" style="height: 150px;">
+                                        <table width="90%" cellpadding="0" cellspacing="0" style="text-align: left;">
+                                            <tr>
+                                                <td style="font-weight: bold; color: #4f4e50;" class="style1">
+                                                    Prepared By:
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdborderbotton">
+                                                    <!PreparedBy!>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdborderbotton">
+                                                    <!Mobile!>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdborderbotton">
+                                                    <!Email!>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="height: 20px;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="font-weight: bold; color: #4f4e50;">
+                                                    Prepared For:
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdborderbotton">
+                                                    <!PreparedFor!>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- <tr>
+            <td class="td_style3">
+                &nbsp;
+            </td>
+        </tr>-->
+        <tr>
+            <td class="line">                
+            </td>
+        </tr>
+        <tr>
+            <td class="dis">
+                *For important instructions/disclaimer please refer page 2
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right; padding-right: 15px;">
+                Page 1
+            </td>
+        </tr>
+        <tr>
+            <td class="td_style3" style="height: 20px;">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="top_tr">
+                                        Performance report
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style2">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td class="mid_table">
+                            &nbsp;
+                        </td>
+                        <td class="right_table">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="td_style3">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" height="58px">
+                                        <img src="../IMG/logo.jpg" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td_style3" style="vertical-align: top; text-align: right; height: 84px;">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="td_style3" style="height: 10px;">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="td_style1">
+                <b>Note: Risk may be represented as:</b>
+                <br />
+                Investors understand that their principal will be at Low risk
+                <img src="../IMG/img_blue.jpg" />
+                (Blue)<br />
+                Investors understand that their principal will be at Medium risk
+                <img src="../IMG/img_yellow.jpg" />
+                (Yellow)<br />
+                Investors understand that their principal will be at High risk
+                <img src="../IMG/img_brown.jpg" />
+                (Brown)<br />
+                <b>
+                    <br />
+                    * Returns here denote the Extended Internal Rate of Return (XIRR).
+                    <br />
+                    • Since Inception return of the benchmark is calculated from the scheme inception
+                    date.</b>
+                <br />
+                This report is intended solely for the use of the person requesting the same. If
+                you have received this report in error, please ignore/delete/discard the same. This
+                report should not be construed as an advertisement or solicitation to invest in
+                any scheme of DSP BlackRock Mutual Fund. This report is provided for assistance
+                only and is not intended to be and must not alone be taken as the basis for an investment
+                decision. This recipient should make necessary investment analysis (inclusing the
+                risk involved) and should consult his advisor before investing.
+            </td>
+        </tr>
+        <tr>
+            <td class="dis">
+                <br />
+                <b>Mutual Fund investments are subject to market risks, read all scheme related documents
+                    carefully.</b><br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td class="line">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="dis">
+               
+            </td>
+        </tr>
+         <tr>
+            <td style="height: 860px;">
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: right; padding-right: 15px;">
+                Page 2
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

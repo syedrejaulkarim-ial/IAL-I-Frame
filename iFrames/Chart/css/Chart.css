@@ -1,0 +1,45 @@
+﻿.button
+{
+	background-color: #067DCD;
+	color: White;
+	font-weight: bold;
+	text-align: center;
+	border: 1;
+	border-width: 1;
+	cursor: pointer;
+}
+
+a:pager
+{
+	background-color: #067DCD;
+	border-left: 10px solid #369;
+	border-right: 1px solid #69c;
+	border-bottom: 1px solid #369;
+	font-weight: bold;
+	text-align: center;
+	border: 1;
+	border-width: 1;
+	cursor: pointer;
+}
+
+.style1
+{
+	width: 100%;
+}
+
+p.Default
+{
+	margin-bottom: .0001pt;
+	font-size: 12.0pt;
+	font-family: "Arial" , "sans-serif";
+	color: black;
+	margin-left: 30px;
+	margin-right: 0in;
+	margin-top: 0in;
+}
+
+
+
+
+
+

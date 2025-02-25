@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Pramerica">
+  <DataContextMoniker Name="/PramericaDataContext" />
+  <nestedChildShapes>
+    <classShape Id="288d1df9-3ca0-4915-a67f-a78c67fa23ea" absoluteBounds="2.125, 2.625, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/PramericaDataContext/T_INDEX_RECORD_PRM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="be43ca07-0917-4dd8-bf9a-8152b482d332" absoluteBounds="2.14, 3.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

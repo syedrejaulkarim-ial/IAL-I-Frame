@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<companies>
+  <company>
+    <id>1</id>
+    <name>ICRA</name>
+    <theme>ICRATheme</theme>
+    <mutid></mutid>
+  </company>
+  <company>
+    <id>2</id>
+    <name>ICICI</name>
+    <theme>ICICI</theme>
+    <mutid></mutid>
+  </company>
+  <company>
+    <id>3</id>
+    <name>IDBI Bank</name>
+    <theme>Green</theme>
+    <mutid></mutid>
+  </company>
+  <company>
+    <id>4</id>
+    <name>AXIS Bank</name>
+    <theme>Maroon</theme>
+    <mutid>5,2,7,8,9</mutid>
+  </company>
+  <company>
+    <id>5</id>
+    <name>CITY Bank</name>
+    <theme>Navy</theme>
+    <mutid>5,2,7,8,9</mutid>
+  </company>
+  <company>
+    <id>6</id>
+    <name>SBI Bank</name>
+    <theme>Aqua</theme>
+    <mutid>5,2,7,8,9</mutid>
+  </company>
+</companies>

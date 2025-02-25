@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link type="text/css" rel="Stylesheet" href="../css/Chart.css" />
+</head>
+<body>
+    <center>
+        <table class="style1" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+                <tr style="height: 50px;">
+                    <td style="width: 10%; background-color: #007ac2;">
+                    <!DistributorLogo!>
+                    </td>
+                    <td style="width: 70%; margin-left: 45%;">
+                        <p class="Default">
+                            <b><span style="font-size: 30.0pt; font-family: color:Gray; color: #C0C0C0;">Share Price
+                                follows Earnings Growth </span></b>
+                        </p>
+                    </td>
+                    <td style="width: 20%;">
+                        <img src="http://mfiframes.mutualfundsindia.com/Chart/images/pr_logo.jpg" alt="" style="border-width: 0px;" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <span id="lblMsgError" style="color: Red; font-weight: bold;"></span>
+        <div id="pnlControls" style="font-family: verdana; font-size: 9pt; width: 700px;">
+            <table width="100%" cellpadding="0" cellspacing="1" border="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div>
+                                <table width="100%" cellspacing="1" style="background-color: #007AC2; height: 30px;">
+                                    <tbody>
+                                        <tr>
+                                            <td align="right">
+                                                <span style="color: White;"><b>Company Name:</b></span>
+                                            </td>
+                                            <td align="left">
+                                                <span style="color: White;"><b><!CompanyName!></b></span>
+                                            </td>
+                                            <td>
+                                            </td>
+                                            <td align="left">
+                                                <span style="color: White; padding-left: 5px;"><b>Distributor Name:<!DistributorName!></b></span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                        <td align="right" style="display: block;">
+                            <div>
+                                <table width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <span id="lblMsg" style="color: Red; font-weight: bold;"></span>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td align="center">
+                        <div>
+                            <table width="95%" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td id="tdCompName" align="left" style="height: 25px; padding-left: 5px;" colspan="4"
+                                            bgcolor="#007AC2">
+                                            <span id="lblCompName" style="color: White; font-family: Verdana; font-size: 9pt;
+                                                font-weight: bold;"><!CompanyName!> EPS Vs <!Sensex!></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="height: 10px;" colspan="4">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="tdLegend" align="center" style="height: 25px;" bgcolor="#FBFDFE">
+                                            <div>
+                                                <table width="85%" cellpadding="0" cellspacing="0" style="height: 25px; border: 1px solid #B8E4F9;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding-left: 5px; width: 35%; font-family: Verdana; font-size: small">
+                                                                <span id="lblGrowth" style="color: Black; font-family: Verdana; font-weight: bold;">
+                                                                    <!GrowthSince!></span>
+                                                            </td>
+                                                            <td id="tdEps" style="width: 20%;" bgcolor="#50B000">
+                                                                <b style="padding-left: 5px; color: #FFFFFF; font-family: Verdana; font-size: small">
+                                                                    EPS </b><b style="padding-left: 5px; color: #FFFFFF; font-family: Verdana; font-size: small">
+                                                                        <!EPSPER!> </b>
+                                                            </td>
+                                                            <td id="tdShare" style="width: 20%;" bgcolor="#FF0000">
+                                                                <b style="padding-left: 5px; color: #FFFFFF; font-family: Verdana; font-size: small">
+                                                                    Share Price </b><b style="padding-left: 5px; color: #FFFFFF; font-family: Verdana;
+                                                                        font-size: small"><!PER!> </b>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="clear: both;">
+                        </div>
+                        <div>
+                            <div id="pnlCompanyShare" style="width: 100%;">
+                                <br />
+                                <img alt="" src="<!ImageSource!>" />
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 10px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div id="pnlgvCompanyShare">
+                            <!List!>
+                            <br />
+                            <table width="95%" cellpadding="0" cellspacing="4" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2" align="left">
+                                            <span style="color: Black; font-family: Verdana; font-weight: bold; font-size: 9pt;">
+                                                Disclaimer:</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">Data for the graph
+                                                is rebased to 100. </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">PE-Price to Earnings
+                                                ratio.</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">EPS-Earning per share
+                                                in Rs. </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">Standalone EPS and
+                                                share price is adjusted as per the corporate action. </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">CAGR calculated from
+                                                the first positive value. </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="width: 5px;" align="left" valign="middle">
+                                            <img src="../images/bullet.jpeg" alt="" width="5" height="5" />
+                                        </td>
+                                        <td align="left">
+                                            <span style="color: Black; font-family: Verdana; font-size: 9pt">Powered by ICRA Analytics
+                                                Ltd.</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>

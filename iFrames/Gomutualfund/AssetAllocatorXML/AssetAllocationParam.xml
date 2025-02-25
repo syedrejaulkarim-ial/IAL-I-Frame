@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Weightages>
+  <Weightage value="Very Aggressive1" StartVal="76" EndVal="77" profile="Very Aggressive">
+    <assets>
+      <asset allocation="40">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="05">Sector Funds</asset>
+      <asset allocation="10">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="15">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Very Aggressive1" StartVal="75" EndVal="75" profile="Aggressive">
+    <assets>
+      <asset allocation="40">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="05">Sector Funds</asset>
+      <asset allocation="10">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="15">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Very Aggressive2" StartVal="78" EndVal="80" profile="Very Aggressive">
+    <assets>
+      <asset allocation="41">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="07">Sector Funds</asset>
+      <asset allocation="10">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="12">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Very Aggressive3" StartVal="81" EndVal="83" profile="Very Aggressive">
+    <assets>
+      <asset allocation="42">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="10">Sector Funds</asset>
+      <asset allocation="9">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="9">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Very Aggressive4" StartVal="84" EndVal="86" profile="Very Aggressive">
+    <assets>
+      <asset allocation="43">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="12">Sector Funds</asset>
+      <asset allocation="7">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="8">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Very Aggressive5" StartVal="87" EndVal="89" profile="Very Aggressive">
+    <assets>
+      <asset allocation="43">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="14">Sector Funds</asset>
+      <asset allocation="7">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="6">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Very Aggressive6" StartVal="90" EndVal="92" profile="Very Aggressive">
+    <assets>
+      <asset allocation="43">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="15">Sector Funds</asset>
+      <asset allocation="6">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="6">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Very Aggressive7" StartVal="93" EndVal="95" profile="Very Aggressive">
+    <assets>
+      <asset allocation="43">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="16">Sector Funds</asset>
+      <asset allocation="6">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="5">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Very Aggressive8" StartVal="96" EndVal="98" profile="Very Aggressive">
+    <assets>
+      <asset allocation="45">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="19">Sector Funds</asset>
+      <asset allocation="6">Cash / Bank FD / Liquid Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Very Aggressive9" StartVal="99" EndVal="100" profile="Very Aggressive">
+    <assets>
+      <asset allocation="45">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="20">Sector Funds</asset>
+      <asset allocation="5">Cash / Bank FD / Liquid Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Aggressive1" StartVal="61" EndVal="62" profile="Aggressive">
+    <assets>
+      <asset allocation="36">Large Caps</asset>
+      <asset allocation="16">Mid Caps/Small Caps</asset>
+      <asset allocation="16">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="32">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Aggressive1" StartVal="60" EndVal="60" profile="Moderate">
+    <assets>
+      <asset allocation="36">Large Caps</asset>
+      <asset allocation="16">Mid Caps/Small Caps</asset>
+      <asset allocation="16">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="32">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Aggressive2" StartVal="63" EndVal="65" profile="Aggressive">
+    <assets>
+      <asset allocation="37">Large Caps</asset>
+      <asset allocation="20">Mid Caps/Small Caps</asset>
+      <asset allocation="13">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="30">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Aggressive3" StartVal="66" EndVal="68" profile="Aggressive">
+    <assets>
+      <asset allocation="38">Large Caps</asset>
+      <asset allocation="23">Mid Caps/Small Caps</asset>
+      <asset allocation="12">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="27">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Aggressive4" StartVal="69" EndVal="71" profile="Aggressive">
+    <assets>
+      <asset allocation="39">Large Caps</asset>
+      <asset allocation="26">Mid Caps/Small Caps</asset>
+      <asset allocation="11">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="24">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Aggressive5" StartVal="72" EndVal="74" profile="Aggressive">
+    <assets>
+      <asset allocation="40">Large Caps</asset>
+      <asset allocation="30">Mid Caps/Small Caps</asset>
+      <asset allocation="10">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="20">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Moderate1" StartVal="51" EndVal="53" profile="Moderate">
+    <assets>
+      <asset allocation="33">Large Caps</asset>
+      <asset allocation="5">Mid Caps/Small Caps</asset>
+      <asset allocation="22">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="40">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Moderate2" StartVal="54" EndVal="56" profile="Moderate">
+    <assets>
+      <asset allocation="34">Large Caps</asset>
+      <asset allocation="8">Mid Caps/Small Caps</asset>
+      <asset allocation="20">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="38">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Moderate3" StartVal="57" EndVal="59" profile="Moderate">
+    <assets>
+      <asset allocation="35">Large Caps</asset>
+      <asset allocation="12">Mid Caps/Small Caps</asset>
+      <asset allocation="18">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="35">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Conservative1" StartVal="41" EndVal="41" profile="Conservative">
+    <assets>
+      <asset allocation="25">Large Caps</asset>
+      <asset allocation="30">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="45">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Conservative1" StartVal="39" EndVal="40" profile="Defensive">
+    <assets>
+      <asset allocation="25">Large Caps</asset>
+      <asset allocation="30">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="45">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Conservative2" StartVal="42" EndVal="44" profile="Conservative">
+    <assets>
+      <asset allocation="27">Large Caps</asset>
+      <asset allocation="28">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="45">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Conservative3" StartVal="45" EndVal="47" profile="Conservative">
+    <assets>
+      <asset allocation="30">Large Caps</asset>
+      <asset allocation="27">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="43">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Conservative4" StartVal="48" EndVal="50" profile="Conservative">
+    <assets>
+      <asset allocation="32">Large Caps</asset>
+      <asset allocation="25">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="43">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Defensive1" StartVal="0" EndVal="20" profile="Defensive">
+    <assets>
+      <asset allocation="5">Large Caps</asset>
+      <asset allocation="40">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="55">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Defensive2" StartVal="21" EndVal="23" profile="Defensive">
+    <assets>
+      <asset allocation="7">Large Caps</asset>
+      <asset allocation="38">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="55">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Defensive3" StartVal="24" EndVal="26" profile="Defensive">
+    <assets>
+      <asset allocation="10">Large Caps</asset>
+      <asset allocation="35">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="55">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Defensive4" StartVal="27" EndVal="29" profile="Defensive">
+    <assets>
+      <asset allocation="12">Large Caps</asset>
+      <asset allocation="35">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="53">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Defensive5" StartVal="30" EndVal="32" profile="Defensive">
+    <assets>
+      <asset allocation="17">Large Caps</asset>
+      <asset allocation="32">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="51">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Defensive6" StartVal="33" EndVal="35" profile="Defensive">
+    <assets>
+      <asset allocation="18">Large Caps</asset>
+      <asset allocation="32">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="50">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+  <Weightage value="Defensive7" StartVal="36" EndVal="38" profile="Defensive">
+    <assets>
+      <asset allocation="20">Large Caps</asset>
+      <asset allocation="30">Cash / Bank FD / Liquid Funds</asset>
+      <asset allocation="50">FMPS &amp; Debt Funds</asset>
+    </assets>
+  </Weightage>
+</Weightages>

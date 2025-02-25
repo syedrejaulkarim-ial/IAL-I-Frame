@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.mutualfundsindia.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.mutualfundsindia.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.mutualfundsindia.com/">
+      <s:element name="FetchMutualFund">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mFIds" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchMutualFundResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchMutualFundResult" type="tns:ArrayOfNameAndId" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNameAndId">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="NameAndId" nillable="true" type="tns:NameAndId" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="NameAndId">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FetchSchemes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mutCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchSchemesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchSchemesResult" type="tns:ArrayOfNameAndId" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchIndices">
+        <s:complexType />
+      </s:element>
+      <s:element name="FetchIndicesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchIndicesResult" type="tns:ArrayOfNameAndId" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchIndicesAgainstScheme">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="schemecode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchIndicesAgainstSchemeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchIndicesAgainstSchemeResult" type="tns:ArrayOfNameAndId" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FetchNav">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="items" type="tns:ArrayOfSelectedItems" />
+            <s:element minOccurs="0" maxOccurs="1" name="startdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="enddate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSelectedItems">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SelectedItems" nillable="true" type="tns:SelectedItems" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SelectedItems">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsIndex" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" default="true" name="IsChecked" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FetchNavResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FetchNavResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FilterData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="items" type="tns:ArrayOfSelectedItems" />
+            <s:element minOccurs="0" maxOccurs="1" name="startdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="enddate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FilterDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FilterDataResult" type="tns:ArrayOfSelectedItems" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="FetchMutualFundSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchMutualFund" />
+  </wsdl:message>
+  <wsdl:message name="FetchMutualFundSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchMutualFundResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchSchemesSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchSchemes" />
+  </wsdl:message>
+  <wsdl:message name="FetchSchemesSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchSchemesResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchIndicesSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchIndices" />
+  </wsdl:message>
+  <wsdl:message name="FetchIndicesSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchIndicesResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchIndicesAgainstSchemeSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchIndicesAgainstScheme" />
+  </wsdl:message>
+  <wsdl:message name="FetchIndicesAgainstSchemeSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchIndicesAgainstSchemeResponse" />
+  </wsdl:message>
+  <wsdl:message name="FetchNavSoapIn">
+    <wsdl:part name="parameters" element="tns:FetchNav" />
+  </wsdl:message>
+  <wsdl:message name="FetchNavSoapOut">
+    <wsdl:part name="parameters" element="tns:FetchNavResponse" />
+  </wsdl:message>
+  <wsdl:message name="FilterDataSoapIn">
+    <wsdl:part name="parameters" element="tns:FilterData" />
+  </wsdl:message>
+  <wsdl:message name="FilterDataSoapOut">
+    <wsdl:part name="parameters" element="tns:FilterDataResponse" />
+  </wsdl:message>
+  <wsdl:portType name="NAVChartSoap">
+    <wsdl:operation name="FetchMutualFund">
+      <wsdl:input message="tns:FetchMutualFundSoapIn" />
+      <wsdl:output message="tns:FetchMutualFundSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchSchemes">
+      <wsdl:input message="tns:FetchSchemesSoapIn" />
+      <wsdl:output message="tns:FetchSchemesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchIndices">
+      <wsdl:input message="tns:FetchIndicesSoapIn" />
+      <wsdl:output message="tns:FetchIndicesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchIndicesAgainstScheme">
+      <wsdl:input message="tns:FetchIndicesAgainstSchemeSoapIn" />
+      <wsdl:output message="tns:FetchIndicesAgainstSchemeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FetchNav">
+      <wsdl:input message="tns:FetchNavSoapIn" />
+      <wsdl:output message="tns:FetchNavSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FilterData">
+      <wsdl:input message="tns:FilterDataSoapIn" />
+      <wsdl:output message="tns:FilterDataSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NAVChartSoap" type="tns:NAVChartSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FetchMutualFund">
+      <soap:operation soapAction="http://www.mutualfundsindia.com/FetchMutualFund" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchSchemes">
+      <soap:operation soapAction="http://www.mutualfundsindia.com/FetchSchemes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchIndices">
+      <soap:operation soapAction="http://www.mutualfundsindia.com/FetchIndices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchIndicesAgainstScheme">
+      <soap:operation soapAction="http://www.mutualfundsindia.com/FetchIndicesAgainstScheme" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchNav">
+      <soap:operation soapAction="http://www.mutualfundsindia.com/FetchNav" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FilterData">
+      <soap:operation soapAction="http://www.mutualfundsindia.com/FilterData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NAVChartSoap12" type="tns:NAVChartSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FetchMutualFund">
+      <soap12:operation soapAction="http://www.mutualfundsindia.com/FetchMutualFund" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchSchemes">
+      <soap12:operation soapAction="http://www.mutualfundsindia.com/FetchSchemes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchIndices">
+      <soap12:operation soapAction="http://www.mutualfundsindia.com/FetchIndices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchIndicesAgainstScheme">
+      <soap12:operation soapAction="http://www.mutualfundsindia.com/FetchIndicesAgainstScheme" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FetchNav">
+      <soap12:operation soapAction="http://www.mutualfundsindia.com/FetchNav" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FilterData">
+      <soap12:operation soapAction="http://www.mutualfundsindia.com/FilterData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NAVChart">
+    <wsdl:port name="NAVChartSoap" binding="tns:NAVChartSoap">
+      <soap:address location="http://mfiframes.mutualfundsindia.com/WebServices/NAVChart.asmx" />
+    </wsdl:port>
+    <wsdl:port name="NAVChartSoap12" binding="tns:NAVChartSoap12">
+      <soap12:address location="http://mfiframes.mutualfundsindia.com/WebServices/NAVChart.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

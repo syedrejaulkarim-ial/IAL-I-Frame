@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ICRAClient" Class="CanaraClientDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.T_CANARA_SCHEMES_fundmanagers" Member="T_CANARA_SCHEMES_fundmanagers">
+    <Type Name="T_CANARA_SCHEMES_fundmanager">
+      <Column Name="Scheme_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FundManagerName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="From_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Image_link" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Doc_Link" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Inserted_on" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Inserted_By" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Modified_On" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Is_active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SysStartTime" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="SysEndTime" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_CANARA_SCHEMES_AssetAllocation" Member="T_CANARA_SCHEMES_AssetAllocations">
+    <Type Name="T_CANARA_SCHEMES_AssetAllocation">
+      <Column Name="Scheme_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Instrument_Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Allocation" Type="System.Decimal" DbType="Decimal(38,10)" CanBeNull="true" />
+      <Column Name="Inserted_on" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Inserted_By" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Modified_On" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Is_active" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="SysStartTime" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="SysEndTime" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_WEB_LOGIN_MASTER" Member="T_WEB_LOGIN_MASTERs">
+    <Type Name="T_WEB_LOGIN_MASTER">
+      <Column Name="User_Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Email_Id" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Login_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Password_Changed_Date" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Wrong_Attmept_Count" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Created_By" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Created_On" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Modified_BY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Modified_On" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Last_Locked_Out_Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsLockedOut" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsOnLine" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BRANCH_NAME" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.T_CANARA_SCHEMES_STATIC_DATA" Member="T_CANARA_SCHEMES_STATIC_DATAs">
+    <Type Name="T_CANARA_SCHEMES_STATIC_DATA">
+      <Column Name="Scheme_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Amfi_Code" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Scheme_Name" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="FUND_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Risk" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Benchmark_Risk" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="AUM" Type="System.Decimal" DbType="Decimal(38,10)" CanBeNull="true" />
+      <Column Name="Aum_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Inception_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Inception_Price" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Horizon" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Goal" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Index_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Benchmark" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Additional_Index_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Additional_Benchmark" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="Nav" Type="System.Decimal" DbType="Decimal(38,10)" CanBeNull="true" />
+      <Column Name="Nav_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Nav_Change" Type="System.Decimal" DbType="Decimal(38,10)" CanBeNull="true" />
+      <Column Name="Nav_Change_Perc" Type="System.Decimal" DbType="Decimal(38,10)" CanBeNull="true" />
+      <Column Name="CAGR_SI" Type="System.Decimal" DbType="Decimal(38,10)" CanBeNull="true" />
+      <Column Name="About_Fund" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Investment_Objective" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Reason_To_Invest" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Min_Amount_SIP" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Min_Amount_Lumpsum" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Min_Amount_STP" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Min_Amount_SWP" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Min_Amount_Redeem" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Exit_Load" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Entry_Load" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Prescribed_Asset_Allocation" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Expense_Ratio_Regular" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Expense_Ratio_Direct" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="Suitable_For" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PT_Ratio" Type="System.Decimal" DbType="Decimal(38,10)" CanBeNull="true" />
+      <Column Name="STD_DEV" Type="System.Decimal" DbType="Decimal(38,10)" CanBeNull="true" />
+      <Column Name="Product_Suitable_for" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="Inserted_By" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Inserted_On" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Modified_By" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Modified_On" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SysStartTime" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+      <Column Name="SysEndTime" Type="System.DateTime" DbType="DateTime2 NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

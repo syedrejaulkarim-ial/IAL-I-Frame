@@ -1,0 +1,172 @@
+﻿.body
+{
+    width: 695px;
+    font-family:Verdana;
+}
+
+.HeaderDiv
+{
+    background-image: url('../Images/Ranking_Background.jpg');
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.popupMenu
+{
+    position: absolute;
+    visibility: hidden;
+    background-color: #C1D6E9;
+    opacity: .9;
+    filter: alpha(opacity=90);
+    text-align: left;
+    font-family: Tahoma;
+    color: Black;
+    font-size: 12px;
+}
+
+.popupMenu a
+{
+    margin: 12px;
+    color: Black;
+    text-decoration: none;
+}
+
+.popupHover
+{
+    background-image: url(images/header-opened.png);
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-color: #F5F7F8;
+}
+
+._TableCSS
+{
+    font-family: "Verdana", "Lucida Sans Unicode" , "Lucida Grande" , Sans-Serif;
+    font-size: 8px;
+    margin: 5px;
+    text-align: left;
+    border-collapse: collapse;
+    border-bottom: 1px solid #424242;
+    border-right: 1px solid #424242;
+    border-left: 1px solid #424242;
+    width: 100%;
+}
+._TableCSSth
+{
+    background-position: center center;
+    font-size: 9px;
+    font-weight: normal;
+    border: 1px #424242 solid;
+    color: #804000;
+    text-align: center;
+    font-weight: bold;
+    background-image: url('../Images/Ranking_Background.jpg');
+    background-repeat: repeat;
+    height:50px;
+}
+._TableCSStdLA
+{
+    text-align: left;
+    background: #F4F4F4;
+    border-bottom: 1px solid Black;
+    color: black;
+    font-size:10px;
+}
+
+._TableCSStd
+{
+    text-align: Center;
+    border: 1px solid Black;
+    color: black;
+    font-size:10px;
+}
+
+._TableCSStdleft
+{
+    text-align:left;
+    border: 1px solid Black;
+    color: black;
+    font-size:10px;
+}
+
+._GridCSStd
+{
+    font-family: "Verdana", "Lucida Sans Unicode" , "Lucida Grande" , Sans-Serif;    
+    margin: 5px;
+    text-align: Center;
+    border-collapse: collapse;
+    border-bottom: 1px solid #424242;
+    border-right: 1px solid #424242;
+    border-left: 1px solid #424242;
+    width: 100%;
+    border: 1px solid Black;
+    color: black;
+    font-size:10px;
+}
+.GridCSSth
+{
+    background-position: center center;
+    margin: 5px;
+    font-family: "Verdana", "Lucida Sans Unicode" , "Lucida Grande" , Sans-Serif;
+    font-size: 10px;
+    font-weight: normal;
+    border: 1px #424242 solid;
+    color: #804000;
+    text-align: center;
+    font-weight: bold;
+    background-image: url('../Images/Ranking_Background.jpg');
+    background-repeat: repeat;
+    height:50px;
+}
+
+.Yellow
+{
+    color:#0000FF;
+}
+
+.ContextMenuPanel
+{
+    border: 1px solid #868686;
+    z-index: 1000;
+    background: #FAFAFA repeat-y 0 0;
+    cursor: default;
+    padding: 1px 1px 0px 1px;
+    font-size: 11px;
+}
+
+.ContextMenuBreak
+{
+	margin:1px 1px 1px 32px;
+	padding:0;
+	height:1px;
+	overflow:hidden;
+	display:block;
+	border-top: 1px solid #C5C5C5;	
+}
+
+a.ContextMenuItem
+{
+	margin: 1px 0 1px 0;
+	display: block;
+	color: #003399;
+	text-decoration: none;
+	cursor: pointer;	
+	padding: 4px 1px 4px 1px;
+	white-space: nowrap;
+	font-family: Tahoma;
+}
+
+a.ContextMenuItem-Selected
+{
+	font-weight: bold;
+	font-family: Tahoma;
+}
+
+a.ContextMenuItem:hover
+{
+	background-color: #FFE6A0;
+	color: #003399;
+	border: 1px solid #D2B47A;
+	padding: 3px 0px 3px 0px;
+	font-family: Tahoma;
+}
